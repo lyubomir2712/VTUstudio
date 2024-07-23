@@ -1,0 +1,36 @@
+.svg-text {
+    width: 500px;
+    height: 100px;
+    font-family: monospace;
+    font-size: 24px;
+}
+
+text {
+    fill: none;
+    stroke: black;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: write-text 5s linear forwards;
+}
+
+@keyframes write-text {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+.rotating-gear {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    animation: rotateGear 5s linear infinite;
+}
+
+@keyframes rotateGear {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

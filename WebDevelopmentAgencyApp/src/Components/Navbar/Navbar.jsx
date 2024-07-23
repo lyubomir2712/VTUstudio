@@ -2,8 +2,8 @@ import './Navbar.css'
 export default function Navbar() {
     return (
         <header>
-        <nav className="navbar">
-                <span>Български</span>
+            <nav className="navbar">
+                <p>Български</p>
                 <ul className="nav-list">
                     <li className="nav-item"><a href="#">Web design</a></li>
                     <li className="nav-item"><a href="#">Print advertising</a></li>

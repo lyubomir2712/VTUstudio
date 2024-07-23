@@ -1,8 +1,3 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
 .navbar {
     background-color: black;
     width: 100%;
@@ -55,10 +50,11 @@ body {
     background-color: #444;
 }
 
-.navbar span {
+.navbar p {
     color: red;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-left: 47.5rem;
     margin-bottom: 0;
-    padding: 0;
+    margin-top: 0;
+    padding-top: 0.4rem;
 }
