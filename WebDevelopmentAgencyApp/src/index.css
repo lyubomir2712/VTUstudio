@@ -1,7 +1,7 @@
 body{
-  background-image: url("./assets/WaveBackground.webp");
+  background-image: url("./assets/WaveBackground.png");
   background-position: center 12%;
-  background-size: 70%;
+  background-size: 110%;
   background-repeat: no-repeat;
   margin:0;
 }

@@ -34,3 +34,11 @@ text {
         transform: rotate(360deg);
     }
 }
+
+
+.svgHtml{
+    height: 10rem;
+    width: 10rem;
+    position: relative;
+    margin-left:10rem;
+}
