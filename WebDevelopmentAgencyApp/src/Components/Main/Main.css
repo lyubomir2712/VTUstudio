@@ -1,44 +1,70 @@
-.svg-text {
-    width: 500px;
-    height: 100px;
-    font-family: monospace;
-    font-size: 24px;
-}
-
-text {
+.svg-shape {
     fill: none;
     stroke: black;
-    stroke-dasharray: 300;
-    stroke-dashoffset: 300;
-    animation: write-text 5s linear forwards;
+    stroke-width: 1;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 4s ease-out forwards;
 }
 
-@keyframes write-text {
+@keyframes draw {
     to {
         stroke-dashoffset: 0;
     }
 }
 
 
-.rotating-gear {
-    width: 200px; /* Adjust size as needed */
-    height: 200px; /* Adjust size as needed */
-    animation: rotateGear 5s linear infinite;
-}
+/*.svg-shape {*/
+/*    stroke: black;*/
+/*    stroke-width: 1;*/
+/*    stroke-dasharray: 1000;*/
+/*    stroke-dashoffset: 1000;*/
+/*    animation: 4s ease-out ;*/
+/*}*/
 
-@keyframes rotateGear {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
+/*@keyframes FillSvg {*/
+/*    0% {*/
+/*        stroke-dashoffset: 1000;*/
+/*    }*/
+/*    100%{*/
+/*        stroke-dashoffset: 0;*/
+/*    }*/
+/*}*/
+
+/*.rotating-gear {*/
+/*    width: 200px; !* Adjust size as needed *!*/
+/*    height: 200px; !* Adjust size as needed *!*/
+/*    animation: rotateGear 5s linear infinite;*/
+/*}*/
+
+/*@keyframes rotateGear {*/
+/*    from {*/
+/*        transform: rotate(0deg);*/
+/*    }*/
+/*    to {*/
+/*        transform: rotate(360deg);*/
+/*    }*/
+/*}*/
 
 
-.svgHtml{
-    height: 10rem;
-    width: 10rem;
-    position: relative;
-    margin-left:10rem;
-}
+
+
+/*.svgSQL{*/
+/*    height: 20rem;*/
+/*    width: 20rem;*/
+/*    position: relative;*/
+/*    margin-left:10rem;*/
+/*}*/
+
+
+/*.JS-gear{*/
+/*    margin-left: 20%;*/
+/*    margin-top: 20%;*/
+/*}*/
+/*.Sql-gear{*/
+/*    margin-left: 20%;*/
+/*}*/
+
+/*.C-gear{*/
+
+/*}*/
