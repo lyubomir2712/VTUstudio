@@ -1,5 +1,5 @@
 import './Navbar.css'
-import Logo from '../../assets/VTUstudioLogo.png'
+import Logo from '../../assets//DrawnLogoVTU.png'
 export default function Navbar() {
     return (
         <header>
@@ -7,7 +7,7 @@ export default function Navbar() {
                 <p>Български</p>
 
                     <img src={Logo} className={"logo"} alt="Logo" />
-                    <span>Studio</span>
+                    <span>STUDIO</span>
                     <ul className="nav-list">
                         <li className="nav-item"><a href="#">Web design</a></li>
                         <li className="nav-item"><a href="#">Print advertising</a></li>

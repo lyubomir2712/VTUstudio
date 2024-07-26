@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 img{
     height: 10rem;
     width: 10rem;
@@ -6,11 +9,11 @@ img{
 
 
 
-text {
+.svg-text path {
     fill: none;
     stroke: black;
-    stroke-dasharray: 300;
-    stroke-dashoffset: 300;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
     animation: write-text 5s linear forwards;
 }
 
@@ -22,6 +25,15 @@ text {
     }
 }
 
+span{
+    font-family: 'Roboto Light', sans-serif;
+    letter-spacing: 1rem;
+}
+
+.mainLogo{
+    height: 5rem;
+    width: 5rem;
+}
 
 
 /*.svg-shape {*/
