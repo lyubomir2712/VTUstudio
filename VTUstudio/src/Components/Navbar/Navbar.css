@@ -62,9 +62,6 @@
 .logo{
     height: 1.5rem;
     width: 4rem;
-    position: absolute;
-    top: 1.4rem;
-    left: 11rem;
 }
 .navbar span{
     color: black;

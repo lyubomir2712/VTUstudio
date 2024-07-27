@@ -8,13 +8,18 @@ img{
 
 
 
-
-.svg-text path {
+svg{
+    height: 3rem;
+    width: auto;
+}
+text {
     fill: none;
     stroke: black;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
     animation: write-text 5s linear forwards;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -33,6 +38,11 @@ span{
 .mainLogo{
     height: 5rem;
     width: 5rem;
+}
+
+
+.infoText{
+    align-content:center;
 }
 
 

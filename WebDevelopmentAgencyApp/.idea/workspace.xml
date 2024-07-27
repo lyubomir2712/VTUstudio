@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f213904-222d-470c-ab64-b2092f7721be" name="Changes" comment="" />
+    <list default="true" id="6f213904-222d-470c-ab64-b2092f7721be" name="Changes" comment="merged the local and origin main" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +20,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -32,7 +35,7 @@
   "keyToString": {
     "ReactCreateComponentLastSelected": "functionDeclarationComponent",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/lyubomirgeorgiev/Desktop/ReactCourse/WebDevelopingApp/WebDevelopmentAgencyApp/src/assets",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -81,11 +84,24 @@
       <option name="presentableId" value="Default" />
       <updated>1721649447328</updated>
       <workItem from="1721649448367" duration="53189000" />
-      <workItem from="1721976651616" duration="6847000" />
+      <workItem from="1721976651616" duration="7103000" />
     </task>
+    <task id="LOCAL-00001" summary="merged the local and origin main">
+      <option name="closed" value="true" />
+      <created>1721984819060</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721984819060</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="merged the local and origin main" />
+    <option name="LAST_COMMIT_MESSAGE" value="merged the local and origin main" />
   </component>
 </project>

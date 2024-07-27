@@ -6,27 +6,55 @@ export default function Main() {
 
     return (<>
 
-            <svg viewBox="0 0 500 100" className="svg-text">
-                <text x="10" y="50">&lt;h1&gt;Hello, World!&lt;/h1&gt;</text>
+            <svg viewBox="0 0 1000 100" className="svg-text">
+                <text x="10" y="50">&lt;html&gt;</text>
+            </svg>
+            <svg viewBox="0 0 1000 100" className="svg-text">
+                <text x="10" y="50">&#123;height:165px;&#125;</text>
+            </svg>
+            <svg viewBox="0 0 1000 100" className="svg-text">
+                <text x="10" y="50">&lt; div class="VTUstudio"&gt;</text>
+            </svg>
+            <svg viewBox="0 0 1000 100" className="svg-text">
+                <text x="10" y="50">&lt;CSSHTML&gt;</text>
+            </svg>
+            <svg viewBox="0 0 1000 100" className="svg-text">
+                <text x="10" y="50">&lt;&#123;color:#FFF;&#125;&gt;</text>
+            </svg>
+            <svg viewBox="0 0 1000 100" className="svg-text">
+                <text x="10" y="50">React</text>
             </svg>
 
+            <motion.div
+                initial={{y: -1000}}  // Start far above the view
+                animate={{y: 0}}      // Animate to its natural position
+                transition={{duration: 1, ease: 'easeOut'}}  // Animation timing
+                style={{
+                    width: '100px',
+                    height: '100px',
+                    backgroundColor: 'none',
+                    margin: '0 auto', // Center the div
+                }}
+            >
+                <img src={VTUlogo} className={"mainLogo"} alt="VTU logo"/>
+            </motion.div>
 
 
-            <svg width="200" height="100" viewBox="0 0 200 100">
-                <motion.path
-                    d=""
-                    fill="transparent"
-                    stroke="black"
-                    strokeWidth="2"
-                    strokeDasharray="1000"
-                    strokeDashoffset="1000"
-                    animate={{strokeDashoffset: 0}}
-                    transition={{duration: 5, ease: "easeInOut"}}
-                />
-            </svg>
-
-            <img src={VTUlogo} className={"mainLogo"} alt="VTU logo" />
-            <span>STUDIO</span>
+            <motion.div
+                initial={{y: -1000}}  // Start far above the view
+                animate={{y: 0}}      // Animate to its natural position
+                transition={{duration: 1, ease: 'easeOut'}}  // Animation timing
+                style={{
+                    width: '100px',
+                    height: '100px',
+                    backgroundColor: 'none',
+                    margin: '0 auto', // Center the div
+                }}
+            >
+                <span>STUDIO</span>
+            </motion.div>
+            <p className={"infoText"}>ВТУ студио е част от <br/> Създадено пред **** година и работи в областта на уеб
+                разработката</p>
         </>
 
 
