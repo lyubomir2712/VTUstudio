@@ -7,7 +7,7 @@ export default function Main() {
     return (<>
 
             <svg viewBox="0 0 1000 100" className="svg-text">
-                <text x="10" y="50">&lt;html&gt;</text>
+                <text x="10" y="50">&lt;html&gt;<br/></text>
             </svg>
             <svg viewBox="0 0 1000 100" className="svg-text">
                 <text x="10" y="50">&#123;height:165px;&#125;</text>

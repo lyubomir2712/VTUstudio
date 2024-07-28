@@ -1,6 +1,6 @@
 import {motion} from 'framer-motion';
 
-export function SectionThree() {
+export default function SectionTwo() {
     return (
         <>
             <motion.div
@@ -15,12 +15,12 @@ export function SectionThree() {
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    color: 'white',
+                    color: 'black',
                     fontWeight: 'bold',
                     position: 'relative', // Ensure positioning is relative to the parent
                 }}
             >
-                <span>&lt;html&gt;</span>
+                <span>Bottomright animation</span>
             </motion.div>
         </>
     )
