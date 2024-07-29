@@ -6,21 +6,36 @@ import SectionOne from "../SectionOne/SectionOne.jsx";
 import SectionTwo from "../SectionTwo/SectionTwo.jsx";
 
 function Transition() {
-    const { scrollYProgress } = useScroll();
     const [activeSection, setActiveSection] = useState(0);
     let scrollTimeout = null;
+    let scrolling = false;
 
     const sectionThresholds = [0, 0.5, 1]; // Define your sections' thresholds
     const springConfig = { stiffness: 300, damping: 30 }; // Config for snappy transition
 
     useEffect(() => {
         const handleScroll = (e) => {
+            if (scrolling) return; // Prevent handling new scrolls while animating
             clearTimeout(scrollTimeout);
             scrollTimeout = setTimeout(() => {
                 if (e.deltaY < 0) {
-                    setActiveSection((prev) => (prev > 0 ? prev - 1 : prev));
+                    setActiveSection((prev) => {
+                        if (prev > 0) {
+                            scrolling = true;
+                            setTimeout(() => (scrolling = false), 1500); // Delay before allowing next scroll
+                            return prev - 1;
+                        }
+                        return prev;
+                    });
                 } else if (e.deltaY > 0) {
-                    setActiveSection((prev) => (prev < sectionThresholds.length - 1 ? prev + 1 : prev));
+                    setActiveSection((prev) => {
+                        if (prev < sectionThresholds.length - 1) {
+                            scrolling = true;
+                            setTimeout(() => (scrolling = false), 1000); // Delay before allowing next scroll
+                            return prev + 1;
+                        }
+                        return prev;
+                    });
                 }
             }, 50); // Delay to debounce the scroll input
         };
@@ -36,7 +51,7 @@ function Transition() {
     return (
         <>
             <Navbar />
-            <div style={{ height: "200vh", overflow: "hidden" }}> {/* Prevent default scrolling */}
+            <div style={{ height: "200vh", overflow: "hidden" }}>
                 <motion.div
                     style={{
                         position: "sticky",
@@ -46,7 +61,6 @@ function Transition() {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        fontSize: "2rem",
                     }}
                 >
                     <motion.div
