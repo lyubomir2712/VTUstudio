@@ -4,10 +4,10 @@ export default function Navbar() {
     return (
         <header>
             <nav className="navbar">
-                <p>Български</p>
 
-                    <img src={Logo} className={"logo"} alt="Logo" />
-                    <span>STUDIO</span>
+                <div className={'language'}>Български</div>
+                <div className={'navbar-content-container'}>
+                    <img src={Logo} alt="Logo" className={"logo"}/>
                     <ul className="nav-list">
                         <li className="nav-item"><a href="#">Web design</a></li>
                         <li className="nav-item"><a href="#">Print advertising</a></li>
@@ -16,8 +16,9 @@ export default function Navbar() {
                         <li className="nav-item"><a href="#">Photoalbums</a></li>
                         <li className="nav-item"><a href="#">Contacts</a></li>
                     </ul>
-
+                </div>
             </nav>
+            <p className={"logoText"}>STUDIO</p>
         </header>
     )
 }
