@@ -30,7 +30,7 @@
     content: '/';
     position: absolute;
     right: -0.75rem;
-    top: 56%;
+    top: 50%;
     transform: translateY(-50%);
     color: white;
     z-index: 0;

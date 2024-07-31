@@ -1,6 +1,7 @@
 import './Main.css'
 import {motion} from 'framer-motion'
 import VTUlogo from '../../assets/DrawnLogoVTU.png'
+import graphitiImg from '../../assets/graphiti.png'
 export default function Main() {
 
 
@@ -22,20 +23,19 @@ export default function Main() {
             {/*    <text x="10" y="50">React</text>*/}
             {/*</svg>*/}
 
-
+            <img className={"graphitiImg"} src={graphitiImg} alt="Graphiti img" />
             <motion.div className={"logoContainer"}
                 initial={{y: -1000}}
                 animate={{y: 0}}
-                transition={{duration: 1, ease: 'easeOut'}}
+                transition={{duration: 2, ease: 'easeOut'}}
                 style={{
                     backgroundColor: 'none',
                     margin: '0 auto',
                 }}
             >
-                <span className={'logoText-first-word'}>VTU</span>
-                <span className={"logoText-second-word"}>STUDIO</span>
+                <span className={'logoText-first-word'}><img src={VTUlogo}/> STUDIO</span>
             </motion.div>
-            <p className={"infoText"}>ВТУ студио е част от <br/> Създадено пред **** година и работи в областта на уеб
+            <p className={"infoText"}>ВТУ студио е част от ..... ГРУП<br/> Създадено пред **** година и работи в областта на уеб
                 разработката</p>
         </>
 

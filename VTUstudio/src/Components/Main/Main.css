@@ -5,6 +5,12 @@
 /*    height: 5rem;*/
 /*    width: 5rem;*/
 /*}*/
+
+.graphitiImg{
+    opacity: 0.5;
+    margin-left: 25rem;
+
+}
 img{
     height: 20rem;
     width: auto;
@@ -24,23 +30,26 @@ text {
     padding: 0;
 }
 
-.logoContainer{
-    margin-top: 6rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
+
 
 .logoText-first-word{
     font-size: 5rem;
+    text-align: right;
+    text-shadow: -8px 8px 5px rgba(0, 0, 0, 0.3);
+    -webkit-background-clip: text;
+    color: black;
+
 }
-.logoText-second-word{
-    font-size: 5rem;
+
+.logoText-first-word img{
+    height: 4.4rem;
+    width: auto;
 }
 
 .infoText{
-    margin-top: 20rem;
-    align-content:center;
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 1.3rem;
 }
 
 
