@@ -4,6 +4,7 @@ import Navbar from "../Navbar/Navbar.jsx";
 import Main from "../Main/Main.jsx";
 import SectionOne from "../SectionOne/SectionOne.jsx";
 import SectionTwo from "../SectionTwo/SectionTwo.jsx";
+import SectionThree from "../SectionThree/SectionThree.jsx";
 
 function Transition() {
     const [activeSection, setActiveSection] = useState(0);
@@ -71,6 +72,7 @@ function Transition() {
                         {activeSection === 0 && <Main />}
                         {activeSection === 1 && <SectionOne />}
                         {activeSection === 2 && <SectionTwo />}
+                        {activeSection === 3 && <SectionThree />}
                     </motion.div>
                 </motion.div>
             </div>
