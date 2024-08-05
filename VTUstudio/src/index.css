@@ -6,7 +6,13 @@ body{
   margin:0;
 }
 
-
+Main ,Section {
+    scroll-snap-align: start;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 *{
@@ -18,5 +24,9 @@ body{
 
 
 html, body{
-    overflow: hidden;
+    /*overflow: hidden;*/
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
