@@ -3,6 +3,7 @@ import lemon from "../../assets/lemon.png";
 import peacockImg from "../../assets/Peacock copy.png";
 import keycapImg from "../../assets/keycap.png";
 import './SectionOne.css'
+import TrampolineImg from "../../assets/trampoline.png";
 export default function SectionOne() {
     return (
         <>
@@ -39,26 +40,21 @@ export default function SectionOne() {
             </motion.div>
 
 
-
-
             <motion.div
-                initial={{x: 1000, y: -1000}}  // Start off-screen at the upper right
-                animate={{x: 0, y: 0}}         // Animate to the neutral position
+                initial={{x: -1000, y: 0}}  // Start off-screen to the left
+                animate={{x: 0, y: 0}}      // Animate to the neutral position
                 transition={{duration: 1, ease: 'easeOut'}}  // Smooth animation
                 style={{
                     width: '100px',
                     height: '100px',
-                    backgroundColor: 'tomato',
                     margin: '0 auto', // Center the div horizontally within its parent
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    color: 'black',
-                    fontWeight: 'bold',
                     position: 'relative', // Ensure the positioning is relative to the parent
                 }}
             >
-                <span>&lt;UpperRightAnimation&gt;</span>
+                <img src={TrampolineImg} alt="trampoline img"/>
             </motion.div>
         </>
     )

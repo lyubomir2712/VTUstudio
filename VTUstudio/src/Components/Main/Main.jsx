@@ -3,6 +3,7 @@ import {motion} from 'framer-motion'
 import VTUlogo from '../../assets/DrawnLogoVTU.png'
 import graphitiImg from '../../assets/graphiti.png'
 import keycap from '../../assets/keycap.png'
+import cherriesImg from '../../assets/cherries.png'
 export default function Main() {
 
 
@@ -23,6 +24,7 @@ export default function Main() {
             {/*<svg viewBox="0 0 1000 100" className="svg-text">*/}
             {/*    <text x="10" y="50">React</text>*/}
             {/*</svg>*/}
+            <img className={"cherriesImg"} src={cherriesImg} alt={"cherries img"}/>
 
             <img className={"graphitiImg"} src={graphitiImg} alt="Graphiti img"/>
             <motion.div className={"logoContainer"}

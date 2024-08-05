@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f213904-222d-470c-ab64-b2092f7721be" name="Changes" comment="merged the local and origin main">
-      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VTUstudio/src/assets/MonaLisa.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionFour/SectionFour.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionFour/SectionFour.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionOne/SectionOne.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionOne/SectionOne.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionThree/SectionThree.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionThree/SectionThree.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionTwo/SectionTwo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionTwo/SectionTwo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/Transition/Transition.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/Transition/Transition.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/assets/bow copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/assets/bow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/assets/pensil.png" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/assets/pensil.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +45,8 @@
   "keyToString": {
     "ReactCreateComponentLastSelected": "functionDeclarationComponent",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "staged",
-    "last_opened_file_path": "/Users/lyubomirgeorgiev/Desktop/ReactCourse/WebDevelopingApp/WebDevelopmentAgencyApp/src/assets",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/lyubomirgeorgiev/Desktop/ReactCourse/WebDevelopingApp/VTUstudio/src/assets",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -60,11 +68,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../VTUstudio/src/assets" />
       <recent name="$PROJECT_DIR$/src/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../VTUstudio/src/Components/SectionTwo" />
       <recent name="$PROJECT_DIR$/../VTUstudio/src/assets" />
+      <recent name="$PROJECT_DIR$/../VTUstudio/src/Components/SectionTwo" />
       <recent name="$PROJECT_DIR$/../VTUstudio/public" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/assets" />
@@ -88,6 +97,7 @@
       <workItem from="1721649448367" duration="53189000" />
       <workItem from="1721976651616" duration="7103000" />
       <workItem from="1721984985974" duration="16434000" />
+      <workItem from="1722334187173" duration="47078000" />
     </task>
     <task id="LOCAL-00001" summary="merged the local and origin main">
       <option name="closed" value="true" />

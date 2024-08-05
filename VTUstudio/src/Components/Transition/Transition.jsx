@@ -12,6 +12,8 @@ import {
     useTransform,
     MotionValue
 } from "framer-motion";
+import SectionFour from "../SectionFour/SectionFour.jsx";
+import Footer from "../Footer/Footer.jsx";
 
 function useParallax(value, distance) {
     return useTransform(value, [0, 1], [-distance, distance]);
@@ -48,6 +50,8 @@ export default function Transition() {
                 <Section id={2} distance={300}><SectionOne /></Section>
                 <Section id={3} distance={300}><SectionTwo /></Section>
                 <Section id={4} distance={300}><SectionThree /></Section>
+                <Section id={5} distance={300}><SectionFour /></Section>
+                <Section id={5} distance={300}><Footer /></Section>
             </div>
             <motion.div className="progress" style={{ scaleX }} />
         </>
