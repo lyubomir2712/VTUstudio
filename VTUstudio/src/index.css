@@ -24,9 +24,12 @@ Main ,Section {
 
 
 html, body{
-    /*overflow: hidden;*/
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none;
     -ms-overflow-style: none;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
