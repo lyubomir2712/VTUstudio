@@ -8,7 +8,7 @@ import PensilImg from "../../assets/pensil.png";
 
 export default function SectionFour() {
     return (
-        <>
+        <section>
             <motion.div className={"logoContainer"}
                         initial={{y: 1000}}
                         animate={{y: 0}}
@@ -21,6 +21,6 @@ export default function SectionFour() {
                 <img className={"pensilImg"} src={PensilImg} alt={"keycap image"}/>
             </motion.div>
             <h1>ПОРТФОЛИО</h1>
-        </>
+        </section>
     )
 }

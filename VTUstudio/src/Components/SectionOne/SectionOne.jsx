@@ -6,7 +6,7 @@ import './SectionOne.css'
 import TrampolineImg from "../../assets/trampoline.png";
 export default function SectionOne() {
     return (
-        <>
+        <section>
             <motion.div className={"logoContainer"}
                         initial={{y: -1000}}
                         animate={{y: 0}}
@@ -61,6 +61,6 @@ export default function SectionOne() {
                 съобразени със съвременните изисквания за визия и функционалност,
                 уеб базирани приложения, системи с електронно разплащане, електронни магазини,
                 индивидуални бизнес приложения.</p>
-        </>
+        </section>
     )
 }

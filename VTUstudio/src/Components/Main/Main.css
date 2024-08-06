@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-/*.mainLogo{*/
-/*    height: 5rem;*/
-/*    width: 5rem;*/
-/*}*/
 
 .graphitiImg{
     opacity: 0.5;
-    margin-left: 25rem;
+    position: absolute;
+    top: 3%;
+    right: 10%;
 
 }
 img{
@@ -47,9 +45,11 @@ text {
 }
 
 .infoText{
-    margin-top: 4rem;
+    position: absolute;
     text-align: center;
     font-size: 1.3rem;
+    bottom: 2.5%;
+    left: 30%;
 }
 
 
@@ -70,6 +70,25 @@ span.logoText-first-word, span.logoText-second-word{
     position: absolute;
     z-index: 1;
     left: 50%;
+}
+
+.cherriesContainer{
+    position: absolute;
+    transform: rotate(180deg);
+    top:30%;
+    left: 20%;
+    z-index: 1;
+}
+
+.cherriesImg{
+    z-index: 10;
+}
+
+
+.logoImgContainer{
+    position: absolute;
+    left: 27%;
+    top: 65%;
 }
 
 

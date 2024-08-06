@@ -24,10 +24,20 @@ export default function Main() {
             {/*<svg viewBox="0 0 1000 100" className="svg-text">*/}
             {/*    <text x="10" y="50">React</text>*/}
             {/*</svg>*/}
-            <img className={"cherriesImg"} src={cherriesImg} alt={"cherries img"}/>
+            <motion.div className={"cherriesContainer"}
+                        initial={{y: -1000, rotate: 0}}
+                        animate={{y: 0, rotate: 180}}
+                        transition={{duration: 2, ease: 'easeOut'}}
+                        style={{
+                            margin: '0 auto',
+                        }}
+            >
+                <img className={"cherriesImg"} src={cherriesImg} alt={"cherries img"}/>
+            </motion.div>
+
 
             <img className={"graphitiImg"} src={graphitiImg} alt="Graphiti img"/>
-            <motion.div className={"logoContainer"}
+            <motion.div className={"logoImgContainer"}
                         initial={{y: -1000}}
                         animate={{y: 0}}
                         transition={{duration: 2, ease: 'easeOut'}}
@@ -38,7 +48,7 @@ export default function Main() {
             >
                 <span className={'logoText-first-word'}><img src={VTUlogo}/> STUDIO</span>
             </motion.div>
-            <p className={"infoText"}>ВТУ студио е част от ..... ГРУП<br/> Създадено пред **** година и работи в
+            <p className={"infoText"}>ВТУ студио е част от ВТУ ГРУП<br/> Създадено пред 2024 година и работи в
                 областта на уеб
                 разработката</p>
 

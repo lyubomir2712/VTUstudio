@@ -3,7 +3,7 @@
     width: auto;
 }
 
-footer.Footer {
+footer {
     background-color: #030403;
     width: 100vw;
     position: relative;
@@ -11,5 +11,4 @@ footer.Footer {
     height: 40px;
     margin: 0;
     padding: 0;
-    bottom: 0;
 }

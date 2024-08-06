@@ -7,7 +7,7 @@ import BlueButterflyImg from "../../assets/blueButterfly.png";
 
 function SectionThree() {
     return (
-        <>
+        <section>
 
             <motion.div className={"logoContainer"}
                         initial={{y: -1000}}
@@ -56,7 +56,7 @@ function SectionThree() {
                 <h3>Фотофрафия</h3>
                 <p>Професионални фотографски решения: интериорно и екстериорно заснемане, продуктова фотография.</p>
             </motion.div>
-        </>
+        </section>
     )
 }
 

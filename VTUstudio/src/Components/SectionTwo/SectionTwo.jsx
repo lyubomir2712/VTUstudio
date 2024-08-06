@@ -3,7 +3,7 @@ import peacockImg from "../../assets/Peacock.png";
 
 export default function SectionTwo() {
     return (
-        <>
+        <section>
             <motion.div
                 initial={{x: -1000}}   // Start 1000px to the left of the neutral position
                 animate={{x: 0}}       // Animate to the neutral position
@@ -23,6 +23,6 @@ export default function SectionTwo() {
 
             <h3>Печатна реклама</h3>
             <p>Проектираме и изпълняваме печатни рекламни мериали: каталози, книги, брошури, плакати, билбордове.</p>
-        </>
+        </section>
     )
 }
