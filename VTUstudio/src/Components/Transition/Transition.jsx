@@ -53,7 +53,6 @@ export default function Transition() {
                 <Section id={5} distance={300}><SectionFour /></Section>
                 <Section id={5} distance={300}><Footer /></Section>
             </div>
-            <motion.div className="progress" style={{ scaleX }} />
         </>
     );
 }

@@ -11,4 +11,5 @@ footer.Footer {
     height: 40px;
     margin: 0;
     padding: 0;
+    bottom: 0;
 }
