@@ -2,3 +2,13 @@
     height: 1.2rem;
     width: auto;
 }
+
+footer.Footer {
+    background-color: #030403;
+    width: 100vw;
+    position: relative;
+    color: white;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}

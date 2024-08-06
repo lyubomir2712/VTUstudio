@@ -45,17 +45,16 @@ function SectionThree() {
                 style={{
                     width: '100px',
                     height: '100px',
-                    backgroundColor: 'tomato',
                     margin: '0 auto', // Center the div horizontally within its parent
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    color: 'black',
-                    fontWeight: 'bold',
                     position: 'relative', // Ensure the positioning is relative to the parent
                 }}
             >
-                <img src={GreenButterflyImg} className={"BlueButterflyImg"}/>
+                <img src={GreenButterflyImg} className={"BlueButterflyImg"} alt={"blue butterfly img"}/>
+                <h3>Фотофрафия</h3>
+                <p>Професионални фотографски решения: интериорно и екстериорно заснемане, продуктова фотография.</p>
             </motion.div>
         </>
     )

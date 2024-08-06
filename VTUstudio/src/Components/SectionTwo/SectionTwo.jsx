@@ -21,7 +21,8 @@ export default function SectionTwo() {
             <img src={peacockImg} alt="peacock logo"/>
             </motion.div>
 
-
+            <h3>Печатна реклама</h3>
+            <p>Проектираме и изпълняваме печатни рекламни мериали: каталози, книги, брошури, плакати, билбордове.</p>
         </>
     )
 }

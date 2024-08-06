@@ -20,6 +20,7 @@ export default function SectionFour() {
             >
                 <img className={"pensilImg"} src={PensilImg} alt={"keycap image"}/>
             </motion.div>
+            <h1>ПОРТФОЛИО</h1>
         </>
     )
 }

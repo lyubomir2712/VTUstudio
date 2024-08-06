@@ -54,8 +54,7 @@ export default function Main() {
             >
                 <img className={"keycapImg first-keycap"} src={keycap} alt={"keycap image"}/>
             </motion.div>
+
         </>
-
-
     )
 }

@@ -19,8 +19,6 @@ export default function SectionOne() {
             </motion.div>
 
 
-
-
             <motion.div
                 initial={{y: 1000}}   // Starts 1000px below its neutral position
                 animate={{y: 0}}      // Moves to its neutral position
@@ -56,6 +54,13 @@ export default function SectionOne() {
             >
                 <img src={TrampolineImg} alt="trampoline img"/>
             </motion.div>
+
+            <h3>Уеб дизайн</h3>
+            <p>
+                Проектираме и изработваме динамични уеб сайтове,
+                съобразени със съвременните изисквания за визия и функционалност,
+                уеб базирани приложения, системи с електронно разплащане, електронни магазини,
+                индивидуални бизнес приложения.</p>
         </>
     )
 }
