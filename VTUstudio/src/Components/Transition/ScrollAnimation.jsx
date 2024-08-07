@@ -10,7 +10,7 @@ const ScrollAnimation = ({ children }) => {
             ([entry]) => {
                 setIsInView(entry.isIntersecting);
             },
-            { threshold: 0.1 }
+            { threshold: 0.35 }
         );
 
         if (svgRef.current) {

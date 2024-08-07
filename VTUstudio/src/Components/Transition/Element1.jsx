@@ -3,7 +3,7 @@ import VTUlogo from '../../assets/DrawnLogoVTU.png'
 
 function Element1({ isInView }) {
     return (
-        <div style={{ height: "850px", position: "relative", paddingTop: "100px" }}>
+        <div style={{ height: "550px", position: "relative", paddingTop: "100px" }}>
             <motion.div
                 initial={{ y: -1000 }}
                 animate={{ y: isInView ? 0 : -1000 }}

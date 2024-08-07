@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 function App() {
     return (
         <>
+            <Navbar />
             <div className="container">
                 <ScrollAnimation>
                     <Element1 />
