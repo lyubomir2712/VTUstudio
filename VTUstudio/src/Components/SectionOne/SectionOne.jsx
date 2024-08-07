@@ -4,10 +4,11 @@ import peacockImg from "../../assets/Peacock copy.png";
 import keycapImg from "../../assets/keycap.png";
 import './SectionOne.css'
 import TrampolineImg from "../../assets/trampoline.png";
+import Shadow from './../../assets/ShadowTwo.png'
 export default function SectionOne() {
     return (
         <section>
-            <motion.div className={"logoContainer"}
+            <motion.div className={"keycapContainer"}
                         initial={{y: -1000}}
                         animate={{y: 0}}
                         transition={{duration: 1, ease: 'easeOut'}}
@@ -19,40 +20,32 @@ export default function SectionOne() {
             </motion.div>
 
 
-            <motion.div
-                initial={{y: 1000}}   // Starts 1000px below its neutral position
-                animate={{y: 0}}      // Moves to its neutral position
-                transition={{duration: 1, ease: 'easeOut'}}  // 1-second duration
-                style={{
-                    width: '40%',
-                    height: '20%',
-                    margin: '0 auto', // Centers the div horizontally
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    color: 'white',
-                    fontWeight: 'bold'
-                }}
+            <motion.div className={"lemonContainer"}
+                        initial={{y: 1000}}   // Starts 1000px below its neutral position
+                        animate={{y: 0}}      // Moves to its neutral position
+                        transition={{duration: 1, ease: 'easeOut'}}  // 1-second duration
+                        style={{
+                            margin: '0 auto',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                        }}
             >
-                <img src={lemon} alt="lemon logo"/>
+                <img src={lemon} className={"lemonImg"} alt="lemon logo"/>
             </motion.div>
 
 
-            <motion.div
-                initial={{x: -1000, y: 0}}  // Start off-screen to the left
-                animate={{x: 0, y: 0}}      // Animate to the neutral position
-                transition={{duration: 1, ease: 'easeOut'}}  // Smooth animation
-                style={{
-                    width: '100px',
-                    height: '100px',
-                    margin: '0 auto', // Center the div horizontally within its parent
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    position: 'relative', // Ensure the positioning is relative to the parent
-                }}
+            <motion.div className={"trampolineContainer"}
+                        initial={{x: -1000, y: 0}}  // Start off-screen to the left
+                        animate={{x: 0, y: 0}}      // Animate to the neutral position
+                        transition={{duration: 1, ease: 'easeOut'}}  // Smooth animation
+                        style={{
+                            margin: '0 auto', // Center the div horizontally within its parent
+                            justifyContent: 'center',
+                            alignItems: 'center', // Ensure the positioning is relative to the parent
+                        }}
             >
-                <img src={TrampolineImg} alt="trampoline img"/>
+                <img className={"trampoline"} src={TrampolineImg} alt="trampoline img"/>
             </motion.div>
 
             <h3>Уеб дизайн</h3>
@@ -61,6 +54,9 @@ export default function SectionOne() {
                 съобразени със съвременните изисквания за визия и функционалност,
                 уеб базирани приложения, системи с електронно разплащане, електронни магазини,
                 индивидуални бизнес приложения.</p>
+
+            <img src={Shadow} alt="trampoline img" className={"TrampolineShadowImg"}/>
+            <img src={Shadow} alt="trampoline img" className={"lemonShadowImg"}/>
         </section>
     )
 }

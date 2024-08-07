@@ -1,4 +1,48 @@
+.keycapContainer{
+    position: absolute;
+    left: 40%;
+    top: 167%;
+    z-index: 1;
+}
+
 .keycapImg{
     height: 5rem;
     width: auto;
+}
+
+.lemonImg{
+    height:40rem;
+    width: auto;
+
+
+}
+
+.lemonContainer{
+    position: absolute;
+    left: 30%;
+    top: 120%;
+}
+
+.trampolineContainer{
+    position: absolute;
+    top: 180%;
+    left: 35%;
+}
+
+.trampoline{
+    height: 8rem;
+    width: auto;
+}
+
+.lemonShadowImg, .trampolineShadowImg{
+
+}
+
+.lemonShadowImg{
+    top:180%;
+    left: 60%;
+    position: absolute;
+    filter: brightness(0.1);
+    height: auto;
+    width: 40%;
 }

@@ -7,12 +7,12 @@
     position: absolute;
     top: 3%;
     right: 10%;
-
-}
-img{
     height: 20rem;
     width: auto;
+
+
 }
+
 
 svg{
     height: 3rem;
@@ -63,6 +63,7 @@ text {
 span.logoText-first-word, span.logoText-second-word{
     font-family: 'Roboto Light', sans-serif;
     letter-spacing: 1rem;
+    font-size: 6rem;
 }
 
 
@@ -75,21 +76,36 @@ span.logoText-first-word, span.logoText-second-word{
 .cherriesContainer{
     position: absolute;
     transform: rotate(180deg);
-    top:30%;
-    left: 20%;
+    top: 46%;
+    left: 23%;
     z-index: 1;
 }
 
 .cherriesImg{
     z-index: 10;
+    height: 14rem;
+    width: auto;
 }
 
 
 .logoImgContainer{
     position: absolute;
-    left: 27%;
+    left: 33%;
     top: 65%;
 }
 
 
+img.logoImageHalf{
+    height: 5.3rem;
+    width: auto;
+}
+
+img.cherriesShadowimg{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    height:auto;
+    width: 15rem;
+    filter: brightness(0.1);
+}
 

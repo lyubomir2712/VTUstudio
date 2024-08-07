@@ -4,6 +4,8 @@ import VTUlogo from '../../assets/DrawnLogoVTU.png'
 import graphitiImg from '../../assets/graphiti.png'
 import keycap from '../../assets/keycap.png'
 import cherriesImg from '../../assets/cherries.png'
+import VTUlogoHalve from '../../assets/DrawnVTUlogoHalve.png'
+import CherriesShadow from '../../assets/ShadowTwo.png'
 export default function Main() {
 
 
@@ -46,7 +48,7 @@ export default function Main() {
                             margin: '0 auto',
                         }}
             >
-                <span className={'logoText-first-word'}><img src={VTUlogo}/> STUDIO</span>
+                <span className={'logoText-first-word'}><img className={"logoImageHalf"} src={VTUlogoHalve} alt={"vtu logo half image"}/> STUDIO</span>
             </motion.div>
             <p className={"infoText"}>ВТУ студио е част от ВТУ ГРУП<br/> Създадено пред 2024 година и работи в
                 областта на уеб
@@ -64,6 +66,8 @@ export default function Main() {
             >
                 <img className={"keycapImg first-keycap"} src={keycap} alt={"keycap image"}/>
             </motion.div>
+
+            <img src={CherriesShadow} alt={"cherries shadow img"} className="cherriesShadowimg"/>
 
         </>
     )
