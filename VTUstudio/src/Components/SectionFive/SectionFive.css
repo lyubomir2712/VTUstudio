@@ -1,0 +1,26 @@
+
+
+.bowImg{
+    position: absolute;
+    height: 30rem;
+    width: auto;
+    transform: rotate(-35deg);
+    left: 10%;
+    top: 526%;
+}
+
+.arrowImg{
+    transform: rotate(-35deg);
+}
+
+.arrowContainer{
+    position: absolute;
+    top: 40%;
+}
+
+
+.arrowContainer {
+    position: absolute;
+    top: 560%;
+    left: 10%;
+}

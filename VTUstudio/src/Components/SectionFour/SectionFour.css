@@ -1,0 +1,19 @@
+
+.pensilContainer{
+    position: absolute;
+    top: 420%;
+    z-index: 999;
+}
+
+.pensilImg{
+    height: 35rem;
+    width: 2rem;
+}
+
+.portfolio-text{
+    position: absolute;
+    font-family: 'Roboto Light', sans-serif;
+    letter-spacing: 1.5rem;
+    font-size: 5rem;
+    left: 22.5%;
+}

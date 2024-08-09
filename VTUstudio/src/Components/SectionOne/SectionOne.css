@@ -13,7 +13,7 @@
 .lemonImg{
     height:40rem;
     width: auto;
-
+    z-index: 1;
 
 }
 
@@ -32,6 +32,7 @@
 .trampoline{
     height: 8rem;
     width: auto;
+    z-index: 1;
 }
 
 .lemonShadowImg, .trampolineShadowImg{
@@ -39,10 +40,19 @@
 }
 
 .lemonShadowImg{
-    top:180%;
-    left: 60%;
+    top:184%;
+    left: 52%;
     position: absolute;
     filter: brightness(0.1);
     height: auto;
-    width: 40%;
+    width: 35%;
+}
+
+.trampolineShadowImg{
+    position: absolute;
+    filter: brightness(0.1);
+    top: 190%;
+    left: 30%;
+    height: 10%;
+    width: 25%;
 }

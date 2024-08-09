@@ -1,0 +1,18 @@
+.peacockContainer{
+    position:absolute;
+    top: 240%;
+    left: 20%;
+}
+
+img.peacockImg{
+    height: 30rem;
+    width: auto;
+}
+
+.peacockShadow{
+    position: absolute;
+    top: 290%;
+    filter: brightness(0.1);
+    width: 40%;
+    left: 10%;
+}

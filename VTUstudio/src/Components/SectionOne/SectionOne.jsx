@@ -55,7 +55,7 @@ export default function SectionOne() {
                 уеб базирани приложения, системи с електронно разплащане, електронни магазини,
                 индивидуални бизнес приложения.</p>
 
-            <img src={Shadow} alt="trampoline img" className={"TrampolineShadowImg"}/>
+            <img src={Shadow} alt="trampoline img" className={"trampolineShadowImg"}/>
             <img src={Shadow} alt="trampoline img" className={"lemonShadowImg"}/>
         </section>
     )

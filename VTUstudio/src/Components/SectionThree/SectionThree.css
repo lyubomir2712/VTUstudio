@@ -1,0 +1,46 @@
+
+.monaLisaContainer{
+    position: absolute;
+    top: 320%;
+    left: 10%;
+}
+
+.monaLisaImg{
+    height:33rem;
+    width:auto;
+}
+
+
+.greenButterflyImg{
+    height:6rem;
+    width: auto;
+    transform: scaleX(-1);
+}
+
+.greenButterflyContainer{
+    position: absolute;
+    left: 80%;
+    bottom: 25%;
+}
+
+
+.blueButterflyContainer{
+    position: absolute;
+    left:20%;
+    bottom: 10%;
+    z-index: 999;
+}
+
+.blueButterflyImg{
+    height:5rem;
+    width: auto;
+}
+
+.monaLisaShadow{
+    filter: brightness(0.1);
+    position: absolute;
+    left: 5%;
+    top: 385%;
+    width: 30rem;
+}
+
