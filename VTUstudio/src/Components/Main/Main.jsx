@@ -6,8 +6,13 @@ import keycap from '../../assets/keycap.png'
 import cherriesImg from '../../assets/cherries.png'
 import VTUlogoHalve from '../../assets/DrawnVTUlogoHalve.png'
 import CherriesShadow from '../../assets/ShadowTwo.png'
+import {useInView} from "react-intersection-observer";
 export default function Main() {
 
+    const { ref, inView } = useInView({
+        triggerOnce: false,  // Trigger the animation only once
+        threshold: 0.1,     // The percentage of the element's visibility before triggering
+    });
 
     return (<>
 
@@ -27,8 +32,10 @@ export default function Main() {
             {/*    <text x="10" y="50">React</text>*/}
             {/*</svg>*/}
             <motion.div className={"cherriesContainer"}
-                        initial={{y: -1000, rotate: 0}}
-                        animate={{y: 0, rotate: 180}}
+                        ref={ref}
+                        animate={inView ? { y: 0, rotate: 180 } : {}}
+                        initial={{y: '-32rem', rotate: 0}}
+                        // animate={{y: 0, rotate: 180}}
                         transition={{duration: 2, ease: 'easeOut'}}
                         style={{
                             margin: '0 auto',
@@ -40,8 +47,10 @@ export default function Main() {
 
             <img className={"graphitiImg"} src={graphitiImg} alt="Graphiti img"/>
             <motion.div className={"logoImgContainer"}
-                        initial={{y: -1000}}
-                        animate={{y: 0}}
+                        ref={ref}
+                        initial={{y: '-32rem'}}
+                        animate={inView ? {y: 0 } : {}}
+                        // animate={{y: 0}}
                         transition={{duration: 2, ease: 'easeOut'}}
                         style={{
                             backgroundColor: 'none',
@@ -56,6 +65,7 @@ export default function Main() {
 
 
             <motion.div className={"logoContainer"}
+                        // ref={ref}
                         initial={{y: '100vh'}}
                         animate={{y: '-100vh'}}
                         transition={{duration: 0.7, ease: 'easeOut'}}

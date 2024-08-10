@@ -5,12 +5,21 @@ import keycapImg from "../../assets/keycap.png";
 import './SectionOne.css'
 import TrampolineImg from "../../assets/trampoline.png";
 import Shadow from './../../assets/ShadowTwo.png'
+import { useInView } from 'react-intersection-observer';
+
 export default function SectionOne() {
+
+    const { ref, inView } = useInView({
+        triggerOnce: false,  // Trigger the animation only once
+        threshold: 0.1,     // The percentage of the element's visibility before triggering
+    });
+
     return (
         <section>
             <motion.div className={"keycapContainer"}
-                        initial={{y: -1000}}
-                        animate={{y: 0}}
+                        ref={ref}
+                        animate={inView ? { y: 0 } : {}}
+                        initial={{y: '-37.5rem'}}
                         transition={{duration: 1, ease: 'easeOut'}}
                         style={{
                             margin: '0 auto',
@@ -21,8 +30,9 @@ export default function SectionOne() {
 
 
             <motion.div className={"lemonContainer"}
-                        initial={{y: 1000}}   // Starts 1000px below its neutral position
-                        animate={{y: 0}}      // Moves to its neutral position
+                        ref={ref}
+                        initial={{y: '5.3rem'}}   // Starts 1000px below its neutral position
+                        animate={inView ? { y: 0 } : {}}    // Moves to its neutral position
                         transition={{duration: 1, ease: 'easeOut'}}  // 1-second duration
                         style={{
                             margin: '0 auto',
@@ -36,8 +46,9 @@ export default function SectionOne() {
 
 
             <motion.div className={"trampolineContainer"}
-                        initial={{x: -1000, y: 0}}  // Start off-screen to the left
-                        animate={{x: 0, y: 0}}      // Animate to the neutral position
+                        ref={ref}
+                        initial={{x: '-45rem', y: 0}}  // Start off-screen to the left
+                        animate={inView ? {x:0, y: 0 } : {}}  // Animate to the neutral position
                         transition={{duration: 1, ease: 'easeOut'}}  // Smooth animation
                         style={{
                             margin: '0 auto', // Center the div horizontally within its parent

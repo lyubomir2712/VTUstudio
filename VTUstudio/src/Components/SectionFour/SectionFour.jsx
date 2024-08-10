@@ -4,14 +4,21 @@ import MonaLisaPaintingImg from '../../assets/MonaLisa.png'
 import {motion} from "framer-motion";
 import PensilImg from "../../assets/pensil.png";
 import './SectionFour.css'
+import {InView, useInView} from "react-intersection-observer";
 
 
 export default function SectionFour() {
+    const { ref, inView } = useInView({
+        triggerOnce: false,  // Trigger the animation only once
+        threshold: 0.1,     // The percentage of the element's visibility before triggering
+    });
+
     return (
         <section>
             <motion.div className={"pensilContainer"}
-                        initial={{y: 1000}}
-                        animate={{y: 0}}
+                        ref={ref}
+                        initial={{y: 15}}
+                        animate={inView ?{y: 0} : {}}
                         transition={{duration: 0.7, ease: 'easeOut'}}
                         style={{
                             backgroundColor: 'none',
