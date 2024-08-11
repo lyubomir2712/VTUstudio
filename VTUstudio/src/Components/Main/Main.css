@@ -109,3 +109,8 @@ img.cherriesShadowimg{
     filter: brightness(0.1);
 }
 
+
+.keycap-first-container{
+    position: absolute;
+    left: 40%;
+}

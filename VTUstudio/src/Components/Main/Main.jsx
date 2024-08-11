@@ -1,39 +1,46 @@
-import './Main.css'
-import {motion} from 'framer-motion'
-import VTUlogo from '../../assets/DrawnLogoVTU.png'
-import graphitiImg from '../../assets/graphiti.png'
-import keycap from '../../assets/keycap.png'
-import cherriesImg from '../../assets/cherries.png'
-import VTUlogoHalve from '../../assets/DrawnVTUlogoHalve.png'
-import CherriesShadow from '../../assets/ShadowTwo.png'
-import {useInView} from "react-intersection-observer";
+import './Main.css';
+import { motion } from 'framer-motion';
+import VTUlogo from '../../assets/DrawnLogoVTU.png';
+import graphitiImg from '../../assets/graphiti.png';
+import keycap from '../../assets/keycap.png';
+import cherriesImg from '../../assets/cherries.png';
+import VTUlogoHalve from '../../assets/DrawnVTUlogoHalve.png';
+import CherriesShadow from '../../assets/ShadowTwo.png';
+import { useInView } from "react-intersection-observer";
+import { useState, useEffect, useRef } from 'react';
+
 export default function Main() {
 
     const { ref, inView } = useInView({
-        triggerOnce: false,  // Trigger the animation only once
-        threshold: 0.1,     // The percentage of the element's visibility before triggering
+        triggerOnce: false,  // Keep observing the element
+        threshold: 0.1,      // The percentage of the element's visibility before triggering
     });
 
+    const [scrollDirection, setScrollDirection] = useState(null);
+    const prevScrollY = useRef(0);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
 
+            if (currentScrollY < prevScrollY.current) {
+                setScrollDirection('up');
+            } else {
+                setScrollDirection('down');
+            }
+
+            prevScrollY.current = currentScrollY;
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (<>
 
-            {/*<svg viewBox="0 0 1000 100" className="svg-text">*/}
-            {/*    <text x="10" y="50">&#123;height:165px;&#125;</text>*/}
-            {/*</svg>*/}
-            {/*<svg viewBox="0 0 1000 100" className="svg-text">*/}
-            {/*    <text x="10" y="50">&lt; div class="VTUstudio"&gt;</text>*/}
-            {/*</svg>*/}
-            {/*<svg viewBox="0 0 1000 100" className="svg-text">*/}
-            {/*    <text x="10" y="50">&lt;CSSHTML&gt;</text>*/}
-            {/*</svg>*/}
-            {/*<svg viewBox="0 0 1000 100" className="svg-text">*/}
-            {/*    <text x="10" y="50">&lt;&#123;color:#FFF;&#125;&gt;</text>*/}
-            {/*</svg>*/}
-            {/*<svg viewBox="0 0 1000 100" className="svg-text">*/}
-            {/*    <text x="10" y="50">React</text>*/}
-            {/*</svg>*/}
             <motion.div className={"cherriesContainer"}
                         ref={ref}
                         animate={inView ? { y: 0, rotate: 180 } : {}}
@@ -65,11 +72,11 @@ export default function Main() {
                 разработката</p>
 
 
-            <motion.div className={"logoContainer"}
+            <motion.div className={"keycap-first-container"}
                         // ref={ref}
-                        initial={{y: '20rem'}}
-                        animate={inView ? { y: '-24.5rem' } : {}}
-                        transition={{duration: 0.7, ease: 'easeOut'}}
+                        initial={{y: '21.8rem'}}
+                        animate={inView && scrollDirection === 'up' ? { y: '-26.5rem' } : {}}
+                        transition={{duration: 0.3, ease: 'easeOut'}}
                         style={{
                             backgroundColor: 'none',
                             margin: '0 auto',

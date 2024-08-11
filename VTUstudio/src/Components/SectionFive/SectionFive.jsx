@@ -19,7 +19,7 @@ export default function SectionFive() {
             <motion.div className={"arrowContainer"}
                         ref={ref}
                         initial={{x: 0, y: 0}}  // Start at the neutral position
-                        animate={inView ? {x: 500, y: -365} : {}}  // Move to the upper right, out of the viewport
+                        animate={inView ? {x: 550, y: -400} : {}}  // Move to the upper right, out of the viewport
                         transition={{duration: 1.25, ease: 'easeInOut'}}  // Smooth animation
                         style={{
                             margin: '0 auto', // Center the div horizontally within its parent

@@ -10,17 +10,14 @@
 }
 
 .arrowImg{
-    transform: rotate(-35deg);
+    transform: rotate(-36deg);
 }
 
-.arrowContainer{
-    position: absolute;
-    top: 40%;
-}
+
 
 
 .arrowContainer {
     position: absolute;
-    top: 560%;
+    top: 559%;
     left: 10%;
 }
