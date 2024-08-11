@@ -17,7 +17,7 @@ export default function SectionFour() {
         <section>
             <motion.div className={"pensilContainer"}
                         ref={ref}
-                        initial={{y: 15}}
+                        initial={{y: '5.1rem'}}
                         animate={inView ?{y: 0} : {}}
                         transition={{duration: 0.7, ease: 'easeOut'}}
                         style={{
