@@ -14,6 +14,9 @@ export default function Main() {
         threshold: 0.1,     // The percentage of the element's visibility before triggering
     });
 
+
+
+
     return (<>
 
             {/*<svg viewBox="0 0 1000 100" className="svg-text">*/}
@@ -35,7 +38,6 @@ export default function Main() {
                         ref={ref}
                         animate={inView ? { y: 0, rotate: 180 } : {}}
                         initial={{y: '-32rem', rotate: 0}}
-                        // animate={{y: 0, rotate: 180}}
                         transition={{duration: 2, ease: 'easeOut'}}
                         style={{
                             margin: '0 auto',
@@ -50,7 +52,6 @@ export default function Main() {
                         ref={ref}
                         initial={{y: '-32rem'}}
                         animate={inView ? {y: 0 } : {}}
-                        // animate={{y: 0}}
                         transition={{duration: 2, ease: 'easeOut'}}
                         style={{
                             backgroundColor: 'none',
@@ -66,8 +67,8 @@ export default function Main() {
 
             <motion.div className={"logoContainer"}
                         // ref={ref}
-                        initial={{y: '100vh'}}
-                        animate={{y: '-100vh'}}
+                        initial={{y: '20rem'}}
+                        animate={inView ? { y: '-24.5rem' } : {}}
                         transition={{duration: 0.7, ease: 'easeOut'}}
                         style={{
                             backgroundColor: 'none',

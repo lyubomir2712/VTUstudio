@@ -19,7 +19,7 @@ export default function SectionOne() {
             <motion.div className={"keycapContainer"}
                         ref={ref}
                         animate={inView ? { y: 0 } : {}}
-                        initial={{y: '-37.5rem'}}
+                        initial={{y: '-30.5rem'}}
                         transition={{duration: 1, ease: 'easeOut'}}
                         style={{
                             margin: '0 auto',
