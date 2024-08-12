@@ -13,11 +13,24 @@
     transform: rotate(-36deg);
 }
 
-
-
-
 .arrowContainer {
     position: absolute;
     top: 559%;
     left: 10%;
+}
+
+
+.sectionFive-header{
+    position: absolute;
+    top: 543%;
+    left: 71.7%;
+}
+
+.sectionFive-text{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 1;
+    position: absolute;
+    top: 550%;
+    left: 68%;
 }

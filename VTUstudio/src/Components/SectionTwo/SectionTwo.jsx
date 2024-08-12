@@ -28,8 +28,8 @@ export default function SectionTwo() {
             </motion.div>
 
 
-            <h3>Печатна реклама</h3>
-            <p>Проектираме и изпълняваме печатни рекламни мериали: каталози, книги, брошури, плакати, билбордове.</p>
+            <h3 className={"sectionTwo-header"}>Печатна реклама</h3>
+            <p className={"sectionTwo-text"}>Проектираме и изпълняваме печатни рекламни<br/> мериали: каталози, книги, брошури, плакати,<br/> билбордове.</p>
             <img src={shadowImg} className={"peacockShadow"} alt="shadow img"/>
         </section>
     )

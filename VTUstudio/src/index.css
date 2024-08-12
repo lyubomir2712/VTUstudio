@@ -34,3 +34,9 @@ html, body{
 html::-webkit-scrollbar {
     display: none;
 }
+
+.sectionOne-header, .sectionTwo-header, .sectionThree-header, .sectionFour-header, .sectionFive-header {
+    font-size: 1.7rem;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+}

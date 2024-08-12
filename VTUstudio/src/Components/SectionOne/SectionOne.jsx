@@ -20,7 +20,7 @@ export default function SectionOne() {
                         ref={ref}
                         animate={inView ? { y: 0 } : {}}
                         initial={{y: '-30.5rem'}}
-                        transition={{duration: 1, ease: 'easeOut'}}
+                        transition={{duration: 0.5, ease: 'easeOut'}}
                         style={{
                             margin: '0 auto',
                         }}
@@ -49,7 +49,7 @@ export default function SectionOne() {
                         ref={ref}
                         initial={{x: '-45rem', y: 0}}  // Start off-screen to the left
                         animate={inView ? {x:0, y: 0 } : {}}  // Animate to the neutral position
-                        transition={{duration: 1, ease: 'easeOut'}}  // Smooth animation
+                        transition={{duration: 0.5, ease: 'easeOut'}}  // Smooth animation
                         style={{
                             margin: '0 auto', // Center the div horizontally within its parent
                             justifyContent: 'center',
@@ -59,11 +59,11 @@ export default function SectionOne() {
                 <img className={"trampoline"} src={TrampolineImg} alt="trampoline img"/>
             </motion.div>
 
-            <h3>Уеб дизайн</h3>
-            <p>
-                Проектираме и изработваме динамични уеб сайтове,
-                съобразени със съвременните изисквания за визия и функционалност,
-                уеб базирани приложения, системи с електронно разплащане, електронни магазини,
+            <h3 className={"sectionOne-header"}>Уеб дизайн</h3>
+            <p className={'sectionOne-text'}>
+                Проектираме и изработваме динамични уеб сайтове,<br/>
+                съобразени със съвременните изисквания за визия и<br/> функционалност,
+                уеб базирани приложения, системи с<br/> електронно разплащане, електронни магазини,<br/>
                 индивидуални бизнес приложения.</p>
 
             <img src={Shadow} alt="trampoline img" className={"trampolineShadowImg"}/>

@@ -76,7 +76,7 @@ export default function Main() {
                         // ref={ref}
                         initial={{y: '21.8rem'}}
                         animate={inView && scrollDirection === 'up' ? { y: '-26.5rem' } : {}}
-                        transition={{duration: 0.3, ease: 'easeOut'}}
+                        transition={{duration: 0.4, ease: 'easeOut'}}
                         style={{
                             backgroundColor: 'none',
                             margin: '0 auto',

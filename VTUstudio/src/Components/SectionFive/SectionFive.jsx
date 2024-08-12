@@ -33,11 +33,11 @@ export default function SectionFive() {
             </motion.div>
 
 
-            <h3>Контакти</h3>
-            <p>
-                Адрес: Дряново, п.код: 5370,
-                ул."3-ти март" №12
-                тел.: 0889 77 80 80
+            <h3 className={"sectionFive-header"}>Контакти</h3>
+            <p className={"sectionFive-text"}>
+                Адрес: Дряново, п.код: 5370,<br/>
+                ул."3-ти март" №12<br/>
+                тел.: 0889 77 80 80<br/>
                 e-mail: studio@sevenstudio.net</p>
             {/*<Footer/>*/}
 

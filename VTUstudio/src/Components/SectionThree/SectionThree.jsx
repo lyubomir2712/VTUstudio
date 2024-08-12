@@ -75,8 +75,8 @@ function SectionThree() {
 
 
 
-                <h3>Фотофрафия</h3>
-                <p>Професионални фотографски решения: интериорно и екстериорно заснемане, продуктова фотография.</p>
+                <h3 className={"sectionThree-header"}>Фотография</h3>
+                <p className={"sectionThree-text"}>Професионални фотографски решения: интериорно и<br/> екстериорно заснемане, продуктова фотография.</p>
                 <img className={"monaLisaShadow"} src={shadow} alt={"Mona Lisa shadow"}/>
         </section>
     )

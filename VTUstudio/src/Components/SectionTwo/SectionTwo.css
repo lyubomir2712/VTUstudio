@@ -18,3 +18,18 @@ img.peacockImg{
     width: 40%;
     left: 10%;
 }
+
+.sectionTwo-header{
+    position: absolute;
+    top: 263%;
+    left: 64%;
+    font-weight: bolder;
+}
+
+.sectionTwo-text{
+    position: absolute;
+    top: 270%;
+    left:60%;
+    font-size: 1.3rem;
+    text-align: center;
+}
