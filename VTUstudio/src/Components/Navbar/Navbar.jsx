@@ -4,6 +4,8 @@ import i18n from '../LanguageChange/LanguageChange.js';
 import {useState} from 'react';
 import React from "react";
 import { useTranslation } from "react-i18next";
+
+
 export default function Navbar() {
 
     const { t, i18n } = useTranslation();
@@ -30,6 +32,7 @@ export default function Navbar() {
         languageButtonTextHandler({language : languageButtonText});
     }
 
+
     return (
         <header>
             <nav className="navbar">
@@ -38,12 +41,12 @@ export default function Navbar() {
                 <div className={'navbar-content-container'}>
                     <img src={Logo} alt="Logo" className={"logo"}/>
                     <ul className="nav-list">
-                        <li className="nav-item"><a href="#">{t("Web design")}</a></li>
-                        <li className="nav-item"><a href="#">{t("Print advertising")}</a></li>
-                        <li className="nav-item"><a href="#">{t("Photography")}</a></li>
-                        <li className="nav-item"><a href="#">{t("Portfolio")}</a></li>
+                        <li className="nav-item"><a href={"#sectionOne"}>{t("Web design")}</a></li>
+                        <li className="nav-item"><a href="#sectionTwo">{t("Print advertising")}</a></li>
+                        <li className="nav-item"><a href="#sectionThree">{t("Photography")}</a></li>
+                        <li className="nav-item"><a href="#sectionFour">{t("Portfolio")}</a></li>
                         <li className="nav-item"><a href="#">{t("Photoalbums")}</a></li>
-                        <li className="nav-item"><a href="#">{t("Contacts")}</a></li>
+                        <li className="nav-item"><a href="#sectionFive">{t("Contacts")}</a></li>
                     </ul>
                 </div>
             </nav>

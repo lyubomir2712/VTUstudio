@@ -11,7 +11,7 @@ export default function SectionTwo() {
         threshold: 0.1,     // The percentage of the element's visibility before triggering
     });
     return (
-        <section>
+        <section id="sectionTwo">
             <motion.div className={"peacockContainer"}
                         ref={ref}
                         animate={inView ? { x: 0 } : {}}

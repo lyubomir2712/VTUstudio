@@ -15,7 +15,7 @@ export default function SectionOne() {
     });
 
     return (
-        <section>
+        <section id={"sectionOne"}>
             <motion.div className={"keycapContainer"}
                         ref={ref}
                         animate={inView ? { y: 0 } : {}}

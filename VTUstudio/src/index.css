@@ -29,6 +29,7 @@ html, body{
     -ms-overflow-style: none;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+
 }
 
 html::-webkit-scrollbar {

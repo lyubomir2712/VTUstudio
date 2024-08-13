@@ -15,12 +15,12 @@ function SectionThree() {
     });
 
     return (
-        <section>
+        <section id="sectionThree">
 
             <motion.div className={"monaLisaContainer"}
                         ref={ref}
                         animate={inView ? { y: 0, rotate:0 } : {}}
-                        initial={{y: '-9rem', rotate: 45}}  // Start off-screen with 45 degrees rotation
+                        initial={{y: '-9rem', rotate: -45}}  // Start off-screen with 45 degrees rotation
                         // animate={{y: 0, rotate: 0}}       // Animate to the neutral position with 0 degrees rotation
                         transition={{duration: 1, ease: 'easeOut'}}  // Smooth animation
                         style={{
@@ -31,13 +31,13 @@ function SectionThree() {
             </motion.div>
 
             <motion.div className={"blueButterflyContainer"}
-                        initial={{y:  '10rem', x: 0, rotate: 45}}  // Start off-screen with 45 degrees rotation
+                        initial={{y:  '10rem', x: '10rem', rotate: 45}}  // Start off-screen with 45 degrees rotation
                         animate={inView ?{
-                            y: [1000, 500, 0],                // Define y keyframes for a curved path
-                            x: [0, 250, 0],                   // Define x keyframes for a curved path from right to left
-                            rotate: [45, 30, 0]               // Define rotation keyframes
+                            y: [900, 500,100, 0],                // Define y keyframes for a curved path
+                            x: [1000, 900, 800, 700, 600, 500,400],                   // Define x keyframes for a curved path from right to left
+                            rotate: [45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0]               // Define rotation keyframes
                         }: {}}
-                        transition={{duration: 2, ease: 'easeInOut'}}  // Smooth animation
+                        transition={{duration: 3, ease: 'easeInOut'}}  // Smooth animation
                         style={{
                             width: '100px',
                             height: '100px',

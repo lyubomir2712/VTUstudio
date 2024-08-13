@@ -1,7 +1,7 @@
 .peacockContainer{
     position:absolute;
     top: 230%;
-    left: 14%;
+    left: 10%;
     padding-right:27rem;
 }
 
@@ -29,7 +29,7 @@ img.peacockImg{
 .sectionTwo-text{
     position: absolute;
     top: 270%;
-    left:60%;
+    left: 60%;
     font-size: 1.3rem;
     text-align: center;
 }

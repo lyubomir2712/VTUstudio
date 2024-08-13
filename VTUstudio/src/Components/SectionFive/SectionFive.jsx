@@ -12,7 +12,7 @@ export default function SectionFive() {
     });
 
     return (
-        <section>
+        <section id={"sectionFive"}>
             <img src={bowImg} className={"bowImg"} alt={"bow img"}/>
 
 
@@ -39,8 +39,7 @@ export default function SectionFive() {
                 ул."3-ти март" №12<br/>
                 тел.: 0889 77 80 80<br/>
                 e-mail: studio@sevenstudio.net</p>
-            {/*<Footer/>*/}
-
+            <Footer/>
         </section>
     )
 }

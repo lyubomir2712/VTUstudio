@@ -42,11 +42,11 @@ export default function Transition() {
         restDelta: 0.001
     });
 
+
     return (
         <>
-            <Navbar />
+            <Navbar/>
             <div className="content">
-
                 <Section id={1} distance={300}><Main /></Section>
                 <Section id={2} distance={300}><SectionOne /></Section>
                 <Section id={3} distance={300}><SectionTwo /></Section>
