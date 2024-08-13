@@ -8,7 +8,7 @@ import VtuLogoImg from '../../assets/DrawnLogoVTU.png'
 export default function Footer() {
     return (
         <>
-            {/*<span><img className={"footer-logo"} src={VtuLogoImg} alt="VtuLogo"/></span>*/}
+            <img className={"footer-logo"} src={VtuLogoImg} alt="VtuLogo"/>
             <footer>
                 <div className={"footer-content"}><p className={"footer-logo-text"}>STUDIO</p></div>
             </footer>
