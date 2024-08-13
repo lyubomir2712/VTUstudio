@@ -1,18 +1,29 @@
-.arrowImg{
-    height: 1.2rem;
-    width: auto;
-}
-
 footer {
     background-color: #212121;
     width: 100vw;
     position: relative;
     color: white;
     height: 40px;
-    margin-top: 43.3rem;
-    padding: 0.3rem 0;
-    bottom: 0;
+    margin-top: 44.1rem;
+    padding: 0 0 0.25rem 0;
 }
 .footer-content{
-    margin-left: 50rem;
+    margin-left: 60rem;
+}
+
+/*.footer-logo{*/
+/*    height: 3rem;*/
+/*    width: auto;*/
+/*    margin-left: 50rem;*/
+/*}*/
+
+
+
+.footer-logo-text{
+    margin-top: 0;
+    padding-top:0;
+    font-size: 0.6rem;
+    font-weight: bold;
+    letter-spacing: 0.9rem ;
+    font-family: 'Roboto Light', sans-serif;
 }

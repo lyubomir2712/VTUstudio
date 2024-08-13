@@ -11,6 +11,8 @@
 
 .arrowImg{
     transform: rotate(-36deg);
+    height: 1.2rem;
+    width: auto;
 }
 
 .arrowContainer {
