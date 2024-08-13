@@ -4,7 +4,7 @@ import "./SectionThree.css"
 import MonaLisaPaintingImg from "../../assets/MonaLisa.png";
 import GreenButterflyImg from "../../assets/greenButterfly.png";
 import BlueButterflyImg from "../../assets/blueButterfly.png";
-import shadow from '../../assets/ShadowTwo.png'
+import shadow from '../../assets/Shadow.png'
 import {useInView} from "react-intersection-observer";
 
 function SectionThree() {

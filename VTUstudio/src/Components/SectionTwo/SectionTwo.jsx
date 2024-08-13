@@ -1,7 +1,7 @@
 import './SectionTwo.css'
 import {motion} from 'framer-motion';
 import peacockImg from "../../assets/Peacock.png";
-import shadowImg from '../../assets/ShadowTwo.png'
+import shadowImg from '../../assets/Shadow.png'
 import {useInView} from "react-intersection-observer";
 
 export default function SectionTwo() {

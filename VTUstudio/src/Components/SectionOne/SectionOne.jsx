@@ -4,7 +4,7 @@ import peacockImg from "../../assets/Peacock copy.png";
 import keycapImg from "../../assets/keycap.png";
 import './SectionOne.css'
 import TrampolineImg from "../../assets/trampoline.png";
-import Shadow from './../../assets/ShadowTwo.png'
+import Shadow from './../../assets/Shadow.png'
 import { useInView } from 'react-intersection-observer';
 
 export default function SectionOne() {

@@ -104,7 +104,7 @@ img.cherriesShadowimg{
     position: absolute;
     top: 80%;
     left: 20%;
-    height:auto;
+    height:1.8rem;
     width: 15rem;
     filter: brightness(0.1);
 }

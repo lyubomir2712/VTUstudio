@@ -5,7 +5,7 @@ import graphitiImg from '../../assets/graphiti.png';
 import keycap from '../../assets/keycap.png';
 import cherriesImg from '../../assets/cherries.png';
 import VTUlogoHalve from '../../assets/DrawnVTUlogoHalve.png';
-import CherriesShadow from '../../assets/ShadowTwo.png';
+import CherriesShadow from '../../assets/Shadow.png';
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect, useRef } from 'react';
 
