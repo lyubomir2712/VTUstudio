@@ -1,6 +1,5 @@
 import {motion} from "framer-motion";
 import lemon from "../../assets/lemon.png";
-import peacockImg from "../../assets/Peacock copy.png";
 import keycapImg from "../../assets/keycap.png";
 import './SectionOne.css'
 import TrampolineImg from "../../assets/trampoline.png";

@@ -1,4 +1,3 @@
-import peacockImg from "../../assets/Peacock copy.png";
 import {motion} from "framer-motion";
 import "./SectionThree.css"
 import MonaLisaPaintingImg from "../../assets/MonaLisa.png";

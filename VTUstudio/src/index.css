@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'PF Reminder Pro Regular';
+    src: url('/Users/lyubomirgeorgiev/Desktop/ReactCourse/WebDevelopingApp/VTUstudio/public/PF Reminder Pro Regular.ttf') format('woff2');
+    font-weight: normal;
+}
+
+
 body{
   background-image: url("./assets/WaveBackground.png");
   background-position: 35% 80%;
@@ -17,7 +24,7 @@ Main ,Section {
 
 
 *{
-    font-family: "Caveat", cursive;
+    font-family: 'PF Reminder Pro Regular';
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 1.5rem;
@@ -40,4 +47,10 @@ html::-webkit-scrollbar {
     font-size: 1.7rem;
     font-family: 'Mulish', sans-serif;
     font-weight: 700;
+}
+
+
+.sectionOne-text, .sectionTwo-text, .sectionThree-text, .sectionFour-text, .sectionFive-text, .infoText {
+    color: #595959;
+    display: inline-block;
 }

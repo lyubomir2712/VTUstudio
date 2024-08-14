@@ -39,13 +39,15 @@ export default function Main() {
         };
     }, []);
 
+    const animationDuration = scrollDirection === 'up' ? 0.8 : 2;
+
     return (<>
 
             <motion.div className={"cherriesContainer"}
                         ref={ref}
                         animate={inView ? { y: 0, rotate: 180 } : {}}
                         initial={{y: '-32rem', rotate: 0}}
-                        transition={{duration: 2, ease: 'easeOut'}}
+                        transition={{duration: animationDuration, ease: 'easeOut'}}
                         style={{
                             margin: '0 auto',
                         }}
@@ -59,7 +61,7 @@ export default function Main() {
                         ref={ref}
                         initial={{y: '-32rem'}}
                         animate={inView ? {y: 0 } : {}}
-                        transition={{duration: 2, ease: 'easeOut'}}
+                        transition={{duration: animationDuration, ease: 'easeOut'}}
                         style={{
                             backgroundColor: 'none',
                             margin: '0 auto',
