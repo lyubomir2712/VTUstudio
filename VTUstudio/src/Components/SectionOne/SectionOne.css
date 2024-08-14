@@ -36,9 +36,6 @@
     z-index: 1;
 }
 
-.lemonShadowImg, .trampolineShadowImg{
-
-}
 
 .lemonShadowImg{
     top:184%;
@@ -61,15 +58,13 @@
 
 .sectionOne-header{
     position: absolute;
-    left: 17.5%;
+    left: 16.6%;
     top: 143%;
     font-weight: bolder;
 }
 
 .sectionOne-text{
-    font-size: 1.3rem;
     position: absolute;
     left: 8%;
     top: 150%;
-    text-align: center;
 }

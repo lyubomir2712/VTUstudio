@@ -53,4 +53,7 @@ html::-webkit-scrollbar {
 .sectionOne-text, .sectionTwo-text, .sectionThree-text, .sectionFour-text, .sectionFive-text, .infoText {
     color: #595959;
     display: inline-block;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 1;
 }

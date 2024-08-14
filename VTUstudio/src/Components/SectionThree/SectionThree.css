@@ -47,12 +47,10 @@
 .sectionThree-header{
     position: absolute;
     top: 353%;
-    left: 20.5%;
+    left: 19.5%;
 }
 
 .sectionThree-text{
-    text-align: center;
-    font-size: 1.3rem;
     position: absolute;
     top:360%;
     left: 12%;

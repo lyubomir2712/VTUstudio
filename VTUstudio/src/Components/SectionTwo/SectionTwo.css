@@ -22,7 +22,7 @@ img.peacockImg{
 .sectionTwo-header{
     position: absolute;
     top: 263%;
-    left: 64%;
+    left: 63.4%;
     font-weight: bolder;
 }
 
@@ -30,6 +30,4 @@ img.peacockImg{
     position: absolute;
     top: 270%;
     left: 60%;
-    font-size: 1.3rem;
-    text-align: center;
 }

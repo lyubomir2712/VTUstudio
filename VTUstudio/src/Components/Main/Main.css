@@ -46,10 +46,8 @@ text {
 
 .infoText{
     position: absolute;
-    text-align: center;
-    font-size: 1.3rem;
     bottom: 2.5%;
-    left: 30%;
+    left: 32%;
 }
 
 
