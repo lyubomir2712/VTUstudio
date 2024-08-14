@@ -19,7 +19,10 @@ export default function SectionFive() {
             <motion.div className={"arrowContainer"}
                         ref={ref}
                         initial={{x: 0, y: 0}}  // Start at the neutral position
-                        animate={inView ? {x: '22.5rem', y: '-16.5rem'} : {}}  // Move to the upper right, out of the viewport
+                        animate={inView ? {
+                            x: '22.5rem',
+                            y: '-16.5rem'
+                        } : {}}  // Move to the upper right, out of the viewport
                         transition={{duration: 1.25, ease: 'easeInOut'}}  // Smooth animation
                         style={{
                             margin: '0 auto', // Center the div horizontally within its parent
@@ -34,11 +37,12 @@ export default function SectionFive() {
 
 
             <h3 className={"sectionFive-header"}>Контакти</h3>
-            <p className={"sectionFive-text"}>
+            <p className={"sectionFive-text-one"}>
                 Адрес: Дряново, п.код: 5370,<br/>
                 ул."3-ти март" №12<br/>
-                тел.: 0889 77 80 80<br/>
-                e-mail: studio@sevenstudio.net</p>
+            </p>
+            <p className={"sectionFive-text-two"}>тел.: 0889 77 80 80</p>
+            <p className={"sectionFive-text-three"}>e-mail: studio@sevenstudio.net</p>
             <Footer/>
         </section>
     )

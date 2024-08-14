@@ -28,8 +28,21 @@
     left: 70.7%;
 }
 
-.sectionFive-text{
+.sectionFive-text-one{
     position: absolute;
     top: 550%;
     left: 68%;
 }
+
+.sectionFive-text-two{
+    position: absolute;
+    top: 558%;
+    left: 70%;
+}
+
+.sectionFive-text-three{
+    position: absolute;
+    top: 563%;
+    left: 68%;
+}
+
