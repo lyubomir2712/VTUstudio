@@ -69,7 +69,6 @@ export default function SectionTwo() {
 
             <h3 className={"sectionTwo-header"}>Печатна реклама</h3>
             <p className={"sectionTwo-text"}>Проектираме и изпълняваме печатни рекламни<br /> мериали: каталози, книги, брошури, плакати,<br /> билбордове.</p>
-            <img src={shadowImg} className={"peacockShadow"} alt="shadow img" />
         </section>
     );
 }

@@ -11,13 +11,6 @@ img.peacockImg{
 
 }
 
-.peacockShadow{
-    position: absolute;
-    top: 290%;
-    filter: brightness(0.1);
-    width: 40%;
-    left: 10%;
-}
 
 .sectionTwo-header{
     position: absolute;
