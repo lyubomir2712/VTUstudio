@@ -14,13 +14,13 @@
 .greenButterflyImg{
     height:6rem;
     width: auto;
-    transform: scaleX(-1);
 }
 
 .greenButterflyContainer{
     position: absolute;
-    left: 80%;
-    bottom: 25%;
+    left: 20%;
+    top: 316%;
+    padding-right: 10rem;
 }
 
 
