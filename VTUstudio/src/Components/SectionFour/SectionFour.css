@@ -1,13 +1,14 @@
 
 .pensilContainer{
     position: absolute;
-    top: 413%;
+    top: 425%;
+    left: 46.5%;
     z-index: 999;
 }
 
 .pensilImg{
     height: 35rem;
-    width: 2rem;
+    width: 3rem;
 }
 
 .portfolio-text{
