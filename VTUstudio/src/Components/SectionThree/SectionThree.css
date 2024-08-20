@@ -1,8 +1,9 @@
 
 .monaLisaContainer{
     position: absolute;
-    top: 320%;
+    top: 400%;
     left: 60%;
+    padding-bottom: 10rem;
 }
 
 .monaLisaImg{
@@ -39,8 +40,8 @@
 .monaLisaShadow{
     filter: brightness(0.1);
     position: absolute;
-    left: 55%;
-    top: 385%;
+    left: 53.5%;
+    top: 465%;
     width: 30rem;
 }
 

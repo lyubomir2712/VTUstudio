@@ -62,8 +62,8 @@ function SectionThree() {
             <motion.div className={"monaLisaContainer"}
                         ref={ref}
                         animate={isAnimating ? { y: 0, rotate:0 } : {}}
-                        initial={{y: '-9rem', rotate: -45}}  // Start off-screen with 45 degrees rotation
-                        transition={{duration: 0.7, ease: 'easeOut'}}  // Smooth animation
+                        initial={{y: '-38rem', rotate: -90}}  // Start off-screen with 45 degrees rotation
+                        transition={{duration: 2, ease: 'easeOut'}}  // Smooth animation
                         style={{
                             margin: '0 auto',
                         }}

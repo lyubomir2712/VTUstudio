@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import Navbar from "../Navbar/Navbar.jsx";
 import Main from "../Main/Main.jsx";
 import SectionOne from "../SectionOne/SectionOne.jsx";
@@ -43,16 +43,21 @@ export default function Transition() {
     });
 
 
+
+
     return (
         <>
             <Navbar/>
             <div className="content">
                 <Section id={1} distance={300}><Main /></Section>
                 <Section id={2} distance={300}><SectionOne /></Section>
-                <Section id={3} distance={300}><SectionTwo /></Section>
-                <Section id={4} distance={300}><SectionThree /></Section>
-                <Section id={5} distance={300}><SectionFour /></Section>
-                <Section id={6} distance={300}><SectionFive /></Section>
+
+                <Section id={3} distance={300} >><SectionTwo /></Section>
+                <div style={{ marginTop: '37rem' }}>
+                <Section id={4} distance={400}><SectionThree/></Section>
+                </div>
+                {/*<Section id={5} distance={300}><SectionFour /></Section>*/}
+                {/*<Section id={6} distance={300}><SectionFive /></Section>*/}
             </div>
         </>
     );
