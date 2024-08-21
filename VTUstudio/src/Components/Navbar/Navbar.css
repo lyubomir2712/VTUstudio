@@ -63,6 +63,7 @@ header{
     width: 6.5rem;
     margin-right: 12rem;
     margin-left: 10rem;
+    display: block;
 }
 
 .navbar .language{
@@ -83,6 +84,10 @@ header{
     font-family: 'Roboto Light', sans-serif;
 }
 
+
+.logoTag{
+
+}
 
 
 

@@ -39,7 +39,7 @@ export default function Navbar() {
 
                 <div onClick={handleButtonClick} className={'language'}>{languageButtonText}</div>
                 <div className={'navbar-content-container'}>
-                    <img src={Logo} alt="Logo" className={"logo"}/>
+                    <a style={{ display: 'inline-block' }} className={"logoTag"} href={"#main"}><img src={Logo} alt="Logo" className={"logo"}/></a>
                     <ul className="nav-list">
                         <li className="nav-item"><a href={"#sectionOne"}>{t("Web design")}</a></li>
                         <li className="nav-item"><a href="#sectionTwo">{t("Print advertising")}</a></li>
