@@ -41,7 +41,7 @@ export default function Main() {
 
     const animationDuration = scrollDirection === 'up' ? 0.8 : 2;
 
-    return (<>
+    return (<main id="main">
 
             <motion.div className={"cherriesContainer"}
                         ref={ref}
@@ -77,7 +77,7 @@ export default function Main() {
             <motion.div className={"keycap-first-container"}
                         // ref={ref}
                         initial={{y: '21.8rem'}}
-                        animate={inView && scrollDirection === 'up' ? { y: '-26.5rem' } : {}}
+                        animate={inView && scrollDirection === 'up' ? { y: '-29.5rem' } : {}}
                         transition={{duration: 0.4, ease: 'easeOut'}}
                         style={{
                             backgroundColor: 'none',
@@ -89,6 +89,6 @@ export default function Main() {
 
             <img src={CherriesShadow} alt={"cherries shadow img"} className="cherriesShadowimg"/>
 
-        </>
+        </main>
     )
 }

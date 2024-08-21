@@ -57,7 +57,7 @@ export default function SectionTwo() {
                         ref={ref}
                         initial={{ x: '-48rem' }}  // Start 48rem to the left of the neutral position
                         animate={isAnimating ? { x: 0 } : {}} // Animate to x: 0 when scrolling down, stay in place otherwise
-                        transition={{ duration: 1, ease: 'easeOut' }}  // Smooth animation
+                        transition={{ duration: 1, ease: 'easeOut'}}  // Smooth animation
                         style={{
                             margin: '0 auto', // Centers the div horizontally within its parent
                             justifyContent: 'center',

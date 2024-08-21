@@ -62,8 +62,8 @@ function SectionThree() {
             <motion.div className={"monaLisaContainer"}
                         ref={ref}
                         animate={isAnimating ? { y: 0, rotate:0 } : {}}
-                        initial={{y: '-38rem', rotate: -90}}  // Start off-screen with 45 degrees rotation
-                        transition={{duration: 2, ease: 'easeOut'}}  // Smooth animation
+                        initial={{y: '-30rem'}}  // Start off-screen with 45 degrees rotation
+                        transition={{duration: 1, ease: 'easeOut'}}  // Smooth animation
                         style={{
                             margin: '0 auto',
                         }}
@@ -71,26 +71,26 @@ function SectionThree() {
                 <img src={MonaLisaPaintingImg} className={"monaLisaImg"} alt={"Mona Lisa painting"}/>
             </motion.div>
 
-            <motion.div className={"blueButterflyContainer"}
-                        initial={{y:  '10rem', x: '10rem', rotate: 45}}  // Start off-screen with 45 degrees rotation
-                        animate={isAnimating ?{
-                            y: [900,800,700, 600, 500,400, 300, 200, 100, 0],                // Define y keyframes for a curved path
-                            x: [1000, 900, 800, 700, 600, 500,450],                   // Define x keyframes for a curved path from right to left
-                            rotate: [45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0]               // Define rotation keyframes
-                        }: {}}
-                        transition={{duration: 3, ease: 'easeInOut'}}  // Smooth animation
-                        style={{
-                            width: '100px',
-                            height: '100px',
-                            margin: '0 auto', // Center the div horizontally within its parent
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            position: 'relative', // Ensure positioning is relative to the parent
-                        }}
-            >
-                <img src={BlueButterflyImg} className={"blueButterflyImg"} alt="blue butterfly img"/>
-            </motion.div>
+            {/*<motion.div className={"blueButterflyContainer"}*/}
+            {/*            initial={{y:  '10rem', x: '10rem', rotate: 45}}  // Start off-screen with 45 degrees rotation*/}
+            {/*            animate={isAnimating ?{*/}
+            {/*                y: [800,700, 600, 500,400, 300, 200, 100, 0],                // Define y keyframes for a curved path*/}
+            {/*                x: [1000, 900, 800, 700, 600, 500,450],                   // Define x keyframes for a curved path from right to left*/}
+            {/*                rotate: [45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0]               // Define rotation keyframes*/}
+            {/*            }: {}}*/}
+            {/*            transition={{duration: 3, ease: 'easeInOut'}}  // Smooth animation*/}
+            {/*            style={{*/}
+            {/*                width: '100px',*/}
+            {/*                height: '100px',*/}
+            {/*                margin: '0 auto', // Center the div horizontally within its parent*/}
+            {/*                display: 'flex',*/}
+            {/*                justifyContent: 'center',*/}
+            {/*                alignItems: 'center',*/}
+            {/*                position: 'relative', // Ensure positioning is relative to the parent*/}
+            {/*            }}*/}
+            {/*>*/}
+            {/*    <img src={BlueButterflyImg} className={"blueButterflyImg"} alt="blue butterfly img"/>*/}
+            {/*</motion.div>*/}
 
 
 

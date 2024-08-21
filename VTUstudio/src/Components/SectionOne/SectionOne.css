@@ -1,7 +1,7 @@
 .keycapContainer{
     position: absolute;
     left: 40%;
-    top: 167%;
+    top: 177%;
     z-index: 1;
 }
 
@@ -20,12 +20,12 @@
 .lemonContainer{
     position: absolute;
     left: 30%;
-    top: 120%;
+    top: 130%;
 }
 
 .trampolineContainer{
     position: absolute;
-    top: 180%;
+    top: 190%;
     left: 35%;
     padding-right: 10rem;
 }
@@ -38,7 +38,7 @@
 
 
 .lemonShadowImg{
-    top:184%;
+    top:194%;
     left: 52%;
     position: absolute;
     filter: brightness(0.1);
@@ -49,7 +49,7 @@
 .trampolineShadowImg{
     position: absolute;
     filter: brightness(0.1);
-    top: 190%;
+    top: 200%;
     left: 30%;
     height: 10%;
     width: 25%;
@@ -59,12 +59,12 @@
 .sectionOne-header{
     position: absolute;
     left: 16.4%;
-    top: 143%;
+    top: 153%;
     font-weight: bolder;
 }
 
 .sectionOne-text{
     position: absolute;
     left: 8%;
-    top: 150%;
+    top: 160%;
 }

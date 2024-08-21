@@ -6,7 +6,7 @@
     width: auto;
     transform: rotate(-35deg);
     left: 11%;
-    top: 528%;
+    top: 790%;
 }
 
 .arrowImg{
@@ -17,32 +17,32 @@
 
 .arrowContainer {
     position: absolute;
-    top: 559%;
+    top: 821%;
     left: 10%;
 }
 
 
 .sectionFive-header{
     position: absolute;
-    top: 543%;
+    top: 803%;
     left: 70.7%;
 }
 
 .sectionFive-text-one{
     position: absolute;
-    top: 550%;
+    top: 810%;
     left: 68%;
 }
 
 .sectionFive-text-two{
     position: absolute;
-    top: 558%;
+    top: 818%;
     left: 70%;
 }
 
 .sectionFive-text-three{
     position: absolute;
-    top: 563%;
+    top: 823%;
     left: 68%;
 }
 

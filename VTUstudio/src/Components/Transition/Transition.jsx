@@ -44,20 +44,21 @@ export default function Transition() {
 
 
 
-
+    // The additional div's are used to make the space between the sections
     return (
         <>
             <Navbar/>
             <div className="content">
-                <Section id={1} distance={300}><Main /></Section>
-                <Section id={2} distance={300}><SectionOne /></Section>
+                <div style={{marginBottom: '5.5rem'}}><Section id={1} distance={600}><Main /></Section></div>
 
-                <Section id={3} distance={300} >><SectionTwo /></Section>
-                <div style={{ marginTop: '37rem' }}>
-                <Section id={4} distance={400}><SectionThree/></Section>
-                </div>
-                {/*<Section id={5} distance={300}><SectionFour /></Section>*/}
-                {/*<Section id={6} distance={300}><SectionFive /></Section>*/}
+               <div style={{marginBottom: '30rem'}}><Section id={2} distance={600}><SectionOne/></Section></div>
+
+                <Section id={3} distance={600}><SectionTwo/></Section>
+
+                <div style={{marginTop: '37rem'}}><Section id={4} distance={300}><SectionThree/></Section></div>
+
+                <div style={{marginBottom: '45rem'}}><Section id={5} distance={600}><SectionFour /></Section></div>
+                <Section id={6} distance={300}><SectionFive /></Section>
             </div>
         </>
     );

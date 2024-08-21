@@ -1,9 +1,10 @@
 
 .pensilContainer{
     position: absolute;
-    top: 425%;
+    top: 563%;
     left: 46.5%;
     z-index: 999;
+    padding-top: 7rem;
 }
 
 .pensilImg{

@@ -59,7 +59,7 @@ export default function SectionFour() {
         <section id={"sectionFour"}>
             <motion.div className={"pensilContainer"}
                         ref={ref}
-                        initial={{y: '5.1rem'}}
+                        initial={{y: '36rem'}}
                         animate={isAnimating ?{y: 0} : {}}
                         transition={{duration: 0.7, ease: 'easeOut'}}
                         style={{

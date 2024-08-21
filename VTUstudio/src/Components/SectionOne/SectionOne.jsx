@@ -59,7 +59,7 @@ export default function SectionOne() {
             <motion.div className={"keycapContainer"}
                         ref={ref}
                         animate={isAnimating ? { y: 0 } : {}}
-                        initial={{y: '-30.5rem'}}
+                        initial={{y: '-33.5rem'}}
                         transition={{duration: 0.5, ease: 'easeOut'}}
                         style={{
                             margin: '0 auto',
@@ -71,7 +71,7 @@ export default function SectionOne() {
 
             <motion.div className={"lemonContainer"}
                         ref={ref}
-                        initial={{y: '5.3rem'}}   // Starts 1000px below its neutral position
+                        initial={{y: '36.3rem'}}   // Starts 1000px below its neutral position
                         animate={isAnimating ? { y: 0 } : {}}    // Moves to its neutral position
                         transition={{duration: 1, ease: 'easeOut'}}  // 1-second duration
                         style={{
