@@ -61,8 +61,6 @@ header{
 .logo{
     height: 2.5rem;
     width: 6.5rem;
-    margin-right: 12rem;
-    margin-left: 10rem;
     display: block;
 }
 
@@ -86,7 +84,9 @@ header{
 
 
 .logoTag{
-
+    margin-right: 12rem;
+    margin-left: 10rem;
+    display: inline-block;
 }
 
 
