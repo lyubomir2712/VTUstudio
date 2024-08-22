@@ -38,7 +38,7 @@ export default function SectionTwo() {
             // Delay the reset of the animation state by 0.3 seconds
             const delay = setTimeout(() => {
                 setIsAnimating(false);  // Reset animation state after delay
-            }, 135);
+            }, 300);
 
             // Cleanup the timeout if the effect re-runs
             return () => clearTimeout(delay);

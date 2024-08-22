@@ -15,6 +15,7 @@ import {
 import SectionFour from "../SectionFour/SectionFour.jsx";
 import Footer from "../Footer/Footer.jsx";
 import SectionFive from "../SectionFive/SectionFive.jsx";
+import useScrollDelay from "./useScrollDelay.jsx";
 
 function useParallax(value, distance) {
     return useTransform(value, [0, 1], [-distance, distance]);
@@ -24,6 +25,8 @@ function Section({ children, id, distance }) {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({ target: ref });
     const y = useParallax(scrollYProgress, distance);
+
+    useScrollDelay(30)
 
     return (
         <section>
