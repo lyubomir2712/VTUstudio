@@ -64,4 +64,19 @@ html::-webkit-scrollbar {
     font-weight: 1;
 }
 
+.stickman {
+    height: 10rem;
+     width: auto;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 15s linear forwards;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
 

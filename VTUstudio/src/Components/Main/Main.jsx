@@ -45,7 +45,7 @@ export default function Main() {
 
             <motion.div className={"cherriesContainer"}
                         ref={ref}
-                        animate={inView ? { y: 0, rotate: 180 } : {}}
+                        animate={inView ? {y: 0, rotate: 180} : {}}
                         initial={{y: '-32rem', rotate: 0}}
                         transition={{duration: animationDuration, ease: 'easeOut'}}
                         style={{
@@ -60,14 +60,15 @@ export default function Main() {
             <motion.div className={"logoImgContainer"}
                         ref={ref}
                         initial={{y: '-32rem'}}
-                        animate={inView ? {y: 0 } : {}}
+                        animate={inView ? {y: 0} : {}}
                         transition={{duration: animationDuration, ease: 'easeOut'}}
                         style={{
                             backgroundColor: 'none',
                             margin: '0 auto',
                         }}
             >
-                <span className={'logoText-first-word'}><img className={"logoImageHalf"} src={VTUlogoHalve} alt={"vtu logo half image"}/> STUDIO</span>
+                <span className={'logoText-first-word'}><img className={"logoImageHalf"} src={VTUlogoHalve}
+                                                             alt={"vtu logo half image"}/> STUDIO</span>
             </motion.div>
             <p className={"infoText"}>ВТУ студио е част от ВТУ ГРУП<br/> Създадено пред 2024 година и работи в
                 областта на уеб
@@ -75,9 +76,9 @@ export default function Main() {
 
 
             <motion.div className={"keycap-first-container"}
-                        // ref={ref}
+                // ref={ref}
                         initial={{y: '21.8rem'}}
-                        animate={inView && scrollDirection === 'up' ? { y: '-29.5rem' } : {}}
+                        animate={inView && scrollDirection === 'up' ? {y: '-29.5rem'} : {}}
                         transition={{duration: 0.4, ease: 'easeOut'}}
                         style={{
                             backgroundColor: 'none',
@@ -88,6 +89,22 @@ export default function Main() {
             </motion.div>
 
             <img src={CherriesShadow} alt={"cherries shadow img"} className="cherriesShadowimg"/>
+
+
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 100"
+                width="200"
+                height="200"
+                className="stickman"
+            >
+                <circle cx="50" cy="20" r="10" stroke="black" stroke-width="2" fill="none"/>
+                <line x1="50" y1="30" x2="50" y2="60" stroke="black" stroke-width="2"/>
+                <line x1="50" y1="40" x2="30" y2="50" stroke="black" stroke-width="2"/>
+                <line x1="50" y1="40" x2="70" y2="50" stroke="black" stroke-width="2"/>
+                <line x1="50" y1="60" x2="40" y2="80" stroke="black" stroke-width="2"/>
+                <line x1="50" y1="60" x2="60" y2="80" stroke="black" stroke-width="2"/>
+            </svg>
 
         </main>
     )
