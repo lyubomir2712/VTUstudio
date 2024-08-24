@@ -35,12 +35,16 @@ export default function Navbar() {
 
     return (
         <header>
-            <nav className="navbar">
+            <nav className="navbar grid-container">
 
-                <div onClick={handleButtonClick} className={'language'}>{languageButtonText}</div>
-                <div className={'navbar-content-container'}>
-                    <a className={"logoTag"} href={"#main"}><img src={Logo} alt="Logo" className={"logo"}/></a>
-                    <ul className="nav-list">
+                <div onClick={handleButtonClick}
+                     className={'language upper-right-cell'}>{languageButtonText}</div>
+                <div className={"left-cell"}>
+                    <a className={"logoTag"} href={"#main"}><img src={Logo} alt="Logo"
+                      className={"logo"}/></a></div>
+                <div className={'navbar-content-container lower-right-cell'}>
+
+                <ul className="nav-list">
                         <li className="nav-item"><a href={"#sectionOne"}>{t("Web design")}</a></li>
                         <li className="nav-item"><a href="#sectionTwo">{t("Print advertising")}</a></li>
                         <li className="nav-item"><a href="#sectionThree">{t("Photography")}</a></li>

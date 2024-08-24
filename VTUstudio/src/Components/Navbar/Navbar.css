@@ -31,7 +31,7 @@ header{
     content: '/';
     position: absolute;
     right: -0.75rem;
-    top: 50%;
+    top: 64%;
     transform: translateY(-50%);
     color: white;
     z-index: 0;
@@ -53,10 +53,10 @@ header{
 
 
 
-.navbar-content-container{
-    display: flex;
-    flex-direction: row;
-}
+/*.navbar-content-container{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*}*/
 
 .logo{
     height: 2.5rem;
@@ -66,16 +66,16 @@ header{
 
 .navbar .language{
     color: red;
-    font-size: 01rem;
-    margin-left: 61.8rem;
-    margin-bottom: 0;
-    margin-top: 0;
+    font-size: 1rem;
+    /*margin-left: 61.8rem;*/
     padding-top: 0.2rem;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .logoText{
     margin-top: 0.3rem;
-    margin-left: 10rem;
+    margin-left: 12.85rem;
     font-size: 0.6rem;
     font-weight: bold;
     letter-spacing: 0.9rem ;
@@ -84,11 +84,41 @@ header{
 
 
 .logoTag{
-    margin-right: 12rem;
-    margin-left: 10rem;
     display: inline-block;
 }
 
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 0.6fr 2fr; /* Left cell is 1fr, right cells together are 2fr */
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.left-cell {
+    grid-row: 1 / 3; /* Span from the first to the second row */
+    grid-column: 1; /* Occupy the first column */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 6.5rem;
+    margin-left: 12.85rem;
+}
+
+.upper-right-cell {
+    grid-row: 1; /* Occupy the first row */
+    grid-column: 2; /* Occupy the second column */
+    display: flex;
+    justify-self: end;
+    align-content: flex-end;
+    margin-right: 13.5rem;
+}
+
+.lower-right-cell {
+    grid-row: 2; /* Occupy the second row */
+    grid-column: 2; /* Occupy the second column */
+    justify-self: end;
+    margin-right: 13rem;
+}
 
 
 
