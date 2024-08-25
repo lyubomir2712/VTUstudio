@@ -10,6 +10,11 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'ZenKakuGothicNew-Light';
+    src: url('/Users/lyubomirgeorgiev/Desktop/ReactCourse/WebDevelopingApp/VTUstudio/public/ZenKakuGothicNew-Light.ttf') format('woff2');
+    font-weight: normal;
+}
 
 body{
   background-image: url("./assets/WaveBackground.png");
@@ -77,6 +82,7 @@ html::-webkit-scrollbar {
         stroke-dashoffset: 0;
     }
 }
+
 
 
 
