@@ -52,12 +52,6 @@ header{
 }
 
 
-
-/*.navbar-content-container{*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*}*/
-
 .logo{
     height: 2.5rem;
     width: 6.5rem;
@@ -105,8 +99,8 @@ header{
 }
 
 .upper-right-cell {
-    grid-row: 1; /* Occupy the first row */
-    grid-column: 2; /* Occupy the second column */
+    grid-row: 1;
+    grid-column: 2;
     display: flex;
     justify-self: end;
     align-content: flex-end;
@@ -114,8 +108,8 @@ header{
 }
 
 .lower-right-cell {
-    grid-row: 2; /* Occupy the second row */
-    grid-column: 2; /* Occupy the second column */
+    grid-row: 2;
+    grid-column: 2;
     justify-self: end;
     margin-right: 13rem;
 }

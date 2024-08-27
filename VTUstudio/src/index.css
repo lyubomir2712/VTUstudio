@@ -69,7 +69,7 @@ html::-webkit-scrollbar {
     font-weight: 1;
 }
 
-.stickman {
+svg {
     height: 10rem;
      width: auto;
     stroke-dasharray: 1000;

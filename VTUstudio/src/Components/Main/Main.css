@@ -113,3 +113,13 @@ img.cherriesShadowimg{
     left: 40%;
     top: 52.5%;
 }
+
+
+
+.square{
+    position: absolute;
+    height: 20rem;
+    width: auto;
+    fill: none;
+    stroke: black;
+}

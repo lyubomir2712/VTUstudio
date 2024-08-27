@@ -1,6 +1,5 @@
 import './Main.css';
 import { motion } from 'framer-motion';
-import VTUlogo from '../../assets/DrawnLogoVTU.png';
 import graphitiImg from '../../assets/graphiti.png';
 import keycap from '../../assets/keycap.png';
 import cherriesImg from '../../assets/cherries.png';
@@ -12,8 +11,8 @@ import { useState, useEffect, useRef } from 'react';
 export default function Main() {
 
     const { ref, inView } = useInView({
-        triggerOnce: false,  // Keep observing the element
-        threshold: 0.1,      // The percentage of the element's visibility before triggering
+        triggerOnce: false,
+        threshold: 0.1,
     });
 
     const [scrollDirection, setScrollDirection] = useState(null);
@@ -76,7 +75,6 @@ export default function Main() {
 
 
             <motion.div className={"keycap-first-container"}
-                // ref={ref}
                         initial={{y: '21.8rem'}}
                         animate={inView && scrollDirection === 'up' ? {y: '-29.5rem'} : {}}
                         transition={{duration: 0.4, ease: 'easeOut'}}
@@ -91,21 +89,25 @@ export default function Main() {
             <img src={CherriesShadow} alt={"cherries shadow img"} className="cherriesShadowimg"/>
 
 
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 100 100"
-                width="200"
-                height="200"
-                className="stickman"
-            >
-                <circle cx="50" cy="20" r="10" stroke="black" stroke-width="2" fill="none"/>
-                <line x1="50" y1="30" x2="50" y2="60" stroke="black" stroke-width="2"/>
-                <line x1="50" y1="40" x2="30" y2="50" stroke="black" stroke-width="2"/>
-                <line x1="50" y1="40" x2="70" y2="50" stroke="black" stroke-width="2"/>
-                <line x1="50" y1="60" x2="40" y2="80" stroke="black" stroke-width="2"/>
-                <line x1="50" y1="60" x2="60" y2="80" stroke="black" stroke-width="2"/>
-            </svg>
+            {/*<svg*/}
+            {/*    xmlns="http://www.w3.org/2000/svg"*/}
+            {/*    viewBox="0 0 100 100"*/}
+            {/*    width="200"*/}
+            {/*    height="200"*/}
+            {/*    className="stickman"*/}
+            {/*>*/}
+            {/*    <circle cx="50" cy="20" r="10" stroke="black" stroke-width="2" fill="none"/>*/}
+            {/*    <line x1="50" y1="30" x2="50" y2="60" stroke="black" stroke-width="2"/>*/}
+            {/*    <line x1="50" y1="40" x2="30" y2="50" stroke="black" stroke-width="2"/>*/}
+            {/*    <line x1="50" y1="40" x2="70" y2="50" stroke="black" stroke-width="2"/>*/}
+            {/*    <line x1="50" y1="60" x2="40" y2="80" stroke="black" stroke-width="2"/>*/}
+            {/*    <line x1="50" y1="60" x2="60" y2="80" stroke="black" stroke-width="2"/>*/}
+            {/*</svg>*/}
 
+            {/*<svg className={"square"} viewBox = "0 0 100 100">*/}
+            {/*    <path d={" M 10 60 C 10 67 , 20 68, 20 60 " +*/}
+            {/*        "C 10 10, 20 20, 20"}/>*/}
+            {/*</svg>*/}
         </main>
     )
 }
