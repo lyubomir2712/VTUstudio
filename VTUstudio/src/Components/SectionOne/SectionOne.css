@@ -10,17 +10,17 @@
     width: auto;
 }
 
+.lemonContainer{
+    position: absolute;
+    left: 30%;
+    top: 130%;
+}
+
 .lemonImg{
     height:40rem;
     width: auto;
     z-index: 1;
 
-}
-
-.lemonContainer{
-    position: absolute;
-    left: 30%;
-    top: 130%;
 }
 
 .trampolineContainer{
@@ -35,7 +35,6 @@
     width: auto;
     z-index: 1;
 }
-
 
 .lemonShadowImg{
     top:194%;
@@ -54,7 +53,6 @@
     height: 10%;
     width: 25%;
 }
-
 
 .sectionOne-header{
     position: absolute;

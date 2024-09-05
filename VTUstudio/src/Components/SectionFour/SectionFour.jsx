@@ -10,12 +10,12 @@ import {useEffect, useState} from "react";
 
 export default function SectionFour() {
     const { ref, inView, entry } = useInView({
-        triggerOnce: false,  // Allow multiple triggers based on scroll direction
-        threshold: 0.1,      // The percentage of the element's visibility before triggering
+        triggerOnce: false,
+        threshold: 0.1,
     });
 
     const [scrollDirection, setScrollDirection] = useState(null);
-    const [isAnimating, setIsAnimating] = useState(false);  // Track if the animation is currently happening
+    const [isAnimating, setIsAnimating] = useState(false);
 
     useEffect(() => {
         let lastScrollY = window.scrollY;
@@ -38,19 +38,17 @@ export default function SectionFour() {
 
     useEffect(() => {
         if (scrollDirection === 'up' && entry && entry.boundingClientRect.top >= 0) {
-            // Delay the reset of the animation state by 0.3 seconds
             const delay = setTimeout(() => {
-                setIsAnimating(false);  // Reset animation state after delay
+                setIsAnimating(false);
             }, 135);
 
-            // Cleanup the timeout if the effect re-runs
             return () => clearTimeout(delay);
         }
     }, [scrollDirection, entry]);
 
     useEffect(() => {
         if (inView && scrollDirection === 'down') {
-            setIsAnimating(true);  // Start the animation when scrolling downwards into the section
+            setIsAnimating(true);
         }
     }, [inView, scrollDirection]);
 

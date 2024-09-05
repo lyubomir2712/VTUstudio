@@ -5,15 +5,8 @@ import SectionOne from "../SectionOne/SectionOne.jsx";
 import SectionTwo from "../SectionTwo/SectionTwo.jsx";
 import SectionThree from "../SectionThree/SectionThree.jsx";
 import { useRef } from "react";
-import {
-    motion,
-    useScroll,
-    useSpring,
-    useTransform,
-    MotionValue
-} from "framer-motion";
+import {useScroll, useSpring, useTransform,} from "framer-motion";
 import SectionFour from "../SectionFour/SectionFour.jsx";
-import Footer from "../Footer/Footer.jsx";
 import SectionFive from "../SectionFive/SectionFive.jsx";
 import useScrollDelay from "./useScrollDelay.jsx";
 
@@ -44,8 +37,6 @@ export default function Transition() {
         damping: 30,
         restDelta: 0.001
     });
-
-
 
     // The additional div's are used to make the space between the sections
     return (

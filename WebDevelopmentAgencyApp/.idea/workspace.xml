@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f213904-222d-470c-ab64-b2092f7721be" name="Changes" comment="merged the local and origin main">
-      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/Footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/LanguageChange/LanguageChange.js" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/LanguageChange/LanguageChange.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/Footer/Footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/Main/Main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/Main/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/Navbar/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/Navbar/Navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

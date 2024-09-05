@@ -10,12 +10,12 @@ import {useEffect, useState} from "react";
 export default function SectionOne() {
 
     const { ref, inView, entry } = useInView({
-        triggerOnce: false,  // Allow multiple triggers based on scroll direction
-        threshold: 0.1,      // The percentage of the element's visibility before triggering
+        triggerOnce: false,
+        threshold: 0.1,
     });
 
     const [scrollDirection, setScrollDirection] = useState(null);
-    const [isAnimating, setIsAnimating] = useState(false);  // Track if the animation is currently happening
+    const [isAnimating, setIsAnimating] = useState(false);
 
     useEffect(() => {
         let lastScrollY = window.scrollY;
@@ -38,19 +38,17 @@ export default function SectionOne() {
 
     useEffect(() => {
         if (scrollDirection === 'up' && entry && entry.boundingClientRect.top >= 0) {
-            // Delay the reset of the animation state by 0.3 seconds
             const delay = setTimeout(() => {
-                setIsAnimating(false);  // Reset animation state after delay
+                setIsAnimating(false);
             }, 135);
 
-            // Cleanup the timeout if the effect re-runs
             return () => clearTimeout(delay);
         }
     }, [scrollDirection, entry]);
 
     useEffect(() => {
         if (inView && scrollDirection === 'down') {
-            setIsAnimating(true);  // Start the animation when scrolling downwards into the section
+            setIsAnimating(true);
         }
     }, [inView, scrollDirection]);
 
@@ -68,12 +66,11 @@ export default function SectionOne() {
                 <img src={keycapImg} className={"keycapImg"} alt={"keycap image"}/>
             </motion.div>
 
-
             <motion.div className={"lemonContainer"}
                         ref={ref}
-                        initial={{y: '36.3rem'}}   // Starts 1000px below its neutral position
-                        animate={isAnimating ? { y: 0 } : {}}    // Moves to its neutral position
-                        transition={{duration: 1, ease: 'easeOut'}}  // 1-second duration
+                        initial={{y: '36.3rem'}}
+                        animate={isAnimating ? { y: 0 } : {}}
+                        transition={{duration: 1, ease: 'easeOut'}}
                         style={{
                             margin: '0 auto',
                             display: 'flex',
@@ -84,29 +81,33 @@ export default function SectionOne() {
                 <img src={lemon} className={"lemonImg"} alt="lemon logo"/>
             </motion.div>
 
-
             <motion.div className={"trampolineContainer"}
                         ref={ref}
-                        initial={{x: '-45rem', y: 0}}  // Start off-screen to the left
-                        animate={isAnimating ? {x:0, y: 0 } : {}}  // Animate to the neutral position
-                        transition={{duration: 0.5, ease: 'easeOut'}}  // Smooth animation
+                        initial={{x: '-45rem', y: 0}}
+                        animate={isAnimating ? {x:0, y: 0 } : {}}
+                        transition={{duration: 0.5, ease: 'easeOut'}}
                         style={{
-                            margin: '0 auto', // Center the div horizontally within its parent
+                            margin: '0 auto',
                             justifyContent: 'center',
-                            alignItems: 'center', // Ensure the positioning is relative to the parent
+                            alignItems: 'center',
                         }}
             >
                 <img className={"trampoline"} src={TrampolineImg} alt="trampoline img"/>
             </motion.div>
 
-            <h3 className={"sectionOne-header"}>Уеб дизайн</h3>
+            <h3 className={"sectionOne-header"}>
+                Уеб дизайн
+            </h3>
+
             <p className={'sectionOne-text'}>
                 Проектираме и изработваме динамични уеб сайтове,<br/>
                 съобразени със съвременните изисквания за визия и<br/> функционалност,
                 уеб базирани приложения, системи с<br/> електронно разплащане, електронни магазини,<br/>
-                индивидуални бизнес приложения.</p>
+                индивидуални бизнес приложения.
+            </p>
 
             <img src={Shadow} alt="trampoline img" className={"trampolineShadowImg"}/>
+
             <img src={Shadow} alt="trampoline img" className={"lemonShadowImg"}/>
         </section>
     )

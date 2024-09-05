@@ -5,7 +5,6 @@ const useScrollDelay = (scrollAmount = 50) => {
         const handleWheel = (event) => {
             event.preventDefault();
 
-            // Normalize scroll speed across browsers
             const delta = Math.sign(event.deltaY);
 
             window.scrollBy({
@@ -15,10 +14,8 @@ const useScrollDelay = (scrollAmount = 50) => {
             });
         };
 
-        // Add the event listener to control scrolling
         window.addEventListener('wheel', handleWheel, { passive: false });
 
-        // Cleanup event listener on unmount
         return () => {
             window.removeEventListener('wheel', handleWheel);
         };
