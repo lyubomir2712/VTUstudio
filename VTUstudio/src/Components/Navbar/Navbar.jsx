@@ -40,7 +40,7 @@ export default function Navbar() {
                 <div onClick={handleButtonClick}
                      className={'language upper-right-cell'}>{languageButtonText}</div>
                 <div className={"left-cell"}>
-                    <a className={"logoTag"} href={"#main"}><img src={Logo} alt="Logo"
+                    <a className={"logo-tag"} href={"#main"}><img src={Logo} alt="Logo"
                       className={"logo"}/></a></div>
                 <div className={'navbar-content-container lower-right-cell'}>
 
@@ -54,7 +54,7 @@ export default function Navbar() {
                     </ul>
                 </div>
             </nav>
-            <p className={"logoText"}>STUDIO</p>
+            <p className={"logo-text"}>STUDIO</p>
         </header>
     )
 }
