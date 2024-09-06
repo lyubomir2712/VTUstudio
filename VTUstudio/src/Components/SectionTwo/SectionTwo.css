@@ -1,11 +1,11 @@
-.peacockContainer{
+.peacock-container{
     position:absolute;
     top: 308%;
     left: 10%;
     padding-right:27rem;
 }
 
-img.peacockImg{
+img.peacock-img{
     height: 30rem;
     width: auto;
 

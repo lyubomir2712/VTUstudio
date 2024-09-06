@@ -50,7 +50,7 @@ export default function SectionTwo() {
 
     return (
         <section id="sectionTwo">
-            <motion.div className={"peacockContainer"}
+            <motion.div className={"peacock-container"}
                         ref={ref}
                         initial={{ x: '-48rem' }}
                         animate={isAnimating ? { x: 0 } : {}}
@@ -61,7 +61,7 @@ export default function SectionTwo() {
                             alignItems: 'center',
                         }}>
 
-                <img src={peacockImg} className={"peacockImg"} alt="peacock logo" />
+                <img src={peacockImg} className={"peacock-img"} alt="peacock logo" />
             </motion.div>
 
             <h3 className={"sectionTwo-header"}>
