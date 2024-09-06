@@ -1,27 +1,27 @@
-.monaLisaContainer{
+.monaLisa-container{
     position: absolute;
     top: 480%;
     left: 60%;
 }
 
-.monaLisaImg{
+.monaLisa-img{
     height:33rem;
     width:auto;
 }
 
-.greenButterflyContainer{
+.greenButterfly-container{
     position: absolute;
     left: 20%;
     top: 480%;
     padding-right: 10rem;
 }
 
-.greenButterflyImg{
+.greenButterfly-img{
     height:6rem;
     width: auto;
 }
 
-.monaLisaShadow{
+.monaLisa-shadowImg{
     filter: brightness(0.1);
     position: absolute;
     left: 53.5%;

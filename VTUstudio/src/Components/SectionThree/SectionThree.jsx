@@ -54,7 +54,7 @@ function SectionThree() {
 
     return (
         <section id="sectionThree">
-            <motion.div className={"monaLisaContainer"}
+            <motion.div className={"monaLisa-container"}
                         ref={ref}
                         animate={isAnimating ? { y: 0, rotate:0 } : {}}
                         initial={{y: '-35rem', rotate: -90}}
@@ -63,10 +63,10 @@ function SectionThree() {
                             margin: '0 auto',
                         }}
             >
-                <img src={MonaLisaPaintingImg} className={"monaLisaImg"} alt={"Mona Lisa painting"}/>
+                <img src={MonaLisaPaintingImg} className={"monaLisa-img"} alt={"Mona Lisa painting"}/>
             </motion.div>
 
-                <motion.div className={"greenButterflyContainer"}
+                <motion.div className={"greenButterfly-container"}
                             ref={ref}
                             initial={{ x: '-25rem' }}
                             animate={isAnimating ? { x: 0 } : {}}
@@ -77,7 +77,7 @@ function SectionThree() {
                                 alignItems: 'center',
                             }}
                 >
-                    <img src={GreenButterflyImg} className={"greenButterflyImg"} alt={"green butterfly img"}/>
+                    <img src={GreenButterflyImg} className={"greenButterfly-img"} alt={"green butterfly img"}/>
                 </motion.div>
 
                 <h3 className={"sectionThree-header"}>
@@ -88,7 +88,7 @@ function SectionThree() {
                     Професионални фотографски решения: интериорно и<br/> екстериорно заснемане, продуктова фотография.
                 </p>
 
-                <img className={"monaLisaShadow"} src={shadow} alt={"Mona Lisa shadow"}/>
+                <img className={"monaLisa-shadowImg"} src={shadow} alt={"Mona Lisa shadow"}/>
         </section>
     )
 }
