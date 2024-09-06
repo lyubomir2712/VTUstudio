@@ -54,7 +54,7 @@ export default function SectionOne() {
 
     return (
         <section id={"sectionOne"}>
-            <motion.div className={"keycapContainer"}
+            <motion.div className={"keycap-container"}
                         ref={ref}
                         animate={isAnimating ? { y: 0 } : {}}
                         initial={{y: '-33.5rem'}}
@@ -63,10 +63,10 @@ export default function SectionOne() {
                             margin: '0 auto',
                         }}
             >
-                <img src={keycapImg} className={"keycapImg"} alt={"keycap image"}/>
+                <img src={keycapImg} className={"keycap-img"} alt={"keycap image"}/>
             </motion.div>
 
-            <motion.div className={"lemonContainer"}
+            <motion.div className={"lemon-container"}
                         ref={ref}
                         initial={{y: '36.3rem'}}
                         animate={isAnimating ? { y: 0 } : {}}
@@ -78,10 +78,10 @@ export default function SectionOne() {
                             alignItems: 'center',
                         }}
             >
-                <img src={lemon} className={"lemonImg"} alt="lemon logo"/>
+                <img src={lemon} className={"lemon-img"} alt="lemon logo"/>
             </motion.div>
 
-            <motion.div className={"trampolineContainer"}
+            <motion.div className={"trampoline-container"}
                         ref={ref}
                         initial={{x: '-45rem', y: 0}}
                         animate={isAnimating ? {x:0, y: 0 } : {}}
@@ -92,7 +92,7 @@ export default function SectionOne() {
                             alignItems: 'center',
                         }}
             >
-                <img className={"trampoline"} src={TrampolineImg} alt="trampoline img"/>
+                <img className={"trampoline-img"} src={TrampolineImg} alt="trampoline img"/>
             </motion.div>
 
             <h3 className={"sectionOne-header"}>
@@ -106,9 +106,9 @@ export default function SectionOne() {
                 индивидуални бизнес приложения.
             </p>
 
-            <img src={Shadow} alt="trampoline img" className={"trampolineShadowImg"}/>
+            <img src={Shadow} alt="trampoline img" className={"trampolineShadow-img"}/>
 
-            <img src={Shadow} alt="trampoline img" className={"lemonShadowImg"}/>
+            <img src={Shadow} alt="trampoline img" className={"lemonShadow-img"}/>
         </section>
     )
 }

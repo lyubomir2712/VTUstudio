@@ -1,42 +1,42 @@
-.keycapContainer{
+.keycap-container{
     position: absolute;
     left: 40%;
     top: 177%;
     z-index: 1;
 }
 
-.keycapImg{
+.keycap-img{
     height: 5rem;
     width: auto;
 }
 
-.lemonContainer{
+.lemon-container{
     position: absolute;
     left: 30%;
     top: 130%;
 }
 
-.lemonImg{
+.lemon-img{
     height:40rem;
     width: auto;
     z-index: 1;
 
 }
 
-.trampolineContainer{
+.trampoline-container{
     position: absolute;
     top: 190%;
     left: 35%;
     padding-right: 10rem;
 }
 
-.trampoline{
+.trampoline-img{
     height: 8rem;
     width: auto;
     z-index: 1;
 }
 
-.lemonShadowImg{
+.lemonShadow-img{
     top:194%;
     left: 52%;
     position: absolute;
@@ -45,7 +45,7 @@
     width: 35%;
 }
 
-.trampolineShadowImg{
+.trampolineShadow-img{
     position: absolute;
     filter: brightness(0.1);
     top: 200%;
