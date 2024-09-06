@@ -13,9 +13,9 @@ export default function SectionFive() {
     return (
         <section id={"sectionFive"}>
 
-            <img src={bowImg} className={"bowImg"} alt={"bow img"}/>
+            <img src={bowImg} className={"bow-img"} alt={"bow img"}/>
 
-            <motion.div className={"arrowContainer"}
+            <motion.div className={"arrow-container"}
                         ref={ref}
                         initial={{x: 0, y: 0}}
                         animate={inView ? {
@@ -30,7 +30,7 @@ export default function SectionFive() {
                             alignItems: 'center',
                         }}
             >
-                <img src={arrowImg} className={"arrowImg"} alt={"arrow img"}/>
+                <img src={arrowImg} className={"arrow-img"} alt={"arrow img"}/>
             </motion.div>
 
 

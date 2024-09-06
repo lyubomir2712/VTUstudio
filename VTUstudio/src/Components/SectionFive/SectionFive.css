@@ -1,4 +1,4 @@
-.bowImg{
+.bow-img{
     position: absolute;
     height: 30rem;
     width: auto;
@@ -7,13 +7,13 @@
     top: 790%;
 }
 
-.arrowImg{
+.arrow-img{
     transform: rotate(-36deg);
     height: 2.5rem;
     width: auto;
 }
 
-.arrowContainer {
+.arrow-container {
     position: absolute;
     top: 821%;
     left: 10%;
