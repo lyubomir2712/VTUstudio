@@ -1,4 +1,4 @@
-.pensilContainer{
+.pensil-container{
     position: absolute;
     top: 563%;
     left: 46.5%;
@@ -6,7 +6,7 @@
     padding-top: 7rem;
 }
 
-.pensilImg{
+.pensil-img{
     height: 35rem;
     width: 3rem;
 }

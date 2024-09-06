@@ -53,7 +53,7 @@ export default function SectionFour() {
 
     return (
         <section id={"sectionFour"}>
-            <motion.div className={"pensilContainer"}
+            <motion.div className={"pensil-container"}
                         ref={ref}
                         initial={{y: '36rem'}}
                         animate={isAnimating ?{y: 0} : {}}
@@ -63,7 +63,7 @@ export default function SectionFour() {
                             margin: '0 auto',
                         }}
             >
-                <img className={"pensilImg"} src={PensilImg} alt={"keycap image"}/>
+                <img className={"pensil-img"} src={PensilImg} alt={"keycap image"}/>
             </motion.div>
             <h1 className="portfolio-text">ПОРТФОЛИО</h1>
         </section>
