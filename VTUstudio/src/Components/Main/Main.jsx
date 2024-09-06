@@ -42,7 +42,7 @@ export default function Main() {
 
     return (<main id="main">
 
-            <motion.div className={"cherriesContainer"}
+            <motion.div className={"cherries-container"}
                         ref={ref}
                         animate={inView ? {y: 0, rotate: 180} : {}}
                         initial={{y: '-32rem', rotate: 0}}
@@ -51,12 +51,12 @@ export default function Main() {
                             margin: '0 auto',
                         }}
             >
-                <img className={"cherriesImg"} src={cherriesImg} alt={"cherries img"}/>
+                <img className={"cherries-img"} src={cherriesImg} alt={"cherries img"}/>
             </motion.div>
 
-            <img className={"graphitiImg"} src={graphitiImg} alt="Graphiti img"/>
+            <img className={"graphiti-img"} src={graphitiImg} alt="Graphiti img"/>
 
-            <motion.div className={"logoImgContainer"}
+            <motion.div className={"logoImg-container"}
                         ref={ref}
                         initial={{y: '-32rem'}}
                         animate={inView ? {y: 0} : {}}
@@ -66,11 +66,11 @@ export default function Main() {
                             margin: '0 auto',
                         }}
             >
-                <span className={'logoText-first-word'}><img className={"logoImageHalf"} src={VTUlogoHalve}
+                <span className={'logoText-first-word'}><img className={"logoImg-half"} src={VTUlogoHalve}
                                                              alt={"vtu logo half image"}/> STUDIO</span>
             </motion.div>
 
-            <p className={"infoText"}>ВТУ студио е част от ВТУ ГРУП<br/> Създадено пред 2024 година и работи в
+            <p className={"info-text"}>ВТУ студио е част от ВТУ ГРУП<br/> Създадено пред 2024 година и работи в
                 областта на уеб
                 разработката</p>
 

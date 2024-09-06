@@ -1,4 +1,4 @@
-.graphitiImg{
+.graphiti-img{
     opacity: 0.5;
     position: absolute;
     top: 3%;
@@ -20,7 +20,7 @@
     width: auto;
 }
 
-.infoText{
+.info-text{
     position: absolute;
     bottom: 2.5%;
     left: 32%;
@@ -38,7 +38,7 @@ span.logoText-first-word, span.logoText-second-word{
     left: 50%;
 }
 
-.cherriesContainer{
+.cherries-container{
     position: absolute;
     transform: rotate(180deg);
     top: 46%;
@@ -46,19 +46,19 @@ span.logoText-first-word, span.logoText-second-word{
     z-index: 1;
 }
 
-.cherriesImg{
+.cherries-img{
     z-index: 10;
     height: 14rem;
     width: auto;
 }
 
-.logoImgContainer{
+.logoImg-container{
     position: absolute;
     left: 33%;
     top: 65%;
 }
 
-img.logoImageHalf{
+img.logoImg-half{
     height: 5.3rem;
     width: auto;
 }
