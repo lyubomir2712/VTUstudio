@@ -1,5 +1,5 @@
-import bowImg from "../../assets/bow.png";
-import arrowImg from "../../assets/arrow.png";
+import bowImg from "../../assets/Images/SectionFive/bow.png";
+import arrowImg from "../../assets/Images/SectionFive/arrow.png";
 import Footer from "../Footer/Footer.jsx";
 import './SectionFive.css'
 import {motion} from "framer-motion";

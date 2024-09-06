@@ -1,8 +1,8 @@
 import {motion} from "framer-motion";
 import "./SectionThree.css"
-import MonaLisaPaintingImg from "../../assets/MonaLisa.png";
-import GreenButterflyImg from "../../assets/greenButterfly.png";
-import shadow from '../../assets/Shadow.png'
+import MonaLisaPaintingImg from "../../assets/Images/SectionThree/MonaLisa.png";
+import GreenButterflyImg from "../../assets/Images/SectionThree/greenButterfly.png";
+import shadow from '../../assets/Images/Main/Shadow.png'
 import {useInView} from "react-intersection-observer";
 import {useEffect, useState} from "react";
 

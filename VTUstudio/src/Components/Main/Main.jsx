@@ -1,10 +1,10 @@
 import './Main.css';
 import { motion } from 'framer-motion';
-import graphitiImg from '../../assets/graphiti.png';
-import keycap from '../../assets/keycap.png';
-import cherriesImg from '../../assets/cherries.png';
-import VTUlogoHalve from '../../assets/DrawnVTUlogoHalve.png';
-import CherriesShadow from '../../assets/Shadow.png';
+import graphitiImg from '../../assets/Images/Main/graphiti.png';
+import keycap from '../../assets/Images/Main/keycap.png';
+import cherriesImg from '../../assets/Images/Main/cherries.png';
+import VTUlogoHalve from '../../assets/Images/Main/DrawnVTUlogoHalve.png';
+import CherriesShadow from '../../assets/Images/Main/Shadow.png';
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect, useRef } from 'react';
 

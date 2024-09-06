@@ -1,5 +1,5 @@
 import './Footer.css'
-import VtuLogoImg from '../../assets/DrawnLogoVTU.png'
+import VtuLogoImg from '../../assets/Images/Main/DrawnLogoVTU.png'
 
 
 export default function Footer() {

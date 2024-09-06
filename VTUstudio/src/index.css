@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'PF Reminder Pro Regular';
-    src: url('/Users/lyubomirgeorgiev/Desktop/ReactCourse/WebDevelopingApp/VTUstudio/public/PF Reminder Pro Regular.ttf') format('woff2');
+    src: url('/public/fonts/PF Reminder Pro Regular.ttf') format('woff2');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'CaviarDreams Bold';
-    src: url('/Users/lyubomirgeorgiev/Desktop/ReactCourse/WebDevelopingApp/VTUstudio/public/CaviarDreams_Bold.ttf') format('woff2');
+    src: url('/public/fonts/CaviarDreams_Bold.ttf') format('woff2');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'ZenKakuGothicNew-Light';
-    src: url('/Users/lyubomirgeorgiev/Desktop/ReactCourse/WebDevelopingApp/VTUstudio/public/ZenKakuGothicNew-Light.ttf') format('woff2');
+    src: url('/public/fonts/ZenKakuGothicNew-Light.ttf') format('woff2');
     font-weight: normal;
 }
 
@@ -23,7 +23,7 @@
 }
 
 body{
-  background-image: url("./assets/WaveBackground.png");
+  background-image: url("assets/Images/WaveBackground.png");
   background-position: 35% 80%;
   background-size: 110%;
   background-attachment: fixed;

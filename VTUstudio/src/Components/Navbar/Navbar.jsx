@@ -1,5 +1,5 @@
 import './Navbar.css'
-import Logo from '../../assets//DrawnLogoVTU.png'
+import Logo from '../../assets/Images/Main/DrawnLogoVTU.png'
 import i18n from '../LanguageChange/LanguageChange.js';
 import {useState} from 'react';
 import React from "react";

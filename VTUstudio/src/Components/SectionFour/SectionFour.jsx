@@ -1,10 +1,8 @@
-import BlueButterflyImg from '../../assets/blueButterfly.png'
-import GreenButterflyImg from '../../assets/greenButterfly.png'
-import MonaLisaPaintingImg from '../../assets/MonaLisa.png'
+
 import {motion} from "framer-motion";
-import PensilImg from "../../assets/pensil.png";
+import PensilImg from "../../assets/Images/SectionFour/pensil.png";
 import './SectionFour.css'
-import {InView, useInView} from "react-intersection-observer";
+import {useInView} from "react-intersection-observer";
 import {useEffect, useState} from "react";
 
 

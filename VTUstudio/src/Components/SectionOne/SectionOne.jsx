@@ -1,9 +1,9 @@
 import {motion} from "framer-motion";
-import lemon from "../../assets/lemon.png";
-import keycapImg from "../../assets/keycap.png";
+import lemon from "../../assets/Images/SectionOne/lemon.png";
+import keycapImg from "../../assets/Images/Main/keycap.png";
 import './SectionOne.css'
-import TrampolineImg from "../../assets/trampoline.png";
-import Shadow from './../../assets/Shadow.png'
+import TrampolineImg from "../../assets/Images/SectionOne/trampoline.png";
+import Shadow from '../../assets/Images/Main/Shadow.png'
 import { useInView } from 'react-intersection-observer';
 import {useEffect, useState} from "react";
 

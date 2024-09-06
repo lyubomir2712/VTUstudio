@@ -1,6 +1,6 @@
 import './SectionTwo.css';
 import { motion } from 'framer-motion';
-import peacockImg from "../../assets/Peacock.png";
+import peacockImg from "../../assets/Images/SectionTwo/Peacock.png";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from 'react';
 
