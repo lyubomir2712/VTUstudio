@@ -56,7 +56,7 @@ export default function SectionFour() {
             <motion.div className={"pensil-container"}
                         ref={ref}
                         initial={{y: '36rem'}}
-                        animate={isAnimating ?{y: 0} : {}}
+                        animate={isAnimating ? {y: 0} : {}}
                         transition={{duration: 0.7, ease: 'easeOut'}}
                         style={{
                             backgroundColor: 'none',
@@ -66,6 +66,14 @@ export default function SectionFour() {
                 <img className={"pensil-img"} src={PensilImg} alt={"keycap image"}/>
             </motion.div>
             <h1 className="portfolio-text">ПОРТФОЛИО</h1>
+
+            <svg className={"pensil-jet-svg"} width="80" height="145" viewBox="0 0 80 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20.6425 1L3.6377 54.8258L20.6425 45.1854L3.6377 96.6011L20.6425 74.9101L1 138.5L24 96.6011L28.5 144L36.5 96.6011L56.5845 144L54 96.6011L75.5218 129.5L56.5845 74.9101L75.5218 96.6011L63.1546 45.1854L79 54.8258L63.1546 1"
+                    stroke="black"/>
+            </svg>
+
+
         </section>
     )
 }
