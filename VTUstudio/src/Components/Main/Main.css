@@ -63,7 +63,7 @@ img.logoImg-half{
     width: auto;
 }
 
-img.cherriesShadowimg{
+img.cherriesShadow-img{
     position: absolute;
     top: 80%;
     left: 20%;
@@ -76,4 +76,40 @@ img.cherriesShadowimg{
     position: absolute;
     left: 40%;
     top: 52.5%;
+}
+
+.surfboard-stickman{
+    height: 5rem;
+    width: auto;
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    transform: rotate(-13deg);
+}
+
+.falling-stickman{
+    height: 5rem;
+    width: auto;
+    position: absolute;
+    top: 78%;
+    left: 77%;
+}
+
+.layback-stickman{
+    height: 1.5rem;
+    width: auto;
+    position: absolute;
+    top: 78%;
+    left: 19.5%;
+    transform: scaleX(-1);
+
+}
+
+
+svg.svg-text{
+    height: 12rem;
+    width: auto;
+    position: absolute;
+    left: 20%;
+    top: 18%;
 }
