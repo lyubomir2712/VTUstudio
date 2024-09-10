@@ -1,6 +1,6 @@
 .pensil-container{
     position: absolute;
-    top: 563%;
+    top: 558%;
     left: 46.5%;
     z-index: 999;
     padding-top: 7rem;
@@ -22,7 +22,7 @@
 
 .pensil-jet-svg{
     position: absolute;
-    top: 655.5%;
-    left: 47.3%;
+    top: 640.5%;
+    left: 47.25%;
     width: 3rem;
 }

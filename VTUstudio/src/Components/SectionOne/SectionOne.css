@@ -70,6 +70,73 @@
 
 .svg-text-section-one{
     position: absolute;
-    left: 19.4%;
+    left: 10.4%;
     top: 130%;
+}
+
+.laptop-stickman{
+    position: absolute;
+    right: 13%;
+    top: 175.3%;
+    height: 5rem;
+    stroke-width: 4;
+}
+
+.satelite{
+    position: absolute;
+    top: 127%;
+    transform: rotate(25deg);
+    left: 78%;
+    stroke-width: 3;
+    height: 8rem;
+}
+
+.six-edge-star{
+    position: absolute;
+    top: 125%;
+    height: 1.5rem;
+    stroke-width: 1;
+    transform: rotate(-10deg);
+    left: 65%;
+}
+
+.four-edge-star-one{
+    position: absolute;
+    height: 1rem;
+    transform: rotate(-15deg);
+    top: 130%;
+    left: 63%;
+}
+
+.four-edge-star-two{
+    position: absolute;
+    height: 0.6rem;
+    transform: rotate(15deg);
+    top: 125%;
+    left: 60%;
+}
+
+.four-edge-star-three {
+    position: absolute;
+    height: 0.6rem;
+    transform: rotate(15deg);
+    top: 122%;
+    left: 63%;
+}
+
+.star-rainbow{
+    position: absolute;
+    top: 125%;
+    left: 35%;
+    height: 5rem;
+    transform: scaleX(1) rotate(-7deg);
+    stroke-width: 2;
+}
+
+.lightbulb-stickman{
+    position: absolute;
+    stroke-width: 6;
+    top: 180%;
+    left: 15%;
+    height: 13rem;
 }

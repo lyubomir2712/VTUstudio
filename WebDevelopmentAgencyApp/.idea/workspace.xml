@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f213904-222d-470c-ab64-b2092f7721be" name="Changes" comment="merged the local and origin main">
-      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/Footer/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/Main/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/Main/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionOne/SectionOne.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionOne/SectionOne.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionOne/SectionOne.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionOne/SectionOne.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionTwo/SectionTwo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionTwo/SectionTwo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,11 +69,11 @@
       <recent name="$PROJECT_DIR$/src/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../VTUstudio/public" />
-      <recent name="$PROJECT_DIR$/../VTUstudio/src/assets" />
-      <recent name="$PROJECT_DIR$/../VTUstudio/src/Components/LanguageChange/Languages" />
-      <recent name="$PROJECT_DIR$/../VTUstudio/src/Components/SectionTwo" />
-      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/../VTUstudio/src/assets/Svgs/SectionFour" />
+      <recent name="$PROJECT_DIR$/../VTUstudio/src/assets/Svgs/Main" />
+      <recent name="$PROJECT_DIR$/../VTUstudio/src/Components/Main" />
+      <recent name="$PROJECT_DIR$/../VTUstudio/src/assets/Images/SectionOne" />
+      <recent name="$PROJECT_DIR$/../VTUstudio/src/assets/Images/Main" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -100,6 +100,8 @@
       <workItem from="1723711733761" duration="2187000" />
       <workItem from="1724053494281" duration="8415000" />
       <workItem from="1724153700296" duration="21960000" />
+      <workItem from="1725352499956" duration="33352000" />
+      <workItem from="1725872528126" duration="5436000" />
     </task>
     <task id="LOCAL-00001" summary="merged the local and origin main">
       <option name="closed" value="true" />

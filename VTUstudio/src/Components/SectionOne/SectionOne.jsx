@@ -111,7 +111,8 @@ export default function SectionOne() {
             <img src={Shadow} alt="trampoline img" className={"lemonShadow-img"}/>
 
 
-            <svg className={"svg-text-section-one"} width="121" height="85" viewBox="0 0 121 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className={"svg-text-section-one"} width="121" height="85" viewBox="0 0 121 85" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M11.5 41C10.1188 34.0942 6.05976 37 3.80249 41C2.32017 43.6267 1.2779 46.9553 1.42474 49.5C2.5 55.5 7.5 57 14.5 49.5"
                     stroke="black" stroke-linecap="round"/>
@@ -334,6 +335,173 @@ export default function SectionOne() {
                 <path d="M72.52 8.5L74.77 5.6M72.57 3.7C73.6329 4.6493 74.87 6 74.87 6" stroke="black"
                       stroke-width="0.5" stroke-linecap="round"/>
             </svg>
+
+
+            <svg className={"laptop-stickman"} width="169" height="299" viewBox="0 0 169 299" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M25 67C21 81.5 15.5 102 15.5 102C11.481 121.044 10.4959 131.915 10 151.5C10 171.5 10 180 13 201.5"
+                    stroke="black"/>
+                <path d="M15.5 102C12.7249 102.93 1.00011 147.5 0.500046 155C-1.49992e-05 162.5 76.0001 178 76.0001 178"
+                      stroke="black"/>
+                <path d="M15.5 102C15.5 102 25.5733 140.599 34.5 144C55.5 152 87.0001 159 87.0001 159" stroke="black"/>
+                <path d="M145.5 118.5L154 138" stroke="black"/>
+                <path d="M125 129L140 144" stroke="black"/>
+                <path d="M102 144L125 159" stroke="black"/>
+                <path d="M68.0001 181.5H136.5L168 129" stroke="black"/>
+                <path
+                    d="M13 201.5C32.3883 199.654 46.935 198.216 58 197.688C72.3465 197.688 83.0179 197.117 91.0001 197.392C96.2101 197.572 100.288 197.451 103.5 197.801C106.475 198.126 108.533 197.867 110 198.283C115.07 199.502 118.5 222.5 115 267L130.5 282.5"
+                    stroke="black"/>
+                <path
+                    d="M13 201.5C26.5566 207.1 38.3193 211.609 48.5 215.5C76.2506 226.106 96 233.5 96 233.5C102.5 235.5 108.93 272.594 109 290C114.637 294.427 117.538 296.342 123 298"
+                    stroke="black"/>
+                <path
+                    d="M65.0679 43.1822C58.0743 61.1542 39.8094 70.6775 24.85 64.8562C9.89824 59.0379 3.25312 39.836 10.2502 21.855C17.2215 3.94 33.8072 -2.60867 48.8187 3.23285C63.8391 9.07784 72.0357 25.2762 65.0679 43.1822Z"
+                    stroke="black"/>
+            </svg>
+
+
+            <svg className={"satelite"} width="661" height="402" viewBox="0 0 661 402" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M311 252V401M262.5 86.5V244.5C286.833 249.833 308.7 257.3 357.5 244.5V86.5M262.5 86.5C271 51.5 352.5 57.5 357.5 86.5M262.5 86.5C270.5 90.5 277 92 301 93C301 93 325.547 92.8053 333 91.5C358.123 87.0999 351.742 88.3792 357.5 86.5"
+                    stroke="black" stroke-linecap="round"/>
+                <path
+                    d="M357.5 140.5C363.268 140.321 370.736 140.343 370.5 140.5C370.264 140.657 370.5 185 370.5 185C370.677 185.404 365.249 185.206 357.5 185"
+                    stroke="black" stroke-linecap="round"/>
+                <path d="M263 125C249.5 124.5 251 125 251 125C251 125 251 146.5 251 147C251 147.5 258.455 147 263 147"
+                      stroke="black"/>
+                <path d="M309.5 70.5V13" stroke="black" stroke-linecap="round"/>
+                <circle cx="309.5" cy="6.5" r="6" stroke="black"/>
+                <path d="M315.593 6.76471L346 6.76471M303.43 6.76471L273 6.76471M279.041 2V11" stroke="black"
+                      stroke-linecap="round"/>
+                <path d="M342 2.5V11" stroke="black" stroke-linecap="round"/>
+                <circle cx="272" cy="125" r="5.5" stroke="black"/>
+                <circle cx="272.5" cy="149.5" r="6" stroke="black"/>
+                <path d="M458.75 221.5C458.493 223.734 657.95 222.914 659.5 221.5" stroke="black" stroke-width="0.7"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M458.75 111V137.25V163.5C458.75 163.5 459.007 219.266 458.75 221.5" stroke="black"
+                      stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M458.75 111C463.888 108.387 662.903 110.602 659.5 111" stroke="black" stroke-width="0.7"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M218 78V130.5C218 130.5 218.257 185.766 218 188" stroke="black" stroke-width="0.7"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M370.5 163.5H458.75" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M218 188H1" stroke="black" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 188V130V78" stroke="black" stroke-width="0.7" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                <path d="M1 78H218" stroke="black" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M218 130H1" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M459 200H660.156" stroke="black" stroke-width="0.5" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                <path d="M459 163.5H619.5" stroke="black" stroke-width="0.5" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                <path d="M1 101H212" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M1 166H212.5" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M13 78L13 186" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M35 78V186" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M198 78V186" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M178 78L179 186" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M156 78V186" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M135 78V186" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M113 78V186" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M95 78V186" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M75 78V186" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M55 78V186" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M611 119.5V214.5" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M593.5 119.5V214.5" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M576 119.5V214.5" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M556.5 119.5V214.5" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M536.5 119.5V214.5" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M516.5 119.5V214.5" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M497.5 119.5V214.5" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M481.5 119.5V214.5" stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                <path d="M251 130H218" stroke="black"/>
+                <path d="M326 92V250.5" stroke="black" stroke-linecap="round"/>
+                <path d="M659.5 221.5C661.05 220.086 659.5 111 659.5 111" stroke="black" stroke-width="0.7"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+
+            <svg className={"six-edge-star"} width="75" height="73" viewBox="0 0 75 73" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 0.5L53.5 72.5M53.5 0.5L24 72.5M0 36H75" stroke="black"/>
+            </svg>
+
+            <svg className={"four-edge-star-one"} width="64" height="63" viewBox="0 0 64 63" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 0V63M0.5 32.5H63.5" stroke="black"/>
+            </svg>
+
+            <svg className={"four-edge-star-two"} width="64" height="63" viewBox="0 0 64 63" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 0V63M0.5 32.5H63.5" stroke="black"/>
+            </svg>
+
+            <svg className={"four-edge-star-three"} width="64" height="63" viewBox="0 0 64 63" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 0V63M0.5 32.5H63.5" stroke="black"/>
+            </svg>
+
+            <svg className={"star-rainbow"} width="397" height="173" viewBox="0 0 397 173" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M76 31.618L93.2611 84.7422L93.3733 85.0877H93.7366L149.595 85.0877L104.405 117.92L104.111 118.134L104.223 118.479L121.484 171.603L76.2939 138.771L76 138.557L75.7061 138.771L30.516 171.603L47.7771 118.479L47.8894 118.134L47.5955 117.92L2.40539 85.0877L58.2634 85.0877H58.6267L58.7389 84.7422L76 31.618Z"
+                    stroke="black"/>
+                <path d="M88.3867 70.0122C123.812 46.5124 278.5 -7.50003 396.5 1.5" stroke="black"
+                      stroke-linecap="round"/>
+                <path d="M149 85.5C170.787 77.5916 297 52 396.5 79.5" stroke="black" stroke-linecap="round"/>
+                <path d="M111 85.0891C165.5 61.5001 289 31 396 52" stroke="black" stroke-linecap="round"/>
+                <path d="M114.5 110.5C163.907 92.6922 294.278 69.2443 396.5 101.5" stroke="black"
+                      stroke-linecap="round"/>
+                <path d="M92.0002 81C127.315 59.3253 285.5 6.50002 396.5 27" stroke="black" stroke-linecap="round"/>
+            </svg>
+
+
+            <svg className={"lightbulb-stickman"} width="589" height="1071" viewBox="0 0 589 1071" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M269.946 456H370.708C381.944 456 381.582 439 370.708 439H269.946M270.264 439C259.028 439.045 259.447 456.043 270.32 456"
+                    stroke="black" stroke-linecap="round"/>
+                <path
+                    d="M274.267 473H286C291.75 473 290 477 290 477C282 507.735 319.5 508.5 331 506.5M274.267 456L368.056 456C378 456 378.528 473 368.253 473L357.5 473M274.557 456C264.282 456.045 264.665 473.044 274.609 473"
+                    stroke="black" stroke-linecap="round"/>
+                <path d="M358 473C352.25 473 354 477 354 477" stroke="black" stroke-linecap="round"/>
+                <path d="M354 477C362 507.734 324.5 508.5 313 506.5" stroke="black" stroke-linecap="round"/>
+                <path
+                    d="M274.267 439H366.417C376.693 439 376.361 422 366.417 422H274.267M274.557 422C264.282 422.045 264.665 439.043 274.609 439"
+                    stroke="black" stroke-linecap="round"/>
+                <path d="M428 310C433.227 282.868 434.277 260.136 433 239.399C427 142 225 123.5 206.8 239"
+                      stroke="black" stroke-linecap="round"/>
+                <path
+                    d="M210 311C206.294 284.812 202.433 257.496 207 238M279.057 422C280 418.5 279.5 415.5 279.057 411.5M279.083 412C277.982 389.189 269.581 383.99 244.512 369C219.443 354.01 209.477 311.076 209.737 309"
+                    stroke="black" stroke-linecap="round"/>
+                <path
+                    d="M359 422C359 418.262 358.152 416 358.321 412.5C359.422 389.689 368.001 383.99 393.071 369C418.14 354.01 428.106 311.076 427.846 309"
+                    stroke="black" stroke-linecap="round"/>
+                <path d="M262 263C256.5 248.5 269.838 252.593 320.75 263C358.657 257.656 389 248.5 380 263"
+                      stroke="black" stroke-linecap="round"/>
+                <path d="M380.5 262.5C329 355.5 337 381.5 337 422" stroke="black" stroke-linecap="round"/>
+                <path d="M262 263C313.5 356 304.5 382 304.5 422.5" stroke="black" stroke-linecap="round"/>
+                <path d="M588 302L469 292" stroke="black"/>
+                <path d="M588 186L469 208" stroke="black"/>
+                <path d="M506 34L432 130" stroke="black"/>
+                <path d="M321.02 0L321.02 96" stroke="black"/>
+                <path d="M137 34L203 130" stroke="black"/>
+                <path d="M45 186L166 208" stroke="black"/>
+                <path d="M33 302L166 292" stroke="black"/>
+                <path d="M80 432L189 384" stroke="black"/>
+                <path d="M158.5 673V736V856" stroke="black"/>
+                <path d="M158.5 856C148.746 931.618 147.849 970.405 125 1034" stroke="black"/>
+                <path d="M158.5 856C208 864 202 1025 210 1034" stroke="black"/>
+                <path d="M158.5 736C146 740.128 121.5 757.5 110 833.5" stroke="black"/>
+                <path d="M158.5 736C213 718 234.601 696.634 231 611" stroke="black"/>
+                <path d="M84.5 1070H101.5M0 1070H18" stroke="black"/>
+                <path
+                    d="M198.5 633C198.5 654.815 180.815 672.5 159 672.5C137.185 672.5 119.5 654.815 119.5 633C119.5 611.185 137.185 593.5 159 593.5C180.815 593.5 198.5 611.185 198.5 633Z"
+                    stroke="black"/>
+                <path d="M522 427L437 366" stroke="black"/>
+            </svg>
+
         </section>
     )
 }

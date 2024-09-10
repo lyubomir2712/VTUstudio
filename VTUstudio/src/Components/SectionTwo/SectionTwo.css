@@ -23,3 +23,11 @@ img.peacock-img{
     top: 346%;
     left: 60%;
 }
+
+.section-two-border{
+    position: absolute;
+    left: 57.5%;
+    top: 335%;
+    height: 13rem;
+    stroke-width: 4;
+}
