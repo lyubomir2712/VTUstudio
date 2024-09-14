@@ -85,6 +85,10 @@ img.cherriesShadow-img{
     top: 40%;
     left: 43%;
     transform: rotate(-13deg);
+    stroke-width: 3.5;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 5s linear forwards;
 }
 
 .falling-stickman{
@@ -96,15 +100,17 @@ img.cherriesShadow-img{
 }
 
 .layback-stickman{
-    height: 1.5rem;
+    height: 2rem;
     width: auto;
     position: absolute;
-    top: 78%;
+    top: 77%;
     left: 19.5%;
     transform: scaleX(-1);
-
+    stroke-width: 3;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 7s linear forwards;
 }
-
 
 svg.svg-text{
     height: 12rem;
@@ -112,4 +118,8 @@ svg.svg-text{
     position: absolute;
     left: 20%;
     top: 18%;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 40s linear forwards;
+    stroke-width: 1.2;
 }

@@ -89,22 +89,25 @@ export default function Main() {
             <img src={CherriesShadow} alt={"cherries shadow img"} className="cherriesShadow-img"/>
 
 
-            <svg className={"surfboard-stickman"} width="283" height="185" viewBox="0 0 283 185" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
+            <svg className={"surfboard-stickman"} width="283" height="182" viewBox="0 0 283 182" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M178 38C179.667 49.3333 178.4 78.2 160 103C148.667 111.333 123.6 131 114 143" stroke="black"/>
+                <path d="M160 103C167.333 108.333 179.8 125.8 171 153" stroke="black"/>
                 <path
-                    d="M178 41C179.667 52.3333 178.4 81.2 160 106M160 106C167.333 111.333 179.8 128.8 171 156M160 106C148.667 114.333 123.6 134 114 146"
-                    stroke="black" stroke-width="3"/>
+                    d="M113.953 143.303L117.452 147.31M1.52417 119.5C5.95307 101.397 59.4558 86.97 211.427 133.785C244.265 143.757 284.376 159.471 281.89 170"
+                    stroke="black" stroke-linecap="round"/>
                 <path
-                    d="M113.953 146.303L117.452 150.31M177.436 1.22786C154.872 1.22787 147.936 34.2279 180.372 37.7279C212.807 41.2279 200 1.22785 177.436 1.22786ZM8.49999 137.5C-16.5 117.538 16.2794 76.6696 211.427 136.785C266.412 153.483 341.791 186.279 203.429 183.875C94.3901 173.58 43.8337 165.714 8.49999 137.5Z"
-                    stroke="black" stroke-linecap="round" stroke-width="3"/>
-                <path d="M1 122.485L282 173" stroke="black" stroke-width="3"/>
-                <path d="M171 156L175.5 157" stroke="black" stroke-linecap="round" stroke-width="3"/>
-                <path d="M178 58.5C165.167 59.3333 138.4 62.8 134 70" stroke="black" stroke-linecap="round"
-                      stroke-width="3"/>
-                <path d="M178 58.5C181.167 62.6667 191.6 72.3 208 77.5" stroke="black" stroke-linecap="round"
-                      stroke-linejoin="round" stroke-width="3"/>
-                <path d="M38.2326 156C34.5 160.224 32.5 161.5 28 166.794C23.5 172.088 40.9954 166.982 50 160.224"
-                      stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                    d="M180.372 1C157.807 1.00001 156.243 34.7279 180.372 34.7279C204.5 34.7279 202.936 0.999988 180.372 1Z"
+                    stroke="black" stroke-linecap="round"/>
+                <path
+                    d="M1.52418 119.5C0.265885 124.643 2.96874 130.083 8.49999 134.5C43.8337 162.714 94.3901 170.58 203.429 180.875C259.159 181.843 280.213 177.101 281.89 170"
+                    stroke="black" stroke-linecap="round"/>
+                <path d="M1 119.485L282 170" stroke="black"/>
+                <path d="M171 153L175.5 154" stroke="black" stroke-linecap="round"/>
+                <path d="M178 55.5C165.167 56.3333 138.4 59.8 134 67" stroke="black" stroke-linecap="round"/>
+                <path d="M178 55.5C181.167 59.6667 191.6 69.3 208 74.5" stroke="black" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                <path d="M38.2326 153C34.5 157.224 32.5 158.5 28 163.794C23.5 169.088 40.9954 163.982 50 157.224"
+                      stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
 
 
@@ -123,27 +126,25 @@ export default function Main() {
             </svg>
 
 
-            <svg className={"layback-stickman"} width="517" height="113" viewBox="0 0 517 113" fill="none"
+            <svg className={"layback-stickman"} width="305" height="76" viewBox="0 0 305 76" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
-                <path d="M50 84H343" stroke="black" stroke-linecap="round" stroke-width="6"/>
+                <path d="M59 50H190" stroke="black" stroke-linecap="round"/>
+                <path d="M38.5 50C2.73524 50 6.31175 -2.35905 38.5 1.17078C70.6883 4.7006 74.2647 50 38.5 50Z"
+                      stroke="black"/>
+                <path d="M190 50C240 50 229 50 304 50" stroke="black" stroke-linecap="round"/>
+                <path d="M190 50.125C233 5.625 253.5 10.625 291 45.125" stroke="black" stroke-linecap="round"/>
+                <path d="M59 50C68 78 79 71 134 71" stroke="black" stroke-linecap="round"/>
+                <path d="M59 50C77.8889 46.0417 118.733 36.7 131 31" stroke="black" stroke-linecap="round"/>
+                <path d="M144.042 29.1341L133.486 34.2083L120 12.392L137.458 4L144.042 29.1341Z" stroke="black"
+                      stroke-linecap="round"/>
+                <path d="M127 9C112.5 5.33333 78.8 2.1 60 18.5" stroke="black" stroke-linecap="round"/>
                 <path
-                    d="M43.7796 84.2903C-16.2205 84.2903 -10.2204 -4.70971 43.7796 1.29029C97.7796 7.29029 103.78 84.2903 43.7796 84.2903Z"
-                    stroke="black" stroke-width="6"/>
-                <path d="M343 84C372.807 42.4957 447.136 -12.6103 506 87" stroke="black" stroke-linecap="round"
-                      stroke-width="6"/>
-                <path d="M343 83.7675C377.5 28.1008 464 -30 516 87" stroke="black" stroke-linecap="round"
-                      stroke-width="6"/>
-                <path d="M77 84C77 112 147 112 202 112" stroke="black" stroke-linecap="round" stroke-width="6"/>
-                <path d="M77 84C95.8889 80.0417 136.733 70.7 149 65" stroke="black" stroke-linecap="round"
-                      stroke-width="6"/>
-                <path d="M162.042 63.1341L151.486 68.2083L138 46.392L155.458 38L162.042 63.1341Z" stroke="black"
-                      stroke-linecap="round" stroke-width="6"/>
-                <path d="M145 43C130.5 39.3333 96.8 36.1 78 52.5" stroke="black" stroke-linecap="round"
-                      stroke-width="6"/>
-                <path
-                    d="M147 41.809C145.638 41.4176 144.131 41.0246 142.5 40.6471M78 52.5L77 51C78.3016 49.9587 79.6367 48.9927 81 48.0976M81 48.0976L81.5 49M81 48.0976C82.309 47.2381 83.6439 46.444 85 45.7114M85 45.7114L85.5 47M85 45.7114C86.7996 44.7393 88.6366 43.8754 90.5 43.1106M90.5 43.1106L91 44.5M90.5 43.1106C92.3118 42.3671 94.1485 41.7173 96 41.153M96 41.153L96.5 42.5M96 41.153C97.9871 40.5473 99.9913 40.0399 102 39.6207M102 39.6207L102.5 41.5M102 39.6207C104.167 39.1685 106.339 38.8187 108.5 38.5584M108.5 38.5584V40.5M108.5 38.5584C110.852 38.2751 113.192 38.0978 115.5 38.0098M115.5 38.0098V39.6207M115.5 38.0098C117.53 37.9324 119.534 37.924 121.5 37.9734M121.5 37.9734V39.6207M121.5 37.9734C123.373 38.0205 125.21 38.1199 127 38.2619M127 38.2619V40M127 38.2619C128.537 38.3838 130.04 38.5372 131.5 38.7157M131.5 38.7157V40.5M131.5 38.7157C133.23 38.9273 134.901 39.1742 136.5 39.4461M136.5 39.4461V41.153M136.5 39.4461C138.639 39.81 140.649 40.2186 142.5 40.6471M142.5 40.6471V41.809"
-                    stroke="black" stroke-linecap="round" stroke-width="4"/>
+                    d="M129 7.809C127.638 7.4176 126.131 7.02463 124.5 6.64709M60 18.5L59 17C60.3016 15.9587 61.6367 14.9927 63 14.0976M63 14.0976L63.5 15M63 14.0976C64.309 13.2381 65.6439 12.444 67 11.7114M67 11.7114L67.5 13M67 11.7114C68.7996 10.7393 70.6366 9.87535 72.5 9.11063M72.5 9.11063L73 10.5M72.5 9.11063C74.3118 8.3671 76.1485 7.71732 78 7.15296M78 7.15296L78.5 8.5M78 7.15296C79.9871 6.54726 81.9913 6.03995 84 5.62069M84 5.62069L84.5 7.5M84 5.62069C86.1666 5.16847 88.3385 4.81869 90.5 4.55839M90.5 4.55839V6.5M90.5 4.55839C92.8524 4.2751 95.1925 4.0978 97.5 4.00979M97.5 4.00979V5.62069M97.5 4.00979C99.5298 3.93236 101.534 3.92403 103.5 3.97341M103.5 3.97341V5.62069M103.5 3.97341C105.373 4.02045 107.21 4.11989 109 4.26189M109 4.26189V6M109 4.26189C110.537 4.38385 112.04 4.5372 113.5 4.71572M113.5 4.71572V6.5M113.5 4.71572C115.23 4.9273 116.901 5.17423 118.5 5.44614M118.5 5.44614V7.15296M118.5 5.44614C120.639 5.81001 122.649 6.21861 124.5 6.64709M124.5 6.64709V7.809"
+                    stroke="black" stroke-linecap="round"/>
+                <path d="M1 75.5C7.88394 67.3377 12.1592 52.5729 18 46L40.5 53.5L50.5 63.5L54 75.5H1Z" stroke="black"
+                      stroke-linejoin="round"/>
             </svg>
+
 
             {/*<svg className={"svg-text"} width="14" height="18" viewBox="0 0 14 18" fill="none"*/}
             {/*     xmlns="http://www.w3.org/2000/svg">*/}
@@ -154,7 +155,8 @@ export default function Main() {
             {/*</svg>*/}
 
 
-            <svg className={"svg-text"} width="121" height="85" viewBox="0 0 121 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg id={"svg-text"} className={"svg-text"} width="121" height="85" viewBox="0 0 121 85" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M11.5 41C10.1188 34.0942 6.05976 37 3.80249 41C2.32017 43.6267 1.2779 46.9553 1.42474 49.5C2.5 55.5 7.5 57 14.5 49.5"
                     stroke="black" stroke-linecap="round"/>
@@ -285,7 +287,7 @@ export default function Main() {
                     stroke="black" stroke-width="0.5" stroke-linecap="round"/>
                 <path
                     d="M70.5 9.1269C69.9489 9.22441 70.2108 6.06156 70.6228 3.65334M70.6228 3.65334C70.92 1.91613 71.2953 0.5716 71.5 1.1269C71.8221 2.00077 71.1721 2.91491 70.6228 3.65334ZM70.6228 3.65334C70.3391 4.03462 70.0823 4.36905 70 4.6269"
-                    stroke="black" stroke-width="0.5" stroke-linecap="round"/>
+                    stroke="black" strokeWidth="0.5" stroke-linecap="round"/>
                 <path
                     d="M38.1298 26.6487C38.4298 26.2487 36.6239 26.7487 36.1617 27.0576C35.3675 27.5885 35.2857 28.3747 35.9297 28.6027C36.4445 28.8656 37.5144 29.0245 38.2432 29.3684C38.6733 29.5713 38.7298 29.8921 38.4297 30.3523C38.0544 30.928 37.2706 31.3687 35.9297 31.7487C35.7113 31.79 35.6159 31.784 35.9297 31.2487"
                     stroke="black" stroke-width="0.5" stroke-linecap="round"/>
@@ -296,7 +298,7 @@ export default function Main() {
                 <path d="M49 25.2C49.1667 25.5333 49.5 26 48.9 27" stroke="black" stroke-width="0.5"
                       stroke-linecap="round"/>
                 <path d="M50.3 25.2C50.4667 25.5333 50.8 26 50.2 27" stroke="black" stroke-width="0.5"
-                      stroke-linecap="round"/>
+                      strokeLinecap="round"/>
                 <path
                     d="M51.6 26.7C52 27.5 52.3073 28.2396 52.5 29C52.7721 29.6852 52.8253 30.4607 52.95 31C52.9772 32.1091 52.9497 32.5233 53.1307 32.3638C53.3874 31.4158 53.757 30.6342 54.5957 28.405C55 27.5 56.5 25 56 24.5"
                     stroke="black" stroke-width="0.5" stroke-linecap="round"/>

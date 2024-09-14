@@ -75,9 +75,10 @@ html::-webkit-scrollbar {
 svg {
     height: 10rem;
     width: auto;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: draw 3s linear forwards;
+
+    /*stroke-dasharray: 1000;*/
+    /*stroke-dashoffset: 1000;*/
+    /*animation: draw 3s linear forwards;*/
 }
 
 
