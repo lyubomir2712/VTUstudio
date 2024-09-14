@@ -458,7 +458,8 @@ export default function SectionOne() {
             </svg>
 
 
-            <svg className={"lightbulb-stickman"} width="589" height="1071" viewBox="0 0 589 1071" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className={"lightbulb-stickman"} width="589" height="1071" viewBox="0 0 589 1071" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M269.946 456H370.708C381.944 456 381.582 439 370.708 439H269.946M270.264 439C259.028 439.045 259.447 456.043 270.32 456"
                     stroke="black" stroke-linecap="round"/>
@@ -501,6 +502,23 @@ export default function SectionOne() {
                     stroke="black"/>
                 <path d="M522 427L437 366" stroke="black"/>
             </svg>
+
+
+            <svg className={"cloud-border"} width="4149" height="1958" viewBox="0 0 4149 1958" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2970 214C3318.46 105.219 3698 166 3746 438" stroke="black" stroke-linecap="round"/>
+                <path d="M1970 166C2210 -58 2730 -50 2970 214" stroke="black" stroke-linecap="round"/>
+                <path d="M1210 166C1370 -41.9999 1794 -66 1970 166" stroke="black" stroke-linecap="round"/>
+                <path d="M481.999 374C481.999 54.0001 946 -73.9999 1210 166" stroke="black" stroke-linecap="round"/>
+                <path d="M57.9994 798C-142 486 234 262 481.999 374" stroke="black" stroke-linecap="round"/>
+                <path d="M233.999 1622C169.999 1894 641.999 2030 818 1774" stroke="black" stroke-linecap="round"/>
+                <path d="M818 1774C937.999 2018 1438 1938 1490 1774" stroke="black" stroke-linecap="round"/>
+                <path d="M2098 1774C2218 2030 2630 2006 2730 1774" stroke="black" stroke-linecap="round"/>
+                <path d="M3413 1750C3845 1806 3937 1730 3957 1598" stroke="black" stroke-linecap="round"/>
+                <path d="M2981 1806C3257 1954 3445 1862 3413 1750" stroke="black" stroke-linecap="round"/>
+                <path d="M3957 1598C4129 1598 4205 1438 4101 1294" stroke="black" stroke-linecap="round"/>
+                <path d="M3746 438C3983.21 434.045 4133.86 497.631 4114 798" stroke="black" stroke-linecap="round"/>
+            </svg>
+
 
         </section>
     )

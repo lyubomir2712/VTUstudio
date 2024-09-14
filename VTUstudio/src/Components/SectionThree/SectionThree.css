@@ -12,7 +12,7 @@
 .greenButterfly-container{
     position: absolute;
     left: 20%;
-    top: 480%;
+    top: 490%;
     padding-right: 10rem;
 }
 
@@ -41,6 +41,73 @@
     left: 12%;
 }
 
+.section-three-border{
+    position: absolute;
+    top: 510%;
+    left: 11.5%;
+    stroke-width: 4;
+    height: 13rem;
+}
 
+.painter-stickman{
+    position: absolute;
+    height: 8rem;
+    top: 534%;
+    left: 40%;
+    stroke-width: 5;
+}
 
+.section-three-cloud{
+    position: absolute;
+    top: 470%;
+    left: 15%;
+    stroke-width: 2.5;
+    height: 7rem;
+}
 
+.section-three-cloudTwo{
+    position: absolute;
+    top: 470%;
+    left: 80%;
+    stroke-width: 3;
+    height: 8rem;
+}
+
+.section-three-bird{
+    position: absolute;
+    top: 470%;
+    left: 45%;
+    stroke-width: 2.5;
+    height: 3rem;
+}
+
+.section-three-bird-two{
+    position: absolute;
+    top: 480%;
+    left: 50%;
+    stroke-width: 2;
+    height: 4rem;
+}
+
+.section-three-mini-cloud{
+    position: absolute;
+    top: 490%;
+    height: 2rem;
+    left: 10%;
+    stroke-width: 3;
+}
+
+.section-three-mini-cloud-two{
+    position: absolute;
+    top: 480%;
+    height: 2rem;
+    left: 35%;
+    stroke-width: 3;
+}
+
+/*.mona-lisa-stickman{*/
+/*    position: absolute;*/
+/*    top: 530.3%;*/
+/*    left: 82.5%;*/
+/*    height: 8rem;*/
+/*}*/

@@ -140,3 +140,11 @@
     left: 15%;
     height: 13rem;
 }
+
+.cloud-border{
+    position: absolute;
+    stroke-width: 6;
+    top:153%;
+    left: 6%;
+    height: 12rem;
+}
