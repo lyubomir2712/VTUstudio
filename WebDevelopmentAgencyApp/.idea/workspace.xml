@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f213904-222d-470c-ab64-b2092f7721be" name="Changes" comment="merged the local and origin main">
-      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionFour/SectionFour.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionFour/SectionFour.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionFive/SectionFive.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionFive/SectionFive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/assets/Svgs/SectionFive/question-stickman.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/assets/Svgs/SectionFive/question-stickman.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +100,7 @@
       <workItem from="1724053494281" duration="8415000" />
       <workItem from="1724153700296" duration="21960000" />
       <workItem from="1725352499956" duration="33352000" />
-      <workItem from="1725872528126" duration="35026000" />
+      <workItem from="1725872528126" duration="36434000" />
     </task>
     <task id="LOCAL-00001" summary="merged the local and origin main">
       <option name="closed" value="true" />
