@@ -25,4 +25,8 @@
     top: 640.5%;
     left: 47.25%;
     width: 3rem;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 3s linear forwards;
+    stroke-width: 2;
 }
