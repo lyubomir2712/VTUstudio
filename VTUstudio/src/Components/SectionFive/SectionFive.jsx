@@ -76,7 +76,8 @@ export default function SectionFive() {
             </svg>
 
 
-            <svg className={"contact-list"} width="334" height="403" viewBox="0 0 334 403" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className={"contact-list"} width="334" height="403" viewBox="0 0 334 403" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M273.5 2.5C281 64.379 258.5 70.7085 287.5 70C298.375 70.487 315.511 70 332.5 70" stroke="black"
                       stroke-linecap="round"/>
                 <path
@@ -131,8 +132,7 @@ export default function SectionFive() {
             </svg>
 
 
-            <svg className={"pirateShip-stickman"} width="1049" height="787" viewBox="0 0 1049 787" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
+            <svg className={"pirateShip-stickman"} width="1049" height="787" viewBox="0 0 1049 787" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M210 523C265 811 882 733 808 511" stroke="black" stroke-linecap="round"/>
                 <path d="M210 523L403.5 528" stroke="black" stroke-linecap="round"/>
                 <path d="M350 490C357.5 496 380 514 403.5 528" stroke="black" stroke-linecap="round"/>
@@ -209,8 +209,14 @@ export default function SectionFive() {
                 <path
                     d="M707 411C709.082 417.112 711.145 425.456 712.444 435.06M690 523C703.302 508.877 709.868 491.348 712.444 474M712.444 474C721.462 471.5 740.3 476.8 743.5 518M712.444 474C714.474 460.323 714.026 446.757 712.444 435.06M712.444 435.06C718.796 433.373 733.9 426.8 743.5 414M743.5 414C748.5 412 763.2 399.1 766 389.5C768.645 395.348 770.5 411 752.773 414M743.5 414C747.187 414.395 750.247 414.362 752.773 414M743.5 414C743.5 421.5 752.773 420.5 752.773 414"
                     stroke="black" stroke-linecap="round"/>
-                <path d="M707 411C690 414.5 686.5 390.5 701.5 387.5C716.5 384.5 724 407.5 707 411Z" stroke="black"
-                      stroke-linecap="round"/>
+                <path
+                    d="M707 411C724 407.5 716.5 384.5 701.5 387.5C695.532 388.694 692.492 393.212 692.067 398C691.423 405.245 696.764 413.107 707 411Z"
+                    stroke="black" stroke-linecap="round"/>
+                <path d="M692.067 398C691.422 400.667 690.52 406.8 692.067 410C694.12 407.6 692.922 401 692.067 398Z"
+                      stroke="black" stroke-linecap="round"/>
+                <path d="M692.067 398C690.378 399.833 687 404.2 687 407C690.6 404.6 691.878 400 692.067 398Z"
+                      stroke="black" stroke-linecap="round"/>
+                <path d="M692.5 399.5C693.667 394.333 699.6 385.4 712.8 391" stroke="black" stroke-linecap="round"/>
                 <path
                     d="M686.299 402.885C662.429 414.582 655.958 392.827 655 388.827C664.5 393 676 393.5 677 384C669 369 670.208 354.559 689 348.827C708.431 344.801 719.345 356.165 721.572 367.853C722.108 370.665 723.131 373.69 725.832 374.639C732.665 377.039 740.041 371.394 745.5 366.5C747 383 735.5 395.267 726 393C721.091 391.829 717.15 390.754 714.009 389.765C705.815 387.184 699.735 385.488 694.319 392.157C693.153 393.593 691.995 395.433 690.884 397.826C689.901 399.941 688.394 401.859 686.299 402.885Z"
                     stroke="black" stroke-linecap="round"/>

@@ -49,10 +49,11 @@
     left: 10%;
     top: 770%;
     height: 8rem;
-    stroke-width: 3;
+    stroke-width: 4;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 3s linear forwards;
+
 }
 
 .cloud-two{
@@ -61,7 +62,7 @@
     top: 765%;
     z-index: 999;
     height: 8rem;
-    stroke-width: 4;
+    stroke-width: 5;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 3s linear forwards;
@@ -84,10 +85,10 @@
     top: 823%;
     z-index: 999;
     height: 13rem;
-    stroke-width: 3;
+    stroke-width: 5;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
-    animation: draw 5s linear forwards;
+    animation: draw 3s linear forwards;
 }
 
 .questionMark-stickman{

@@ -45,8 +45,11 @@
     position: absolute;
     top: 510%;
     left: 11.5%;
-    stroke-width: 4;
+    stroke-width: 5;
     height: 13rem;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 3s linear forwards;
 }
 
 .painter-stickman{
@@ -54,39 +57,54 @@
     height: 8rem;
     top: 534%;
     left: 40%;
-    stroke-width: 5;
+    stroke-width: 8;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 3s linear forwards;
 }
 
 .section-three-cloud{
     position: absolute;
     top: 470%;
     left: 15%;
-    stroke-width: 2.5;
+    stroke-width: 4;
     height: 7rem;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 5s linear forwards;
 }
 
 .section-three-cloudTwo{
     position: absolute;
     top: 470%;
     left: 80%;
-    stroke-width: 3;
+    stroke-width: 5;
     height: 8rem;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 5s linear forwards;
 }
 
 .section-three-bird{
     position: absolute;
     top: 470%;
     left: 45%;
-    stroke-width: 2.5;
+    stroke-width: 5;
     height: 3rem;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 5s linear forwards;
 }
 
 .section-three-bird-two{
     position: absolute;
     top: 480%;
     left: 50%;
-    stroke-width: 2;
+    stroke-width: 4;
     height: 4rem;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 5s linear forwards;
 }
 
 .section-three-mini-cloud{
@@ -94,7 +112,10 @@
     top: 490%;
     height: 2rem;
     left: 10%;
-    stroke-width: 3;
+    stroke-width: 6;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 3s linear forwards;
 }
 
 .section-three-mini-cloud-two{
@@ -102,7 +123,10 @@
     top: 480%;
     height: 2rem;
     left: 35%;
-    stroke-width: 3;
+    stroke-width: 5;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 3s linear forwards;
 }
 
 /*.mona-lisa-stickman{*/
