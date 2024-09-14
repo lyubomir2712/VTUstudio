@@ -132,7 +132,8 @@ export default function SectionFive() {
             </svg>
 
 
-            <svg className={"pirateShip-stickman"} width="1049" height="787" viewBox="0 0 1049 787" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className={"pirateShip-stickman"} width="1049" height="787" viewBox="0 0 1049 787" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M210 523C265 811 882 733 808 511" stroke="black" stroke-linecap="round"/>
                 <path d="M210 523L403.5 528" stroke="black" stroke-linecap="round"/>
                 <path d="M350 490C357.5 496 380 514 403.5 528" stroke="black" stroke-linecap="round"/>
@@ -270,6 +271,18 @@ export default function SectionFive() {
                       stroke="black"/>
                 <path d="M267.5 268C246.445 268 247.225 298 267.5 298C287.775 298 288.555 268 267.5 268Z"
                       stroke="black"/>
+            </svg>
+
+
+            <svg className={"section-five-seagull"} width="193" height="18" viewBox="0 0 193 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 17C41.0439 -2.1366 61.371 0.940046 96 17C136.368 -6.01935 157.016 -3.05233 192 17"
+                      stroke="black" stroke-linecap="round"/>
+            </svg>
+
+
+            <svg className={"section-five-seagull-two"} width="193" height="18" viewBox="0 0 193 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 17C41.0439 -2.1366 61.371 0.940046 96 17C136.368 -6.01935 157.016 -3.05233 192 17"
+                      stroke="black" stroke-linecap="round"/>
             </svg>
             <Footer/>
         </section>

@@ -139,11 +139,21 @@ export default function SectionTwo() {
             </svg>
 
 
-            <svg className={"section-two-cloud"} width="227" height="82" viewBox="0 0 227 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.99998 81H220" stroke="black" stroke-linecap="round"/>
-                <path d="M3.99999 81C-14.4 21 51 -9.53674e-07 77 33.5" stroke="black" stroke-linecap="round"/>
-                <path d="M220 81C245.5 47.5 184.5 11.5 160.5 33.5" stroke="black" stroke-linecap="round"/>
-                <path d="M166 28C153.5 -8.5 85.5 -10.5 73 35" stroke="black" stroke-linecap="round"/>
+            <svg className={"section-two-cloud"} width="1653" height="403" viewBox="0 0 1653 403" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M133 393C219 417.571 300 371 381 307" stroke="black" stroke-linecap="round"/>
+                <path d="M381 307C462 243 453 369 499 393" stroke="black" stroke-linecap="round"/>
+                <path d="M499 393C545 417 593.138 393.243 775 307" stroke="black" stroke-linecap="round"/>
+                <path d="M775 307C853 267 1039.89 270.694 1151 339" stroke="black" stroke-linecap="round"/>
+                <path d="M1151 339C1200.8 375.558 1271.94 382.993 1337 368.527" stroke="black" stroke-linecap="round"/>
+                <path d="M1499 225C1490.64 297.792 1418.6 350.385 1337 368.527" stroke="black" stroke-linecap="round"/>
+                <path d="M1499 225C1601 267 1721 177 1603 81" stroke="black" stroke-linecap="round"/>
+                <path d="M1603 81C1695 18 1551 -24.071 1367 18" stroke="black" stroke-linecap="round"/>
+                <path d="M963 57C1017.77 87.7778 1113.62 75.9341 1367 18" stroke="black" stroke-linecap="round"/>
+                <path d="M963 57C885 -3.00003 773.843 -10.9374 693 57" stroke="black" stroke-linecap="round"/>
+                <path d="M693 56.9999C583 149.439 518.814 110.146 436 63.9999" stroke="black" stroke-linecap="round"/>
+                <path d="M436 64C403.667 49 381 27 309 81" stroke="black" stroke-linecap="round"/>
+                <path d="M309 81C279.667 103 257 103 187 103" stroke="black" stroke-linecap="round"/>
+                <path d="M1 241C55.2561 238.906 21 361 133 393" stroke="black" stroke-linecap="round"/>
             </svg>
 
 

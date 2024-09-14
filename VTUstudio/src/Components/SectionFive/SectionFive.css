@@ -101,3 +101,21 @@
     stroke-dashoffset: 1000;
     animation: draw 5s linear forwards;
 }
+
+.section-five-seagull{
+    position: absolute;
+    height: 0.35rem;
+    left: 65%;
+    top: 790%;
+    transform: rotate(-15deg);
+    stroke-width: 4;
+}
+
+.section-five-seagull-two{
+    position: absolute;
+    height: 0.5rem;
+    left: 70%;
+    top: 780%;
+    transform: rotate(-15deg);
+    stroke-width: 4;
+}
