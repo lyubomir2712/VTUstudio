@@ -84,10 +84,12 @@
     top: 175.3%;
     height: 5rem;
     stroke-width: 6;
+}
+
+.laptop-stickman-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 5s linear forwards;
-
 }
 
 .satelite{
@@ -97,6 +99,9 @@
     left: 78%;
     stroke-width: 4;
     height: 8rem;
+}
+
+.satelite-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 4s linear forwards;
@@ -109,6 +114,9 @@
     transform: rotate(-10deg);
     left: 65%;
     stroke-width: 4;
+}
+
+.six-edge-star-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 15s linear forwards;
@@ -121,6 +129,9 @@
     top: 130%;
     left: 63%;
     stroke-width: 5;
+}
+
+.four-edge-star-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 15s linear forwards;
@@ -133,6 +144,9 @@
     top: 125%;
     left: 60%;
     stroke-width: 5;
+}
+
+.four-edge-star-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 15s linear forwards;
@@ -145,6 +159,9 @@
     top: 122%;
     left: 63%;
     stroke-width: 5;
+}
+
+.four-edge-star-three-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 15s linear forwards;
@@ -157,14 +174,14 @@
     height: 7.5rem;
     transform: scaleX(1) rotate(-7deg);
     stroke-width: 3;
-    ;
+    fill: none;
 }
 
 .animate-star-rainbow{
     animation: draw 4s linear forwards;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
-    fill: none;
+
 }
 
 .lightbulb-stickman{
@@ -178,12 +195,19 @@
     animation: draw 5s linear forwards;
 }
 
+.lightbulb-stickman-animate{
+
+}
+
 .cloud-border{
     position: absolute;
     stroke-width: 15;
     top:153%;
     left: 6%;
     height: 12rem;
+}
+
+.cloud-border-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 1s linear forwards;

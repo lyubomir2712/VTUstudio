@@ -56,7 +56,6 @@ export default function SectionOne() {
 
 
 
-
     // State to manage the animation class for SVGs
     const [svgAnimation, setSvgAnimation] = useState({
         'cloud-border': false,
@@ -64,9 +63,12 @@ export default function SectionOne() {
         'lightbulb-stickman': false,
     });
 
-    // Function to handle adding/removing the animation class for each SVG
-    const handleSvgClassChange = (refName, inView) => {
-        setSvgAnimation((prevState) => ({ ...prevState, [refName]: inView }));
+    const handleSvgClassChange = (refName, inView, direction) => {
+        if (direction === 'down' && inView) {
+            setSvgAnimation((prevState) => ({ ...prevState, [refName]: true }));
+        } else if (direction === 'up' && !inView) {
+            setSvgAnimation((prevState) => ({ ...prevState, [refName]: false }));
+        }
     };
 
     // Refs and inView hooks for each SVG
@@ -85,12 +87,13 @@ export default function SectionOne() {
         threshold: 0.1,
     });
 
-    // Monitor all SVGs' visibility and apply the respective animation class
+    // Apply the animation logic for SVGs when scrolling
     useEffect(() => {
-        handleSvgClassChange('cloud-border', cloudInView);
-        handleSvgClassChange('star-rainbow', starRainbowInView);
-        handleSvgClassChange('lightbulb-stickman', lightbulbStickmanInView);
-    }, [cloudInView, starRainbowInView, lightbulbStickmanInView]);
+        handleSvgClassChange('cloud-border', cloudInView, scrollDirection);
+        handleSvgClassChange('star-rainbow', starRainbowInView, scrollDirection);
+        handleSvgClassChange('lightbulb-stickman', lightbulbStickmanInView, scrollDirection);
+    }, [cloudInView, starRainbowInView, lightbulbStickmanInView, scrollDirection]);
+
 
 
     return (
@@ -513,7 +516,8 @@ export default function SectionOne() {
             </svg>
 
 
-            <svg className={"lightbulb-stickman"} width="589" height="1071" viewBox="0 0 589 1071" fill="none"
+            <svg ref={lightbulbStickmanRef}
+                 className={`lightbulb-stickman ${svgAnimation['lightbulb-stickman'] ? 'lightbulb-stickman-animate' : ''}`} width="589" height="1071" viewBox="0 0 589 1071" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M269.946 456H370.708C381.944 456 381.582 439 370.708 439H269.946M270.264 439C259.028 439.045 259.447 456.043 270.32 456"
