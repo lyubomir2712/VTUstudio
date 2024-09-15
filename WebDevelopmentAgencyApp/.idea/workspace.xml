@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6f213904-222d-470c-ab64-b2092f7721be" name="Changes" comment="merged the local and origin main">
       <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/Main/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/Navbar/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/Navbar/Navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionTwo/SectionTwo.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionTwo/SectionTwo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionOne/SectionOne.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionOne/SectionOne.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionOne/SectionOne.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionOne/SectionOne.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +101,7 @@
       <workItem from="1724053494281" duration="8415000" />
       <workItem from="1724153700296" duration="21960000" />
       <workItem from="1725352499956" duration="33352000" />
-      <workItem from="1725872528126" duration="45749000" />
+      <workItem from="1725872528126" duration="49425000" />
     </task>
     <task id="LOCAL-00001" summary="merged the local and origin main">
       <option name="closed" value="true" />

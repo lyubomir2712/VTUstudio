@@ -52,6 +52,47 @@ export default function SectionOne() {
         }
     }, [inView, scrollDirection]);
 
+
+
+
+
+
+    // State to manage the animation class for SVGs
+    const [svgAnimation, setSvgAnimation] = useState({
+        'cloud-border': false,
+        'star-rainbow': false,
+        'lightbulb-stickman': false,
+    });
+
+    // Function to handle adding/removing the animation class for each SVG
+    const handleSvgClassChange = (refName, inView) => {
+        setSvgAnimation((prevState) => ({ ...prevState, [refName]: inView }));
+    };
+
+    // Refs and inView hooks for each SVG
+    const { ref: cloudRef, inView: cloudInView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+    });
+
+    const { ref: starRainbowRef, inView: starRainbowInView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+    });
+
+    const { ref: lightbulbStickmanRef, inView: lightbulbStickmanInView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+    });
+
+    // Monitor all SVGs' visibility and apply the respective animation class
+    useEffect(() => {
+        handleSvgClassChange('cloud-border', cloudInView);
+        handleSvgClassChange('star-rainbow', starRainbowInView);
+        handleSvgClassChange('lightbulb-stickman', lightbulbStickmanInView);
+    }, [cloudInView, starRainbowInView, lightbulbStickmanInView]);
+
+
     return (
         <section id={"sectionOne"}>
             <motion.div className={"keycap-container"}
@@ -444,12 +485,20 @@ export default function SectionOne() {
                 <path d="M32 0V63M0.5 32.5H63.5" stroke="black"/>
             </svg>
 
+
+
+
+
             <svg className={"four-edge-star-three"} width="64" height="63" viewBox="0 0 64 63" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M32 0V63M0.5 32.5H63.5" stroke="black"/>
             </svg>
 
-            <svg className={"star-rainbow"} width="397" height="173" viewBox="0 0 397 173" fill="none"
+
+
+
+            <svg ref={starRainbowRef}
+                   className={`star-rainbow ${svgAnimation['star-rainbow'] ? 'animate-star-rainbow' : ''}`}
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M76 31.618L93.2611 84.7422L93.3733 85.0877H93.7366L149.595 85.0877L104.405 117.92L104.111 118.134L104.223 118.479L121.484 171.603L76.2939 138.771L76 138.557L75.7061 138.771L30.516 171.603L47.7771 118.479L47.8894 118.134L47.5955 117.92L2.40539 85.0877L58.2634 85.0877H58.6267L58.7389 84.7422L76 31.618Z"

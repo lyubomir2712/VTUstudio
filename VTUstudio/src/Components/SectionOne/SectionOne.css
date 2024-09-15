@@ -154,12 +154,17 @@
     position: absolute;
     top: 125%;
     left: 35%;
-    height: 5rem;
+    height: 7.5rem;
     transform: scaleX(1) rotate(-7deg);
     stroke-width: 3;
+    ;
+}
+
+.animate-star-rainbow{
+    animation: draw 4s linear forwards;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
-    animation: draw 4s linear forwards;
+    fill: none;
 }
 
 .lightbulb-stickman{

@@ -103,13 +103,13 @@ img.cherriesShadow-img{
 }
 
 .layback-stickman{
-    height: 2rem;
+    height: 1.5rem;
     width: auto;
     position: absolute;
-    top: 77%;
-    left: 19.5%;
+    top: 78%;
+    left: 21%;
     transform: scaleX(-1);
-    stroke-width: 3;
+    stroke-width: 4;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 7s linear forwards;
