@@ -40,6 +40,13 @@ export default function Main() {
 
     const animationDuration = scrollDirection === 'up' ? 0.8 : 2;
 
+
+
+    const { ref: surfboardStickmanRef, inView: surfboardStickmanInView } = useInView({ triggerOnce: false, threshold: 0.1 });
+    const { ref: fallingStickmanRef, inView: fallingStickmanInView } = useInView({ triggerOnce: false, threshold: 0.1 });
+    const { ref: laybackStickmanRef, inView: laybackStickmanInView } = useInView({ triggerOnce: false, threshold: 0.1 });
+    const { ref: svgTextRef, inView: svgTextInView } = useInView({ triggerOnce: false, threshold: 0.1 });
+
     return (<main id="main">
 
             <motion.div className={"cherries-container"}
@@ -89,7 +96,7 @@ export default function Main() {
             <img src={CherriesShadow} alt={"cherries shadow img"} className="cherriesShadow-img"/>
 
 
-            <svg className={"surfboard-stickman"} width="283" height="182" viewBox="0 0 283 182" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg ref={surfboardStickmanRef} className={`surfboard-stickman ${surfboardStickmanInView ? 'surfboard-stickman-animate' : ''}`} width="283" height="182" viewBox="0 0 283 182" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M178 38C179.667 49.3333 178.4 78.2 160 103C148.667 111.333 123.6 131 114 143" stroke="black"/>
                 <path d="M160 103C167.333 108.333 179.8 125.8 171 153" stroke="black"/>
                 <path
@@ -111,7 +118,7 @@ export default function Main() {
             </svg>
 
 
-            <svg className={"falling-stickman"} width="175" height="471" viewBox="0 0 175 471" fill="none"
+            <svg ref={fallingStickmanRef} className={`falling-stickman ${fallingStickmanInView ? 'falling-stickman-animate' : ''}`} width="175" height="471" viewBox="0 0 175 471" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M101.5 328.5L94.9917 261.429L90.2534 156.536M86.6884 77.6168C133.876 80.7128 140.022 150.284 90.0278 151.541C65.7189 152.153 53.121 134.342 51.9942 115.721C50.8035 96.0465 62.4449 76.0262 86.6884 77.6168Z"
@@ -126,7 +133,7 @@ export default function Main() {
             </svg>
 
 
-            <svg className={"layback-stickman"} width="305" height="76" viewBox="0 0 305 76" fill="none"
+            <svg ref={laybackStickmanRef} className={`layback-stickman ${laybackStickmanInView ? 'layback-stickman-animate' : ''}`} width="305" height="76" viewBox="0 0 305 76" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M59 50H190" stroke="black" stroke-linecap="round"/>
                 <path d="M38.5 50C2.73524 50 6.31175 -2.35905 38.5 1.17078C70.6883 4.7006 74.2647 50 38.5 50Z"
@@ -146,16 +153,8 @@ export default function Main() {
             </svg>
 
 
-            {/*<svg className={"svg-text"} width="14" height="18" viewBox="0 0 14 18" fill="none"*/}
-            {/*     xmlns="http://www.w3.org/2000/svg">*/}
-            {/*    <path fill-rule="evenodd" clip-rule="evenodd"*/}
-            {/*          d="M0.954546 9.27273L13.4091 17.3636V16.5L1.77273 8.95209V8.86609L13.4091 1.31818V0.454544L0.954546 8.54545V9.27273Z"*/}
-            {/*          stroke={"black"}*/}
-            {/*          stroke-width={'1'}/>*/}
-            {/*</svg>*/}
 
-
-            <svg id={"svg-text"} className={"svg-text"} width="121" height="85" viewBox="0 0 121 85" fill="none"
+            <svg ref={svgTextRef} className={`svg-text ${svgTextInView ? 'svg-text-animate' : ''}`} width="121" height="85" viewBox="0 0 121 85" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M11.5 41C10.1188 34.0942 6.05976 37 3.80249 41C2.32017 43.6267 1.2779 46.9553 1.42474 49.5C2.5 55.5 7.5 57 14.5 49.5"
