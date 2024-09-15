@@ -20,13 +20,16 @@
     font-weight: 600;
 }
 
-.pensil-jet-svg{
+.pensil-jet{
     position: absolute;
     top: 640.5%;
     left: 47.25%;
     width: 3rem;
+    stroke-width: 2;
+}
+
+.pensil-jet-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 3s linear forwards;
-    stroke-width: 2;
 }

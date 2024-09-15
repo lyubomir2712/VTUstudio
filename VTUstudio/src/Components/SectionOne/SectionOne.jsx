@@ -539,7 +539,7 @@ export default function SectionOne() {
 
 
             <svg ref={starRainbowRef}
-                   className={`star-rainbow ${svgAnimation['star-rainbow'] ? 'animate-star-rainbow' : ''}`}
+                   className={`star-rainbow ${svgAnimation['star-rainbow'] ? 'star-rainbow-animate' : ''}`}
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M76 31.618L93.2611 84.7422L93.3733 85.0877H93.7366L149.595 85.0877L104.405 117.92L104.111 118.134L104.223 118.479L121.484 171.603L76.2939 138.771L76 138.557L75.7061 138.771L30.516 171.603L47.7771 118.479L47.8894 118.134L47.5955 117.92L2.40539 85.0877L58.2634 85.0877H58.6267L58.7389 84.7422L76 31.618Z"
