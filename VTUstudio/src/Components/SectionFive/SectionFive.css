@@ -50,10 +50,12 @@
     top: 770%;
     height: 8rem;
     stroke-width: 4;
+}
+
+.cloud-one-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 3s linear forwards;
-
 }
 
 .cloud-two{
@@ -63,6 +65,9 @@
     z-index: 999;
     height: 8rem;
     stroke-width: 5;
+}
+
+.cloud-two-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 3s linear forwards;
@@ -74,6 +79,9 @@
     height: 12rem;
     top: 770%;
     stroke-width: 4;
+}
+
+.contact-list-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 6s linear forwards;
@@ -86,6 +94,9 @@
     z-index: 999;
     height: 13rem;
     stroke-width: 5;
+}
+
+.pirateShip-stickman-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 3s linear forwards;
@@ -97,6 +108,9 @@
     top: 828%;
     transform: scaleX(1);
     stroke-width: 4;
+}
+
+.questionMark-stickman-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 5s linear forwards;
@@ -111,6 +125,12 @@
     stroke-width: 4;
 }
 
+.section-five-seagull-animate{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 4s linear forwards;
+}
+
 .section-five-seagull-two{
     position: absolute;
     height: 0.5rem;
@@ -118,4 +138,10 @@
     top: 780%;
     transform: rotate(-15deg);
     stroke-width: 4;
+}
+
+.section-five-seagull-two-animate{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 4s linear forwards;
 }

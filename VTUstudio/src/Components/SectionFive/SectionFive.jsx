@@ -4,11 +4,48 @@ import Footer from "../Footer/Footer.jsx";
 import './SectionFive.css'
 import {motion} from "framer-motion";
 import {useInView} from "react-intersection-observer";
+import {useEffect, useState} from "react";
 export default function SectionFive() {
     const { ref, inView } = useInView({
         triggerOnce: false,
         threshold: 0.1,
     });
+
+
+    const { ref: cloudOneRef, inView: cloudOneInView } = useInView({ triggerOnce: false, threshold: 0.1 });
+    const { ref: cloudTwoRef, inView: cloudTwoInView } = useInView({ triggerOnce: false, threshold: 0.1 });
+    const { ref: contactListRef, inView: contactListInView } = useInView({ triggerOnce: false, threshold: 0.1 });
+    const { ref: pirateShipRef, inView: pirateShipInView } = useInView({ triggerOnce: false, threshold: 0.1 });
+    const { ref: questionMarkRef, inView: questionMarkInView } = useInView({ triggerOnce: false, threshold: 0.1 });
+    const { ref: seagullRef, inView: seagullInView } = useInView({ triggerOnce: false, threshold: 0.1 });
+    const { ref: seagullTwoRef, inView: seagullTwoInView } = useInView({ triggerOnce: false, threshold: 0.1 });
+
+    const [svgAnimation, setSvgAnimation] = useState({
+        'cloud-one': false,
+        'cloud-two': false,
+        'contact-list': false,
+        'pirateShip-stickman': false,
+        'questionMark-stickman': false,
+        'section-five-seagull': false,
+        'section-five-seagull-two': false,
+    });
+
+    const handleSvgClassChange = (refName, inView) => {
+        setSvgAnimation((prevState) => ({
+            ...prevState,
+            [refName]: inView,
+        }));
+    };
+
+    useEffect(() => {
+        handleSvgClassChange('cloud-one', cloudOneInView);
+        handleSvgClassChange('cloud-two', cloudTwoInView);
+        handleSvgClassChange('contact-list', contactListInView);
+        handleSvgClassChange('pirateShip-stickman', pirateShipInView);
+        handleSvgClassChange('questionMark-stickman', questionMarkInView);
+        handleSvgClassChange('section-five-seagull', seagullInView);
+        handleSvgClassChange('section-five-seagull-two', seagullTwoInView);
+    }, [cloudOneInView, cloudTwoInView, contactListInView, pirateShipInView, questionMarkInView, seagullInView, seagullTwoInView]);
 
     return (
         <section id={"sectionFive"}>
@@ -45,7 +82,7 @@ export default function SectionFive() {
 
             <p className={"sectionFive-text-three"}>e-mail: studio@sevenstudio.net</p>
 
-            <svg className={"cloud-one"} width="409" height="280" viewBox="0 0 409 280" fill="none"
+            <svg ref={cloudOneRef} className={`cloud-one ${svgAnimation['cloud-one'] ? 'cloud-one-animate' : ''}`} width="409" height="280" viewBox="0 0 409 280" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M87.0001 49C89 52 91.3483 54 93.5 55M141 34C141.512 35 142.6 37.2 143 40" stroke="black"
                       stroke-linecap="round"/>
@@ -62,7 +99,7 @@ export default function SectionFive() {
             </svg>
 
 
-            <svg className={"cloud-two"} width="658" height="420" viewBox="0 0 658 420" fill="none"
+            <svg ref={cloudTwoRef} className={`cloud-two ${svgAnimation['cloud-two'] ? 'cloud-two-animate' : ''}`} width="658" height="420" viewBox="0 0 658 420" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M74.0997 340L65 334.063" stroke="black" stroke-linecap="round"/>
                 <path d="M607 94C668 107 670 203 618 233" stroke="black" stroke-linecap="round"/>
@@ -76,7 +113,7 @@ export default function SectionFive() {
             </svg>
 
 
-            <svg className={"contact-list"} width="334" height="403" viewBox="0 0 334 403" fill="none"
+            <svg ref={contactListRef} className={`contact-list ${svgAnimation['contact-list'] ? 'contact-list-animate' : ''}`} width="334" height="403" viewBox="0 0 334 403" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M273.5 2.5C281 64.379 258.5 70.7085 287.5 70C298.375 70.487 315.511 70 332.5 70" stroke="black"
                       stroke-linecap="round"/>
@@ -132,7 +169,7 @@ export default function SectionFive() {
             </svg>
 
 
-            <svg className={"pirateShip-stickman"} width="1049" height="787" viewBox="0 0 1049 787" fill="none"
+            <svg ref={pirateShipRef} className={`pirateShip-stickman ${svgAnimation['pirateShip-stickman'] ? 'pirateShip-stickman-animate' : ''}`} width="1049" height="787" viewBox="0 0 1049 787" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M210 523C265 811 882 733 808 511" stroke="black" stroke-linecap="round"/>
                 <path d="M210 523L403.5 528" stroke="black" stroke-linecap="round"/>
@@ -252,7 +289,7 @@ export default function SectionFive() {
             </svg>
 
 
-            <svg className={"questionMark-stickman"} width="302" height="493" viewBox="0 0 302 493" fill="none"
+            <svg ref={questionMarkRef} className={`questionMark-stickman ${svgAnimation['questionMark-stickman'] ? 'questionMark-stickman-animate' : ''}`} width="302" height="493" viewBox="0 0 302 493" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M40.222 367C32.1527 408.658 40.0955 438.169 9.22173 492M40.222 367C81.222 411 73.6377 416.697 75.222 492M40.222 367C48.0126 306.265 48.4558 283.333 40.222 268M40.222 268C75.222 315 111.222 289 75.222 225M40.222 268L26.2215 349"
@@ -274,13 +311,13 @@ export default function SectionFive() {
             </svg>
 
 
-            <svg className={"section-five-seagull"} width="193" height="18" viewBox="0 0 193 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg ref={seagullRef} className={`section-five-seagull ${svgAnimation['section-five-seagull'] ? 'section-five-seagull-animate' : ''}`} width="193" height="18" viewBox="0 0 193 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 17C41.0439 -2.1366 61.371 0.940046 96 17C136.368 -6.01935 157.016 -3.05233 192 17"
                       stroke="black" stroke-linecap="round"/>
             </svg>
 
 
-            <svg className={"section-five-seagull-two"} width="193" height="18" viewBox="0 0 193 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg ref={seagullTwoRef} className={`section-five-seagull-two ${svgAnimation['section-five-seagull-two'] ? 'section-five-seagull-two-animate' : ''}`} width="193" height="18" viewBox="0 0 193 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 17C41.0439 -2.1366 61.371 0.940046 96 17C136.368 -6.01935 157.016 -3.05233 192 17"
                       stroke="black" stroke-linecap="round"/>
             </svg>
