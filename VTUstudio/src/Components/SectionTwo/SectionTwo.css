@@ -1,12 +1,12 @@
 .peacock-container{
     position:absolute;
-    top: 303%;
+    top: 307%;
     left: 10%;
     padding-right:27rem;
 }
 
 img.peacock-img{
-    height: 30rem;
+    height: 27rem;
     width: auto;
 
 }
@@ -40,7 +40,7 @@ img.peacock-img{
     top: 315%;
     left: 85%;
     stroke-width: 30;
-    height:6rem;
+    height:5rem;
     transform: rotate(-10deg);
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
@@ -95,27 +95,28 @@ img.peacock-img{
 
 .photographer-stickman{
     position: absolute;
-    stroke-width: 15;
-    top: 340%;
-    left: 48%;
+    stroke-width: 22;
+    top: 346%;
+    left: 50%;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 2s linear forwards;
+    height: 7rem;
 }
 
 .grass{
     position: absolute;
     stroke-width: 20;
     height: 4rem;
-    top: 368%;
-    left: 13%;
+    top: 369%;
+    left: 10%;
 }
 
 .cow{
     position: absolute;
     top: 361%;
-    left: 82%;
-    stroke-width: 15;
+    left: 86.2%;
+    stroke-width: 20;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 3s linear forwards;
@@ -125,7 +126,7 @@ img.peacock-img{
 .horse{
     position: absolute;
     top:362%;
-    left:25%;
+    left:23%;
     stroke-width: 20;
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;

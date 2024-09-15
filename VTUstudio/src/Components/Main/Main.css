@@ -95,8 +95,11 @@ img.cherriesShadow-img{
     height: 5rem;
     width: auto;
     position: absolute;
-    top: 78%;
-    left: 77%;
+    top: 77%;
+    left: 76.5%;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 3s linear forwards;
 }
 
 .layback-stickman{
