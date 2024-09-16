@@ -30,6 +30,9 @@ img.peacock-img{
     top: 335%;
     height: 13rem;
     stroke-width: 7;
+}
+
+.section-two-border-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 2s linear forwards;
@@ -42,6 +45,9 @@ img.peacock-img{
     stroke-width: 30;
     height:5rem;
     transform: rotate(-10deg);
+}
+
+.section-two-bird-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 2s linear forwards;
@@ -53,6 +59,9 @@ img.peacock-img{
     left: 60%;
     height: 7rem;
     stroke-width: 6;
+}
+
+.section-two-cloud-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 3s linear forwards;
@@ -64,6 +73,9 @@ img.peacock-img{
     left: 15%;
     top: 290%;
     height: 7rem;
+}
+
+.section-two-cloud-two-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 3s linear forwards;
@@ -76,6 +88,9 @@ img.peacock-img{
     height: 6rem;
     stroke-width: 6;
     transform: rotate(10deg);
+}
+
+.lightning-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 7s linear forwards;
@@ -88,6 +103,9 @@ img.peacock-img{
     height: 6rem;
     stroke-width: 6;
     transform: rotate(10deg);
+}
+
+.lightning-two-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 7s linear forwards;
@@ -98,10 +116,13 @@ img.peacock-img{
     stroke-width: 22;
     top: 346%;
     left: 50%;
+    height: 7rem;
+}
+
+.photographer-stickman-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 2s linear forwards;
-    height: 7rem;
 }
 
 .grass{
@@ -117,10 +138,13 @@ img.peacock-img{
     top: 361%;
     left: 86.2%;
     stroke-width: 20;
+    height: 7rem;
+}
+
+.cow-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 3s linear forwards;
-    height: 7rem;
 }
 
 .horse{
@@ -128,8 +152,11 @@ img.peacock-img{
     top:362%;
     left:23%;
     stroke-width: 20;
+    height: 7rem;
+}
+
+.horse-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 3s linear forwards;
-    height: 7rem;
 }

@@ -48,6 +48,25 @@ export default function SectionTwo() {
         }
     }, [inView, scrollDirection]);
 
+
+    // State to control the addition/removal of CSS classes for SVGs
+    const [isAnimatingDown, setIsAnimatingDown] = useState(false);
+    const [isAnimatingUp, setIsAnimatingUp] = useState(false);
+
+    useEffect(() => {
+        if (inView) {
+            if (scrollDirection === 'down') {
+                setIsAnimatingDown(true);
+                setIsAnimatingUp(false);
+            } else if (scrollDirection === 'up') {
+                setIsAnimatingDown(false);
+                setIsAnimatingUp(true);
+            }
+        } else {
+            setIsAnimatingDown(false);
+            setIsAnimatingUp(false);
+        }
+    }, [inView, scrollDirection]);
     return (
         <section id="sectionTwo">
             <motion.div className={"peacock-container"}
@@ -108,7 +127,7 @@ export default function SectionTwo() {
             </svg>
 
 
-            <svg className={"section-two-bird"} width="2790" height="1794" viewBox="0 0 2790 1794" fill="none"
+            <svg className={`section-two-bird ${isAnimatingDown ? 'section-two-bird-animate' : ''} ${isAnimatingUp ? 'section-two-bird-animate' : ''}`} width="2790" height="1794" viewBox="0 0 2790 1794" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M381 477C349.302 547.286 334.342 614.13 332.255 677M1195 1357C1153.74 1352.73 1116.65 1347.75 1083 1342.24"
@@ -139,7 +158,7 @@ export default function SectionTwo() {
             </svg>
 
 
-            <svg className={"section-two-cloud"} width="1653" height="403" viewBox="0 0 1653 403" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className={`section-two-cloud ${isAnimatingDown ?  'section-two-cloud-animate' : ''} ${isAnimatingUp ? 'cow-animate-up' : ''}`} width="1653" height="403" viewBox="0 0 1653 403" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M133 393C219 417.571 300 371 381 307" stroke="black" stroke-linecap="round"/>
                 <path d="M381 307C462 243 453 369 499 393" stroke="black" stroke-linecap="round"/>
                 <path d="M499 393C545 417 593.138 393.243 775 307" stroke="black" stroke-linecap="round"/>
@@ -157,7 +176,7 @@ export default function SectionTwo() {
             </svg>
 
 
-            <svg className={"section-two-cloud-two"} width="1745" height="716" viewBox="0 0 1745 716" fill="none"
+            <svg className={`section-two-cloud-two ${isAnimatingDown ? 'section-two-cloud-two-animate' : ''} ${isAnimatingUp ? 'section-two-cloud-two-animate-up' : ''}`} width="1745" height="716" viewBox="0 0 1745 716" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M734 576C730.5 572.276 721.5 564.5 714 550" stroke="black" stroke-linecap="round"/>
                 <path d="M1002 95.9998C1094 -44 1352 -18.0001 1430 95.9998" stroke="black" stroke-linecap="round"/>
@@ -175,7 +194,7 @@ export default function SectionTwo() {
             </svg>
 
 
-            <svg className={"lightning"} width="170" height="390" viewBox="0 0 170 390" fill="none"
+            <svg className={`lightning ${isAnimatingDown ? 'lightning-animate' : ''} ${isAnimatingUp ? 'lightning-animate' : ''}`} width="170" height="390" viewBox="0 0 170 390" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M117.17 87.5538L169 1" stroke="black" stroke-linecap="round"/>
                 <path d="M61.7659 1H169" stroke="black" stroke-linecap="round"/>
@@ -192,7 +211,7 @@ export default function SectionTwo() {
             </svg>
 
 
-            <svg className={"lightning-two"} width="144" height="354" viewBox="0 0 144 354" fill="none"
+            <svg className={`lightning-two ${isAnimatingDown ? 'lightning-two-animate' : ''} ${isAnimatingUp ? 'lightning-two-animate' : ''}`} width="144" height="354" viewBox="0 0 144 354" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M52.3617 214.005L1 353" stroke="black" stroke-linecap="round"/>
                 <path d="M1 353L143 167.974" stroke="black" stroke-linecap="round"/>
@@ -208,7 +227,7 @@ export default function SectionTwo() {
             </svg>
 
 
-            <svg className={"photographer-stickman"} width="716" height="1512" viewBox="0 0 716 1512" fill="none"
+            <svg className={`photographer-stickman ${isAnimatingDown ? 'photographer-stickman-animate' : ''} ${isAnimatingUp ? 'photographer-stickman-animate' : ''}`} width="716" height="1512" viewBox="0 0 716 1512" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M301.753 155.365C309.144 157.532 329.056 160.565 349.58 155.365" stroke="black"
                       stroke-linecap="round"/>
@@ -292,7 +311,7 @@ export default function SectionTwo() {
             </svg>
 
 
-            <svg className={"cow"} width="2276" height="1743" viewBox="0 0 2276 1743" fill="none"
+            <svg className={`cow ${isAnimatingDown ? 'cow-animate' : ''} ${isAnimatingUp ? 'cow-animate-up' : ''}`} width="2276" height="1743" viewBox="0 0 2276 1743" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M729 1144C749.473 1199.92 785.916 1237.76 749.473 1144" stroke="black" stroke-linecap="round"/>
                 <path d="M674.697 1144C667.281 1194.28 686.232 1242.05 692 1144" stroke="black" stroke-linecap="round"/>
@@ -364,7 +383,7 @@ export default function SectionTwo() {
             </svg>
 
 
-            <svg className={"horse"} width="2850" height="1879" viewBox="0 0 2850 1879" fill="none"
+            <svg className={`horse ${isAnimatingDown ? 'horse-animate' : ''} ${isAnimatingUp ? 'horse-animate' : ''}`} width="2850" height="1879" viewBox="0 0 2850 1879" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M1553 548.312C1358.99 566.896 1035.67 522.459 810 548.312" stroke="black"
                       stroke-linecap="round"/>
