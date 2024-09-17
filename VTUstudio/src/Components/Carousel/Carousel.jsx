@@ -42,7 +42,7 @@ const Carousel = () => {
                         <Grid item xs={2.4} key={`${rowIndex}-${colIndex}`}>
                             <Paper
                                 elevation={1}
-                                sx={{ height: '80px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                                sx={{ height: '80px', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent', border: '1px solid black' }}
                             >
                                 {<img className={"carousel-item"} src={VtuLogo} alt={"item"}/>}
                                 {/*{`Cell ${rowIndex + 1},${colIndex + 1}`}*/}
@@ -59,7 +59,7 @@ const Carousel = () => {
             <SwipeableViews index={activeStep} onChangeIndex={setActiveStep} enableMouseEvents>
                 {carouselItems.map((item, index) => (
                     <div key={index}>
-                        <Paper elevation={3} style={{ marginRight: '2rem', marginLeft: '2rem', padding: '20px', height: '20rem' }}>
+                        <Paper elevation={3} style={{ marginRight: '2rem', marginLeft: '2rem', padding: '20px', height: '20rem', backgroundColor: 'transparent' }}>
                             <Grid container spacing={2}>
                                 {renderGrid()}
                             </Grid>
