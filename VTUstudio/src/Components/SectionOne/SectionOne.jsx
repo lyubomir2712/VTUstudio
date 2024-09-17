@@ -69,68 +69,6 @@ export default function SectionOne() {
     const { ref: sateliteRef, inView: sateliteInView } = useInView({ triggerOnce: false, threshold: 0.1 });
 
 
-    const [svgAnimation, setSvgAnimation] = useState({
-        'cloud-border': false,
-        'star-rainbow': false,
-        'lightbulb-stickman': false,
-        'four-edge-star-one': false,
-        'four-edge-star-two': false,
-        'four-edge-star-three': false,
-        'laptop-stickman': false,
-        'svg-text-section-one': false,
-        'six-edge-star': false,
-        'satelite': false,
-    });
-
-    const handleSvgClassChange = (refName, inView, direction) => {
-        if (direction === 'down' && inView) {
-            setSvgAnimation((prevState) => ({ ...prevState, [refName]: true }));
-        } else if (direction === 'up' && !inView) {
-            setSvgAnimation((prevState) => ({ ...prevState, [refName]: false }));
-        }
-    };
-
-    // Track scroll direction
-    useEffect(() => {
-        let lastScrollY = window.scrollY;
-
-        const updateScrollDirection = () => {
-            const scrollY = window.scrollY;
-            const direction = scrollY > lastScrollY ? 'down' : 'up';
-            if (direction !== scrollDirection) {
-                setScrollDirection(direction);
-            }
-            lastScrollY = scrollY > 0 ? scrollY : 0;
-        };
-
-        window.addEventListener('scroll', updateScrollDirection);
-
-        return () => {
-            window.removeEventListener('scroll', updateScrollDirection);
-        };
-    }, [scrollDirection]);
-
-    // Apply the animation logic for SVGs when scrolling
-    useEffect(() => {
-        handleSvgClassChange('cloud-border', cloudBorderInView, scrollDirection);
-        handleSvgClassChange('star-rainbow', starRainbowInView, scrollDirection);
-        handleSvgClassChange('lightbulb-stickman', lightbulbStickmanInView, scrollDirection);
-        handleSvgClassChange('four-edge-star-one', fourEdgeStarOneInView, scrollDirection);
-        handleSvgClassChange('four-edge-star-two', fourEdgeStarTwoInView, scrollDirection);
-        handleSvgClassChange('four-edge-star-three', fourEdgeStarThreeInView, scrollDirection);
-        handleSvgClassChange('laptop-stickman', laptopStickmanInView, scrollDirection);
-        handleSvgClassChange('svg-text-section-one', svgTextSectionOneInView, scrollDirection);
-        handleSvgClassChange('six-edge-star', sixEdgeStarInView, scrollDirection);
-        handleSvgClassChange('satelite', sateliteInView, scrollDirection);
-    }, [
-        cloudBorderInView, starRainbowInView, lightbulbStickmanInView,
-        fourEdgeStarOneInView, fourEdgeStarTwoInView, fourEdgeStarThreeInView,
-        laptopStickmanInView, svgTextSectionOneInView,
-        sixEdgeStarInView, sateliteInView, scrollDirection
-    ]);
-
-
-
     return (
         <section id={"sectionOne"}>
             <motion.div className={"keycap-container"}
@@ -191,7 +129,7 @@ export default function SectionOne() {
 
 
             <svg ref={svgTextSectionOneRef}
-                 className={`svg-text-section-one ${svgAnimation['svg-text-section-one'] ? 'svg-text-section-one-animate' : ''}`} width="121" height="85" viewBox="0 0 121 85" fill="none"
+                 className={`svg-text-section-one ${svgTextSectionOneInView ? 'svg-text-section-one-animate' : ''}`} width="121" height="85" viewBox="0 0 121 85" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M11.5 41C10.1188 34.0942 6.05976 37 3.80249 41C2.32017 43.6267 1.2779 46.9553 1.42474 49.5C2.5 55.5 7.5 57 14.5 49.5"
@@ -418,7 +356,7 @@ export default function SectionOne() {
 
 
             <svg ref={laptopStickmanRef}
-                 className={`laptop-stickman ${svgAnimation['laptop-stickman'] ? 'laptop-stickman-animate' : ''}`} width="169" height="299" viewBox="0 0 169 299" fill="none"
+                 className={`laptop-stickman ${laptopStickmanInView ? 'laptop-stickman-animate' : ''}`} width="169" height="299" viewBox="0 0 169 299" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_0_1)">
                     <path
@@ -448,7 +386,8 @@ export default function SectionOne() {
             </svg>
 
 
-            <svg ref={sateliteRef} className={`satelite ${svgAnimation['satelite'] ? 'satelite-animate' : ''}`} width="661" height="402" viewBox="0 0 661 402" fill="none"
+            <svg ref={sateliteRef}
+                 className={`satelite ${sateliteInView ? 'satelite-animate' : ''}`} width="661" height="402" viewBox="0 0 661 402" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M311 252V401M262.5 86.5V244.5C286.833 249.833 308.7 257.3 357.5 244.5V86.5M262.5 86.5C271 51.5 352.5 57.5 357.5 86.5M262.5 86.5C270.5 90.5 277 92 301 93C301 93 325.547 92.8053 333 91.5C358.123 87.0999 351.742 88.3792 357.5 86.5"
@@ -510,27 +449,24 @@ export default function SectionOne() {
             </svg>
 
 
-            <svg ref={sixEdgeStarRef} className={`six-edge-star ${svgAnimation['six-edge-star'] ? 'six-edge-star-animate' : ''}`} width="75" height="73" viewBox="0 0 75 73" fill="none"
+            <svg ref={sixEdgeStarRef}
+                 className={`six-edge-star ${sixEdgeStarInView ? 'six-edge-star-animate' : ''}`} width="75" height="73" viewBox="0 0 75 73" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M24 0.5L53.5 72.5M53.5 0.5L24 72.5M0 36H75" stroke="black"/>
             </svg>
 
-            <svg ref={fourEdgeStarOneRef} className={`four-edge-star-one ${svgAnimation['four-edge-star-one'] ? 'four-edge-star-one-animate' : ''}`} width="64" height="63" viewBox="0 0 64 63" fill="none"
+            <svg ref={fourEdgeStarOneRef} className={`four-edge-star-one ${fourEdgeStarOneInView ? 'four-edge-star-one-animate' : ''}`} width="64" height="63" viewBox="0 0 64 63" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M32 0V63M0.5 32.5H63.5" stroke="black"/>
             </svg>
 
-            <svg ref={fourEdgeStarTwoRef} className={`four-edge-star-two ${svgAnimation['four-edge-star-two'] ? 'four-edge-star-two-animate' : ''}`} width="64" height="63" viewBox="0 0 64 63" fill="none"
+            <svg ref={fourEdgeStarTwoRef} className={`four-edge-star-two ${fourEdgeStarTwoInView ? 'four-edge-star-two-animate' : ''}`} width="64" height="63" viewBox="0 0 64 63" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M32 0V63M0.5 32.5H63.5" stroke="black"/>
             </svg>
-
-
-
-
 
             <svg ref={fourEdgeStarThreeRef}
-                 className={`four-edge-star-three ${svgAnimation['four-edge-star-three'] ? 'four-edge-star-three-animate' : ''}`} width="64" height="63" viewBox="0 0 64 63" fill="none"
+                 className={`four-edge-star-three ${fourEdgeStarThreeInView ? 'four-edge-star-three-animate' : ''}`} width="64" height="63" viewBox="0 0 64 63" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M32 0V63M0.5 32.5H63.5" stroke="black"/>
             </svg>
@@ -539,7 +475,7 @@ export default function SectionOne() {
 
 
             <svg ref={starRainbowRef}
-                   className={`star-rainbow ${svgAnimation['star-rainbow'] ? 'star-rainbow-animate' : ''}`}
+                 className={`star-rainbow ${starRainbowInView ? 'star-rainbow-animate' : ''}`}
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M76 31.618L93.2611 84.7422L93.3733 85.0877H93.7366L149.595 85.0877L104.405 117.92L104.111 118.134L104.223 118.479L121.484 171.603L76.2939 138.771L76 138.557L75.7061 138.771L30.516 171.603L47.7771 118.479L47.8894 118.134L47.5955 117.92L2.40539 85.0877L58.2634 85.0877H58.6267L58.7389 84.7422L76 31.618Z"
@@ -555,7 +491,7 @@ export default function SectionOne() {
 
 
             <svg ref={lightbulbStickmanRef}
-                    className={`lightbulb-stickman ${svgAnimation['lightbulb-stickman'] ? 'lightbulb-stickman-animate' : ''}`} width="589" height="1071" viewBox="0 0 589 1071" fill="none"
+                 className={`lightbulb-stickman ${lightbulbStickmanInView ? 'lightbulb-stickman-animate' : ''}`} width="589" height="1071" viewBox="0 0 589 1071" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M269.946 456H370.708C381.944 456 381.582 439 370.708 439H269.946M270.264 439C259.028 439.045 259.447 456.043 270.32 456"
@@ -602,7 +538,7 @@ export default function SectionOne() {
 
 
             <svg ref={cloudBorderRef}
-                 className={`cloud-border ${svgAnimation['cloud-border'] ? 'cloud-border-animate' : ''}`} width="4149" height="1958" viewBox="0 0 4149 1958" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 className={`cloud-border ${cloudBorderInView ? 'cloud-border-animate' : ''}`} width="4149" height="1958" viewBox="0 0 4149 1958" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2970 214C3318.46 105.219 3698 166 3746 438" stroke="black" stroke-linecap="round"/>
                 <path d="M1970 166C2210 -58 2730 -50 2970 214" stroke="black" stroke-linecap="round"/>
                 <path d="M1210 166C1370 -41.9999 1794 -66 1970 166" stroke="black" stroke-linecap="round"/>
