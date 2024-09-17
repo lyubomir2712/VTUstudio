@@ -1,3 +1,6 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 @font-face {
     font-family: 'PF Reminder Pro Regular';
     src: url('/public/fonts/PF Reminder Pro Regular.ttf') format('woff2');

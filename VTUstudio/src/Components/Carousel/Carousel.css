@@ -1,2 +1,13 @@
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
+.hidden{
+    visibility: hidden;
+}
+
+.portfolio-button{
+
+}
+
+
+.carousel-item{
+    height:3.5rem;
+    width:auto;
+}
