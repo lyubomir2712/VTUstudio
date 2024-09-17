@@ -62,39 +62,6 @@ function SectionThree() {
     const { ref: sectionThreeMiniCloudRef, inView: sectionThreeMiniCloudInView } = useInView({ triggerOnce: false, threshold: 0.1 });
     const { ref: sectionThreeMiniCloudTwoRef, inView: sectionThreeMiniCloudTwoInView } = useInView({ triggerOnce: false, threshold: 0.1 });
 
-    const [svgAnimation, setSvgAnimation] = useState({
-        'section-three-border': false,
-        'painter-stickman': false,
-        'section-three-cloud': false,
-        'section-three-cloudTwo': false,
-        'section-three-bird': false,
-        'section-three-bird-two': false,
-        'section-three-mini-cloud': false,
-        'section-three-mini-cloud-two': false,
-    });
-
-    const handleSvgClassChange = (refName, inView, direction) => {
-        if (direction === 'down' && inView) {
-            setSvgAnimation((prevState) => ({ ...prevState, [refName]: true }));
-        } else if (direction === 'up' && !inView) {
-            setSvgAnimation((prevState) => ({ ...prevState, [refName]: false }));
-        }
-    };
-
-    useEffect(() => {
-        handleSvgClassChange('section-three-border', sectionThreeBorderInView, scrollDirection);
-        handleSvgClassChange('painter-stickman', painterStickmanInView, scrollDirection);
-        handleSvgClassChange('section-three-cloud', sectionThreeCloudInView, scrollDirection);
-        handleSvgClassChange('section-three-cloudTwo', sectionThreeCloudTwoInView, scrollDirection);
-        handleSvgClassChange('section-three-bird', sectionThreeBirdInView, scrollDirection);
-        handleSvgClassChange('section-three-bird-two', sectionThreeBirdTwoInView, scrollDirection);
-        handleSvgClassChange('section-three-mini-cloud', sectionThreeMiniCloudInView, scrollDirection);
-        handleSvgClassChange('section-three-mini-cloud-two', sectionThreeMiniCloudTwoInView, scrollDirection);
-    }, [
-        sectionThreeBorderInView, painterStickmanInView, sectionThreeCloudInView,
-        sectionThreeCloudTwoInView, sectionThreeBirdInView, sectionThreeBirdTwoInView,
-        sectionThreeMiniCloudInView, sectionThreeMiniCloudTwoInView, scrollDirection
-    ]);
 
     return (
         <section id="sectionThree">
@@ -136,7 +103,7 @@ function SectionThree() {
 
 
             <svg ref={sectionThreeBorderRef}
-                 className={`section-three-border ${svgAnimation['section-three-border'] ? 'section-three-border-animate' : ''}`}  width="958" height="546" viewBox="0 0 958 546" fill="none"
+                 className={`section-three-border ${sectionThreeBorderInView ? 'section-three-border-animate' : ''}`}  width="958" height="546" viewBox="0 0 958 546" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 545H149" stroke="black"/>
                 <path d="M1 397V545" stroke="black"/>
@@ -168,7 +135,7 @@ function SectionThree() {
 
 
             <svg ref={painterStickmanRef}
-                 className={`painter-stickman ${svgAnimation['painter-stickman'] ? 'painter-stickman-animate' : ''}`}  width="951" height="689" viewBox="0 0 951 689" fill="none"
+                 className={`painter-stickman ${painterStickmanInView ? 'painter-stickman-animate' : ''}`}  width="951" height="689" viewBox="0 0 951 689" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M675 364C707 327.835 725.5 329 757 353.5C757 353.5 765 361.5 785.105 358.972C805.21 356.445 834 328 871 352.5C908 377 922 367.5 937.5 347"
@@ -221,7 +188,7 @@ function SectionThree() {
 
 
             <svg ref={sectionThreeCloudRef}
-                 className={`section-three-cloud ${svgAnimation['section-three-cloud'] ? 'section-three-cloud-animate' : ''}`}  width="572" height="270" viewBox="0 0 572 270" fill="none"
+                 className={`section-three-cloud ${sectionThreeCloudInView ? 'section-three-cloud-animate' : ''}`}  width="572" height="270" viewBox="0 0 572 270" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M190 178C186.667 197 194.4 228 252 200" stroke="black"/>
                 <path d="M71 178C-15 200 -24 98 59 98" stroke="black"/>
@@ -235,7 +202,7 @@ function SectionThree() {
 
 
             <svg ref={sectionThreeCloudTwoRef}
-                 className={`section-three-cloudTwo ${svgAnimation['section-three-cloudTwo'] ? 'section-three-cloudTwo-animate' : ''}`}  width="640" height="371" viewBox="0 0 640 371" fill="none"
+                 className={`section-three-cloudTwo ${sectionThreeCloudTwoInView ? 'section-three-cloudTwo-animate' : ''}`}  width="640" height="371" viewBox="0 0 640 371" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M154 119C-25 34.9998 -60 294 121 232" stroke="black" stroke-linecap="round"/>
                 <path d="M346 247C384 352 257 401 231 255" stroke="black" stroke-linecap="round"/>
@@ -253,7 +220,7 @@ function SectionThree() {
 
 
             <svg ref={sectionThreeBirdRef}
-                 className={`section-three-bird ${svgAnimation['section-three-bird'] ? 'section-three-bird-animate' : ''}`} width="493" height="192" viewBox="0 0 493 192" fill="none"
+                 className={`section-three-bird ${sectionThreeBirdRef ? 'section-three-bird-animate' : ''}`} width="493" height="192" viewBox="0 0 493 192" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M156 55C229 3.5 283 39 283 39C283 39 287.718 40.8413 292.119 45.5C292.834 46.2575 293.542 47.0894 294.219 48C295.673 49.9563 296.989 52.2758 297.952 55C299.053 58.1163 299.691 61.7622 299.546 66C299.17 76.9904 293.523 91.9616 277 112"
@@ -269,7 +236,7 @@ function SectionThree() {
 
 
             <svg ref={sectionThreeBirdTwoRef}
-                 className={`section-three-bird-two ${svgAnimation['section-three-bird-two'] ? 'section-three-bird-animate' : ''}`} width="639" height="166" viewBox="0 0 639 166" fill="none"
+                 className={`section-three-bird-two ${sectionThreeBirdTwoInView ? 'section-three-bird-two-animate' : ''}`} width="639" height="166" viewBox="0 0 639 166" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M235 29C308 -22.5 362 13 362 13C362 13 366.718 14.8413 371.119 19.5C371.834 20.2575 372.542 21.0894 373.219 22C374.673 23.9563 375.989 26.2758 376.952 29C378.053 32.1163 378.691 35.7622 378.546 40C378.17 50.9904 372.523 65.9616 356 86"
@@ -285,7 +252,7 @@ function SectionThree() {
 
 
             <svg ref={sectionThreeMiniCloudRef}
-                 className={`section-three-mini-cloud ${svgAnimation['section-three-mini-cloud'] ? 'section-three-mini-cloud-animate' : ''}`} width="235" height="103" viewBox="0 0 235 103" fill="none"
+                 className={`section-three-mini-cloud ${sectionThreeMiniCloudRef ? 'section-three-mini-cloud-animate' : ''}`} width="235" height="103" viewBox="0 0 235 103" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.99998 102H220" stroke="black" stroke-linecap="round"/>
                 <path d="M3.99999 102C-14.4 42 51 21 77 54.5" stroke="black" stroke-linecap="round"/>
@@ -295,7 +262,7 @@ function SectionThree() {
 
 
             <svg ref={sectionThreeMiniCloudTwoRef}
-                 className={`section-three-mini-cloud-two ${svgAnimation['section-three-mini-cloud-two'] ? 'section-three-mini-cloud-two-animate' : ''}`} width="227" height="82" viewBox="0 0 227 82" fill="none"
+                 className={`section-three-mini-cloud-two ${sectionThreeMiniCloudTwoInView ? 'section-three-mini-cloud-two-animate' : ''}`} width="227" height="82" viewBox="0 0 227 82" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.99998 81H220" stroke="black" stroke-linecap="round"/>
                 <path d="M3.99999 81C-14.4 21 51 -9.53674e-07 77 33.5" stroke="black" stroke-linecap="round"/>
