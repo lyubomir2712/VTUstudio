@@ -7,6 +7,13 @@ import {useEffect, useState} from "react";
 
 
 export default function SectionFour() {
+
+
+
+
+
+
+
     const { ref, inView, entry } = useInView({
         triggerOnce: false,
         threshold: 0.1,
