@@ -358,7 +358,7 @@ export default function SectionOne() {
             <svg ref={laptopStickmanRef}
                  className={`laptop-stickman ${laptopStickmanInView ? 'laptop-stickman-animate' : ''}`} width="169" height="299" viewBox="0 0 169 299" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_0_1)">
+                <g clipPath="url(#clip0_0_1)">
                     <path
                         d="M15.5005 102C12.7254 102.93 1.00057 147.5 0.500504 155C0.000442822 162.5 76.0006 178 76.0006 178"
                         stroke="black"/>
@@ -405,23 +405,23 @@ export default function SectionOne() {
                 <circle cx="272" cy="125" r="5.5" stroke="black"/>
                 <circle cx="272.5" cy="149.5" r="6" stroke="black"/>
                 <path d="M458.75 221.5C458.493 223.734 657.95 222.914 659.5 221.5" stroke="black" strokeWidth="0.7"
-                      strokeLinecap="round" stroke-linejoin="round"/>
+                      strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M458.75 111V137.25V163.5C458.75 163.5 459.007 219.266 458.75 221.5" stroke="black"
-                      strokeWidth="0.7" strokeLinecap="round" stroke-linejoin="round"/>
+                      strokeWidth="0.7" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M458.75 111C463.888 108.387 662.903 110.602 659.5 111" stroke="black" strokeWidth="0.7"
-                      strokeLinecap="round" stroke-linejoin="round"/>
+                      strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M218 78V130.5C218 130.5 218.257 185.766 218 188" stroke="black" strokeWidth="0.7"
-                      strokeLinecap="round" stroke-linejoin="round"/>
-                <path d="M370.5 163.5H458.75" stroke="black" strokeLinecap="round" stroke-linejoin="round"/>
-                <path d="M218 188H1" stroke="black" strokeWidth="0.7" strokeLinecap="round" stroke-linejoin="round"/>
+                      strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M370.5 163.5H458.75" stroke="black" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M218 188H1" stroke="black" strokeWidth="0.7" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M1 188V130V78" stroke="black" strokeWidth="0.7" strokeLinecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M1 78H218" stroke="black" strokeWidth="0.7" strokeLinecap="round" stroke-linejoin="round"/>
-                <path d="M218 130H1" stroke="black" strokeWidth="0.5" strokeLinecap="round" stroke-linejoin="round"/>
+                      strokeLinejoin="round"/>
+                <path d="M1 78H218" stroke="black" strokeWidth="0.7" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M218 130H1" stroke="black" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M459 200H660.156" stroke="black" strokeWidth="0.5" strokeLinecap="round"
-                      stroke-linejoin="round"/>
+                      strokeLinejoin="round"/>
                 <path d="M459 163.5H619.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"
-                      stroke-linejoin="round"/>
+                      strokeLinejoin="round"/>
                 <path d="M1 101H212" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
                 <path d="M1 166H212.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
                 <path d="M13 78L13 186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
@@ -445,7 +445,7 @@ export default function SectionOne() {
                 <path d="M251 130H218" stroke="black"/>
                 <path d="M326 92V250.5" stroke="black" strokeLinecap="round"/>
                 <path d="M659.5 221.5C661.05 220.086 659.5 111 659.5 111" stroke="black" strokeWidth="0.7"
-                      strokeLinecap="round" stroke-linejoin="round"/>
+                      strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
 
 
