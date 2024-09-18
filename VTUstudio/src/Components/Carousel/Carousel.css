@@ -17,3 +17,10 @@
 .carousel-item:hover{
     filter: grayscale(0%);
 }
+
+.red-bracket{
+    color: red;
+    font-size: 2rem;
+    transform: scaleX(150%);
+    filter: blur(0.3px);
+}

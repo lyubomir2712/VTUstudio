@@ -34,15 +34,15 @@ const Carousel = () => {
                     if (rowIndex === 2 && (colIndex === 1 || colIndex === 2 || colIndex === 3)) {
                         return (
                             <Grid item xs={2.4} key={`${rowIndex}-${colIndex}`}>
-                                <Paper elevation={1} sx={{ height: '80px', visibility: 'hidden' }} />
+                                <Paper elevation={0} sx={{ height: '80px', visibility: 'hidden',  boxShadow: 'none'}} />
                             </Grid>
                         );
                     }
                     return (
                         <Grid item xs={2.4} key={`${rowIndex}-${colIndex}`}>
                             <Paper
-                                elevation={1}
-                                sx={{ height: '80px', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent', border: '1px solid black' }}
+                                elevation={0}
+                                sx={{ height: '80px', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent' }}
                             >
                                 {<img className={"carousel-item"} src={VtuLogo} alt={"item"}/>}
                                 {/*{`Cell ${rowIndex + 1},${colIndex + 1}`}*/}
@@ -55,11 +55,11 @@ const Carousel = () => {
     };
 
     return (
-        <Box sx={{ border: 'solid', width: '100%', height: '100%', maxWidth: 1000, maxHeight: 600, margin: '0 auto', textAlign: 'center' }}>
-            <SwipeableViews index={activeStep} onChangeIndex={setActiveStep} enableMouseEvents>
+        <Box sx={{width: '100%', height: '100%', maxWidth: 1000, maxHeight: 600, margin: '0 auto', textAlign: 'center' }}>
+            <SwipeableViews index={activeStep} onChangeIndex={setActiveStep} enableMouseEvents ={false}>
                 {carouselItems.map((item, index) => (
                     <div key={index}>
-                        <Paper elevation={3} style={{ marginRight: '2rem', marginLeft: '2rem', padding: '20px', height: '20rem', backgroundColor: 'transparent' }}>
+                        <Paper elevation={0} style={{padding: '1px', height: '20rem', backgroundColor: 'transparent' }}>
                             <Grid container spacing={2}>
                                 {renderGrid()}
                             </Grid>
@@ -77,12 +77,14 @@ const Carousel = () => {
                         visibility: activeStep === 0 ? 'hidden' : 'visible',
                         color: 'black',
                         fontFamily: 'PF Reminder Pro Regular',
+                        textTransform: 'none',
+                        fontSize: "1rem",
                         '&:hover': {
                             backgroundColor: 'transparent',
                         },
                     }}
                 >
-                    &lt;Previous
+                    <span className={"red-bracket"}>&lt;&nbsp;</span>Предишна
                 </Button>
                 <Button
                     disableRipple
@@ -92,12 +94,14 @@ const Carousel = () => {
                         visibility: activeStep === carouselItems.length - 1 ? 'hidden' : 'visible',
                         color: 'black',
                         fontFamily: 'PF Reminder Pro Regular',
+                        textTransform: 'none',
+                        fontSize: "1rem",
                         '&:hover': {
                             backgroundColor: 'transparent',
                         },
                     }}
                 >
-                    Next&gt;
+                    Следваща <span className={"red-bracket"}>&nbsp;&gt;</span>
                 </Button>
             </Box>
         </Box>

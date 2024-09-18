@@ -1,7 +1,7 @@
 .pensil-container{
     position: absolute;
     top: 558%;
-    left: 46.5%;
+    left: 52.8%;
     z-index: 999;
     padding-top: 7rem;
 }
@@ -15,15 +15,16 @@
     position: absolute;
     font-family: 'ZenKakuGothicNew-Light';
     letter-spacing: 1.5rem;
-    font-size: 5rem;
-    left: 23.1%;
+    font-size: 2.5rem;
+    left: 32.35%;
     font-weight: 600;
+    top: 592%;
 }
 
 .pensil-jet{
     position: absolute;
     top: 640.5%;
-    left: 47.25%;
+    left: 53.55%;
     width: 3rem;
     stroke-width: 2;
 }
