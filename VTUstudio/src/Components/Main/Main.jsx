@@ -1,6 +1,6 @@
 import './Main.css';
 import { motion } from 'framer-motion';
-import graphitiImg from '../../assets/Images/Main/graphiti.png';
+import graphitiImg from '../../assets/Images/Main/graphiti.webp';
 import keycap from '../../assets/Images/Main/keycap.png';
 import cherriesImg from '../../assets/Images/Main/cherries.png';
 import VTUlogoHalve from '../../assets/Images/Main/DrawnVTUlogoHalve.png';
@@ -61,7 +61,7 @@ export default function Main() {
                 <img className={"cherries-img"} src={cherriesImg} alt={"cherries img"}/>
             </motion.div>
 
-            {/*<img className={"graphiti-img"} src={graphitiImg} alt="Graphiti img"/>*/}
+            <img className={"graphiti-img"} src={graphitiImg} alt="Graphiti img"/>
 
             <motion.div className={"logoImg-container"}
                         ref={ref}

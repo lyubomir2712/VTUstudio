@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f213904-222d-470c-ab64-b2092f7721be" name="Changes" comment="merged the local and origin main">
-      <change beforePath="$PROJECT_DIR$/../VTUstudio/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VTUstudio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/Carousel/Carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/Carousel/Carousel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/Carousel/Carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/Carousel/Carousel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionFour/SectionFour.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/Components/SectionFour/SectionFour.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VTUstudio/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../VTUstudio/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,18 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "lyubomir2712"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lyubomir2712&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/lyubomir2712/WebDevelopingApp.git",
-    "accountId": "2e10e113-488b-46ba-9813-8badeddb4e15"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/lyubomir2712/WebDevelopingApp.git&quot;,
+    &quot;accountId&quot;: &quot;2e10e113-488b-46ba-9813-8badeddb4e15&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -117,6 +112,9 @@
       <workItem from="1725352499956" duration="33352000" />
       <workItem from="1725872528126" duration="68322000" />
       <workItem from="1726480790508" duration="15344000" />
+      <workItem from="1726662157792" duration="2547000" />
+      <workItem from="1726685069115" duration="2942000" />
+      <workItem from="1726762246632" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="merged the local and origin main">
       <option name="closed" value="true" />
