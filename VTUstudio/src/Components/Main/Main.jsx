@@ -1,6 +1,6 @@
 import './Main.css';
 import { motion } from 'framer-motion';
-import graphitiImg from '../../assets/Images/Main/graphiti.webp';
+import graphitiImg from '../../assets/Images/Main/graphiti.png';
 import keycap from '../../assets/Images/Main/keycap.png';
 import cherriesImg from '../../assets/Images/Main/cherries.png';
 import VTUlogoHalve from '../../assets/Images/Main/DrawnVTUlogoHalve.png';
