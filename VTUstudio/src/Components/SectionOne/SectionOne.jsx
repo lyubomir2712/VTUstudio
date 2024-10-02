@@ -71,65 +71,115 @@ export default function SectionOne() {
 
     return (
         <section id={"sectionOne"}>
-            <motion.div className={"keycap-container"}
-                        ref={ref}
-                        animate={isAnimating ? {y: 0} : {}}
-                        initial={{y: '-33.5rem'}}
-                        transition={{duration: 0.5, ease: 'easeOut'}}
-                        style={{
-                            margin: '0 auto',
-                        }}
-            >
-                <img src={keycapImg} className={"keycap-img"} alt={"keycap image"}/>
-            </motion.div>
+            <svg ref={sixEdgeStarRef}
+                 className={`six-edge-star ${sixEdgeStarInView ? 'six-edge-star-animate' : ''}`} width="75" height="73"
+                 viewBox="0 0 75 73" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 0.5L53.5 72.5M53.5 0.5L24 72.5M0 36H75" stroke="black"/>
+            </svg>
 
-            <motion.div className={"lemon-container"}
-                        ref={ref}
-                        initial={{y: '36.3rem'}}
-                        animate={isAnimating ? {y: 0} : {}}
-                        transition={{duration: 1, ease: 'easeOut'}}
-                        style={{
-                            margin: '0 auto',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                        }}
-            >
-                <img src={lemon} className={"lemon-img"} alt="lemon logo"/>
-            </motion.div>
+            <svg ref={fourEdgeStarOneRef}
+                 className={`four-edge-star-one ${fourEdgeStarOneInView ? 'four-edge-star-one-animate' : ''}`}
+                 width="64" height="63" viewBox="0 0 64 63" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 0V63M0.5 32.5H63.5" stroke="black"/>
+            </svg>
 
-            <motion.div className={"trampoline-container"}
-                        ref={ref}
-                        initial={{x: '-45rem', y: 0}}
-                        animate={isAnimating ? {x: 0, y: 0} : {}}
-                        transition={{duration: 0.5, ease: 'easeOut'}}
-                        style={{
-                            margin: '0 auto',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                        }}
-            >
-                <img className={"trampoline-img"} src={TrampolineImg} alt="trampoline img"/>
-            </motion.div>
+            <svg ref={fourEdgeStarTwoRef}
+                 className={`four-edge-star-two ${fourEdgeStarTwoInView ? 'four-edge-star-two-animate' : ''}`}
+                 width="64" height="63" viewBox="0 0 64 63" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 0V63M0.5 32.5H63.5" stroke="black"/>
+            </svg>
 
-            <h3 className={"sectionOne-header"}>
-                Уеб дизайн
-            </h3>
+            <svg ref={fourEdgeStarThreeRef}
+                 className={`four-edge-star-three ${fourEdgeStarThreeInView ? 'four-edge-star-three-animate' : ''}`}
+                 width="64" height="63" viewBox="0 0 64 63" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 0V63M0.5 32.5H63.5" stroke="black"/>
+            </svg>
 
-            <p className={'sectionOne-text'}>
-                Проектираме и изработваме динамични уеб сайтове,<br/>
-                съобразени със съвременните изисквания за визия и<br/> функционалност,
-                уеб базирани приложения, системи с<br/> електронно разплащане, електронни магазини,<br/>
-                индивидуални бизнес приложения.
-            </p>
+            <svg ref={starRainbowRef}
+                 className={`star-rainbow ${starRainbowInView ? 'star-rainbow-animate' : ''}`}
+                 xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M76 31.618L93.2611 84.7422L93.3733 85.0877H93.7366L149.595 85.0877L104.405 117.92L104.111 118.134L104.223 118.479L121.484 171.603L76.2939 138.771L76 138.557L75.7061 138.771L30.516 171.603L47.7771 118.479L47.8894 118.134L47.5955 117.92L2.40539 85.0877L58.2634 85.0877H58.6267L58.7389 84.7422L76 31.618Z"
+                    stroke="black"/>
+                <path d="M88.3867 70.0122C123.812 46.5124 278.5 -7.50003 396.5 1.5" stroke="black"
+                      strokeLinecap="round"/>
+                <path d="M149 85.5C170.787 77.5916 297 52 396.5 79.5" stroke="black" strokeLinecap="round"/>
+                <path d="M111 85.0891C165.5 61.5001 289 31 396 52" stroke="black" strokeLinecap="round"/>
+                <path d="M114.5 110.5C163.907 92.6922 294.278 69.2443 396.5 101.5" stroke="black"
+                      strokeLinecap="round"/>
+                <path d="M92.0002 81C127.315 59.3253 285.5 6.50002 396.5 27" stroke="black" strokeLinecap="round"/>
+            </svg>
 
-            <img src={Shadow} alt="trampoline img" className={"trampolineShadow-img"}/>
-
-            <img src={Shadow} alt="trampoline img" className={"lemonShadow-img"}/>
-
+            <svg ref={sateliteRef}
+                 className={`satelite ${sateliteInView ? 'satelite-animate' : ''}`} width="661" height="402"
+                 viewBox="0 0 661 402" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M311 252V401M262.5 86.5V244.5C286.833 249.833 308.7 257.3 357.5 244.5V86.5M262.5 86.5C271 51.5 352.5 57.5 357.5 86.5M262.5 86.5C270.5 90.5 277 92 301 93C301 93 325.547 92.8053 333 91.5C358.123 87.0999 351.742 88.3792 357.5 86.5"
+                    stroke="black" strokeLinecap="round"/>
+                <path
+                    d="M357.5 140.5C363.268 140.321 370.736 140.343 370.5 140.5C370.264 140.657 370.5 185 370.5 185C370.677 185.404 365.249 185.206 357.5 185"
+                    stroke="black" strokeLinecap="round"/>
+                <path d="M263 125C249.5 124.5 251 125 251 125C251 125 251 146.5 251 147C251 147.5 258.455 147 263 147"
+                      stroke="black"/>
+                <path d="M309.5 70.5V13" stroke="black" strokeLinecap="round"/>
+                <circle cx="309.5" cy="6.5" r="6" stroke="black"/>
+                <path d="M315.593 6.76471L346 6.76471M303.43 6.76471L273 6.76471M279.041 2V11" stroke="black"
+                      strokeLinecap="round"/>
+                <path d="M342 2.5V11" stroke="black" strokeLinecap="round"/>
+                <circle cx="272" cy="125" r="5.5" stroke="black"/>
+                <circle cx="272.5" cy="149.5" r="6" stroke="black"/>
+                <path d="M458.75 221.5C458.493 223.734 657.95 222.914 659.5 221.5" stroke="black" strokeWidth="0.7"
+                      strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M458.75 111V137.25V163.5C458.75 163.5 459.007 219.266 458.75 221.5" stroke="black"
+                      strokeWidth="0.7" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M458.75 111C463.888 108.387 662.903 110.602 659.5 111" stroke="black" strokeWidth="0.7"
+                      strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M218 78V130.5C218 130.5 218.257 185.766 218 188" stroke="black" strokeWidth="0.7"
+                      strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M370.5 163.5H458.75" stroke="black" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M218 188H1" stroke="black" strokeWidth="0.7" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M1 188V130V78" stroke="black" strokeWidth="0.7" strokeLinecap="round"
+                      strokeLinejoin="round"/>
+                <path d="M1 78H218" stroke="black" strokeWidth="0.7" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M218 130H1" stroke="black" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M459 200H660.156" stroke="black" strokeWidth="0.5" strokeLinecap="round"
+                      strokeLinejoin="round"/>
+                <path d="M459 163.5H619.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"
+                      strokeLinejoin="round"/>
+                <path d="M1 101H212" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M1 166H212.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M13 78L13 186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M35 78V186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M198 78V186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M178 78L179 186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M156 78V186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M135 78V186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M113 78V186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M95 78V186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M75 78V186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M55 78V186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M611 119.5V214.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M593.5 119.5V214.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M576 119.5V214.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M556.5 119.5V214.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M536.5 119.5V214.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M516.5 119.5V214.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M497.5 119.5V214.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M481.5 119.5V214.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
+                <path d="M251 130H218" stroke="black"/>
+                <path d="M326 92V250.5" stroke="black" strokeLinecap="round"/>
+                <path d="M659.5 221.5C661.05 220.086 659.5 111 659.5 111" stroke="black" strokeWidth="0.7"
+                      strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
 
             <svg ref={svgTextSectionOneRef}
-                 className={`svg-text-section-one ${svgTextSectionOneInView ? 'svg-text-section-one-animate' : ''}`} width="121" height="85" viewBox="0 0 121 85" fill="none"
+                 className={`svg-text-section-one ${svgTextSectionOneInView ? 'svg-text-section-one-animate' : ''}`}
+                 width="121" height="85" viewBox="0 0 121 85" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M11.5 41C10.1188 34.0942 6.05976 37 3.80249 41C2.32017 43.6267 1.2779 46.9553 1.42474 49.5C2.5 55.5 7.5 57 14.5 49.5"
@@ -355,8 +405,54 @@ export default function SectionOne() {
             </svg>
 
 
+            <svg ref={cloudBorderRef}
+                 className={`cloud-border ${cloudBorderInView ? 'cloud-border-animate' : ''}`} width="4149"
+                 height="1958" viewBox="0 0 4149 1958" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2970 214C3318.46 105.219 3698 166 3746 438" stroke="black" strokeLinecap="round"/>
+                <path d="M1970 166C2210 -58 2730 -50 2970 214" stroke="black" strokeLinecap="round"/>
+                <path d="M1210 166C1370 -41.9999 1794 -66 1970 166" stroke="black" strokeLinecap="round"/>
+                <path d="M481.999 374C481.999 54.0001 946 -73.9999 1210 166" stroke="black" strokeLinecap="round"/>
+                <path d="M57.9994 798C-142 486 234 262 481.999 374" stroke="black" strokeLinecap="round"/>
+                <path d="M233.999 1622C169.999 1894 641.999 2030 818 1774" stroke="black" strokeLinecap="round"/>
+                <path d="M818 1774C937.999 2018 1438 1938 1490 1774" stroke="black" strokeLinecap="round"/>
+                <path d="M2098 1774C2218 2030 2630 2006 2730 1774" stroke="black" strokeLinecap="round"/>
+                <path d="M3413 1750C3845 1806 3937 1730 3957 1598" stroke="black" strokeLinecap="round"/>
+                <path d="M2981 1806C3257 1954 3445 1862 3413 1750" stroke="black" strokeLinecap="round"/>
+                <path d="M3957 1598C4129 1598 4205 1438 4101 1294" stroke="black" strokeLinecap="round"/>
+                <path d="M3746 438C3983.21 434.045 4133.86 497.631 4114 798" stroke="black" strokeLinecap="round"/>
+            </svg>
+
+            <h3 className={"sectionOne-header"}>
+                Уеб дизайн
+            </h3>
+
+            <p className={'sectionOne-text'}>
+                Проектираме и изработваме динамични уеб сайтове,<br/>
+                съобразени със съвременните изисквания за визия и<br/> функционалност,
+                уеб базирани приложения, системи с<br/> електронно разплащане, електронни магазини,<br/>
+                индивидуални бизнес приложения.
+            </p>
+
+            <motion.div className={"lemon-container"}
+                        ref={ref}
+                        initial={{y: '36.3rem'}}
+                        animate={isAnimating ? {y: 0} : {}}
+                        transition={{duration: 1, ease: 'easeOut'}}
+                        style={{
+                            margin: '0 auto',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                        }}
+            >
+                <img src={lemon} className={"lemon-img"} alt="lemon logo"/>
+            </motion.div>
+
+            <img src={Shadow} alt="lemonShadow img" className={"lemonShadow-img"}/>
+
             <svg ref={laptopStickmanRef}
-                 className={`laptop-stickman ${laptopStickmanInView ? 'laptop-stickman-animate' : ''}`} width="169" height="299" viewBox="0 0 169 299" fill="none"
+                 className={`laptop-stickman ${laptopStickmanInView ? 'laptop-stickman-animate' : ''}`} width="169"
+                 height="299" viewBox="0 0 169 299" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_0_1)">
                     <path
@@ -386,112 +482,9 @@ export default function SectionOne() {
             </svg>
 
 
-            <svg ref={sateliteRef}
-                 className={`satelite ${sateliteInView ? 'satelite-animate' : ''}`} width="661" height="402" viewBox="0 0 661 402" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M311 252V401M262.5 86.5V244.5C286.833 249.833 308.7 257.3 357.5 244.5V86.5M262.5 86.5C271 51.5 352.5 57.5 357.5 86.5M262.5 86.5C270.5 90.5 277 92 301 93C301 93 325.547 92.8053 333 91.5C358.123 87.0999 351.742 88.3792 357.5 86.5"
-                    stroke="black" strokeLinecap="round"/>
-                <path
-                    d="M357.5 140.5C363.268 140.321 370.736 140.343 370.5 140.5C370.264 140.657 370.5 185 370.5 185C370.677 185.404 365.249 185.206 357.5 185"
-                    stroke="black" strokeLinecap="round"/>
-                <path d="M263 125C249.5 124.5 251 125 251 125C251 125 251 146.5 251 147C251 147.5 258.455 147 263 147"
-                      stroke="black"/>
-                <path d="M309.5 70.5V13" stroke="black" strokeLinecap="round"/>
-                <circle cx="309.5" cy="6.5" r="6" stroke="black"/>
-                <path d="M315.593 6.76471L346 6.76471M303.43 6.76471L273 6.76471M279.041 2V11" stroke="black"
-                      strokeLinecap="round"/>
-                <path d="M342 2.5V11" stroke="black" strokeLinecap="round"/>
-                <circle cx="272" cy="125" r="5.5" stroke="black"/>
-                <circle cx="272.5" cy="149.5" r="6" stroke="black"/>
-                <path d="M458.75 221.5C458.493 223.734 657.95 222.914 659.5 221.5" stroke="black" strokeWidth="0.7"
-                      strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M458.75 111V137.25V163.5C458.75 163.5 459.007 219.266 458.75 221.5" stroke="black"
-                      strokeWidth="0.7" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M458.75 111C463.888 108.387 662.903 110.602 659.5 111" stroke="black" strokeWidth="0.7"
-                      strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M218 78V130.5C218 130.5 218.257 185.766 218 188" stroke="black" strokeWidth="0.7"
-                      strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M370.5 163.5H458.75" stroke="black" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M218 188H1" stroke="black" strokeWidth="0.7" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M1 188V130V78" stroke="black" strokeWidth="0.7" strokeLinecap="round"
-                      strokeLinejoin="round"/>
-                <path d="M1 78H218" stroke="black" strokeWidth="0.7" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M218 130H1" stroke="black" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M459 200H660.156" stroke="black" strokeWidth="0.5" strokeLinecap="round"
-                      strokeLinejoin="round"/>
-                <path d="M459 163.5H619.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"
-                      strokeLinejoin="round"/>
-                <path d="M1 101H212" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M1 166H212.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M13 78L13 186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M35 78V186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M198 78V186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M178 78L179 186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M156 78V186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M135 78V186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M113 78V186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M95 78V186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M75 78V186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M55 78V186" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M611 119.5V214.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M593.5 119.5V214.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M576 119.5V214.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M556.5 119.5V214.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M536.5 119.5V214.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M516.5 119.5V214.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M497.5 119.5V214.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M481.5 119.5V214.5" stroke="black" strokeWidth="0.5" strokeLinecap="round"/>
-                <path d="M251 130H218" stroke="black"/>
-                <path d="M326 92V250.5" stroke="black" strokeLinecap="round"/>
-                <path d="M659.5 221.5C661.05 220.086 659.5 111 659.5 111" stroke="black" strokeWidth="0.7"
-                      strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-
-
-            <svg ref={sixEdgeStarRef}
-                 className={`six-edge-star ${sixEdgeStarInView ? 'six-edge-star-animate' : ''}`} width="75" height="73" viewBox="0 0 75 73" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 0.5L53.5 72.5M53.5 0.5L24 72.5M0 36H75" stroke="black"/>
-            </svg>
-
-            <svg ref={fourEdgeStarOneRef} className={`four-edge-star-one ${fourEdgeStarOneInView ? 'four-edge-star-one-animate' : ''}`} width="64" height="63" viewBox="0 0 64 63" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M32 0V63M0.5 32.5H63.5" stroke="black"/>
-            </svg>
-
-            <svg ref={fourEdgeStarTwoRef} className={`four-edge-star-two ${fourEdgeStarTwoInView ? 'four-edge-star-two-animate' : ''}`} width="64" height="63" viewBox="0 0 64 63" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M32 0V63M0.5 32.5H63.5" stroke="black"/>
-            </svg>
-
-            <svg ref={fourEdgeStarThreeRef}
-                 className={`four-edge-star-three ${fourEdgeStarThreeInView ? 'four-edge-star-three-animate' : ''}`} width="64" height="63" viewBox="0 0 64 63" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M32 0V63M0.5 32.5H63.5" stroke="black"/>
-            </svg>
-
-
-
-
-            <svg ref={starRainbowRef}
-                 className={`star-rainbow ${starRainbowInView ? 'star-rainbow-animate' : ''}`}
-                 xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M76 31.618L93.2611 84.7422L93.3733 85.0877H93.7366L149.595 85.0877L104.405 117.92L104.111 118.134L104.223 118.479L121.484 171.603L76.2939 138.771L76 138.557L75.7061 138.771L30.516 171.603L47.7771 118.479L47.8894 118.134L47.5955 117.92L2.40539 85.0877L58.2634 85.0877H58.6267L58.7389 84.7422L76 31.618Z"
-                    stroke="black"/>
-                <path d="M88.3867 70.0122C123.812 46.5124 278.5 -7.50003 396.5 1.5" stroke="black"
-                      strokeLinecap="round"/>
-                <path d="M149 85.5C170.787 77.5916 297 52 396.5 79.5" stroke="black" strokeLinecap="round"/>
-                <path d="M111 85.0891C165.5 61.5001 289 31 396 52" stroke="black" strokeLinecap="round"/>
-                <path d="M114.5 110.5C163.907 92.6922 294.278 69.2443 396.5 101.5" stroke="black"
-                      strokeLinecap="round"/>
-                <path d="M92.0002 81C127.315 59.3253 285.5 6.50002 396.5 27" stroke="black" strokeLinecap="round"/>
-            </svg>
-
-
             <svg ref={lightbulbStickmanRef}
-                 className={`lightbulb-stickman ${lightbulbStickmanInView ? 'lightbulb-stickman-animate' : ''}`} width="589" height="1071" viewBox="0 0 589 1071" fill="none"
+                 className={`lightbulb-stickman ${lightbulbStickmanInView ? 'lightbulb-stickman-animate' : ''}`}
+                 width="589" height="1071" viewBox="0 0 589 1071" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M269.946 456H370.708C381.944 456 381.582 439 370.708 439H269.946M270.264 439C259.028 439.045 259.447 456.043 270.32 456"
@@ -536,24 +529,33 @@ export default function SectionOne() {
                 <path d="M522 427L437 366" stroke="black"/>
             </svg>
 
+            <motion.div className={"keycap-container"}
+                        ref={ref}
+                        animate={isAnimating ? {y: 0} : {}}
+                        initial={{y: '-33.5rem'}}
+                        transition={{duration: 0.5, ease: 'easeOut'}}
+                        style={{
+                            margin: '0 auto',
+                        }}
+            >
+                <img src={keycapImg} className={"keycap-img"} alt={"keycap image"}/>
+            </motion.div>
 
-            <svg ref={cloudBorderRef}
-                 className={`cloud-border ${cloudBorderInView ? 'cloud-border-animate' : ''}`} width="4149" height="1958" viewBox="0 0 4149 1958" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2970 214C3318.46 105.219 3698 166 3746 438" stroke="black" strokeLinecap="round"/>
-                <path d="M1970 166C2210 -58 2730 -50 2970 214" stroke="black" strokeLinecap="round"/>
-                <path d="M1210 166C1370 -41.9999 1794 -66 1970 166" stroke="black" strokeLinecap="round"/>
-                <path d="M481.999 374C481.999 54.0001 946 -73.9999 1210 166" stroke="black" strokeLinecap="round"/>
-                <path d="M57.9994 798C-142 486 234 262 481.999 374" stroke="black" strokeLinecap="round"/>
-                <path d="M233.999 1622C169.999 1894 641.999 2030 818 1774" stroke="black" strokeLinecap="round"/>
-                <path d="M818 1774C937.999 2018 1438 1938 1490 1774" stroke="black" strokeLinecap="round"/>
-                <path d="M2098 1774C2218 2030 2630 2006 2730 1774" stroke="black" strokeLinecap="round"/>
-                <path d="M3413 1750C3845 1806 3937 1730 3957 1598" stroke="black" strokeLinecap="round"/>
-                <path d="M2981 1806C3257 1954 3445 1862 3413 1750" stroke="black" strokeLinecap="round"/>
-                <path d="M3957 1598C4129 1598 4205 1438 4101 1294" stroke="black" strokeLinecap="round"/>
-                <path d="M3746 438C3983.21 434.045 4133.86 497.631 4114 798" stroke="black" strokeLinecap="round"/>
-            </svg>
+            <motion.div className={"trampoline-container"}
+                        ref={ref}
+                        initial={{x: '-45rem', y: 0}}
+                        animate={isAnimating ? {x: 0, y: 0} : {}}
+                        transition={{duration: 0.5, ease: 'easeOut'}}
+                        style={{
+                            margin: '0 auto',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                        }}
+            >
+                <img className={"trampoline-img"} src={TrampolineImg} alt="trampoline img"/>
+            </motion.div>
 
-
+            <img src={Shadow} alt="trampoline img" className={"trampolineShadow-img"}/>
         </section>
     )
 }
