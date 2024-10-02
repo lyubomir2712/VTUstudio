@@ -65,17 +65,89 @@ function SectionThree() {
 
     return (
         <section id="sectionThree">
-            <motion.div className={"monaLisa-container"}
-                        ref={ref}
-                        animate={isAnimating ? {y: 0, rotate: 0} : {}}
-                        initial={{y: '-35rem', rotate: -90}}
-                        transition={{duration: 2, ease: 'easeOut'}}
-                        style={{
-                            margin: '0 auto',
-                        }}
-            >
-                <img src={MonaLisaPaintingImg} className={"monaLisa-img"} alt={"Mona Lisa painting"}/>
-            </motion.div>
+            <svg ref={sectionThreeCloudRef}
+                 className={`section-three-cloud ${sectionThreeCloudInView ? 'section-three-cloud-animate' : ''}`}
+                 width="572" height="270" viewBox="0 0 572 270" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M190 178C186.667 197 194.4 228 252 200" stroke="black"/>
+                <path d="M71 178C-15 200 -24 98 59 98" stroke="black"/>
+                <path d="M71 178C22.6266 273.962 102 292 257 238" stroke="black"/>
+                <path d="M442 200C338 284 275 284 257 238" stroke="black"/>
+                <path d="M541 105C599 133 566 238 442 200" stroke="black"/>
+                <path d="M442 32C541 -9 616 32 541 105" stroke="black"/>
+                <path d="M225 51C343 -18 415.63 -7.21112 442 32" stroke="black"/>
+                <path d="M59 98C59 32 159 -7.00002 225 51" stroke="black"/>
+            </svg>
+
+            <svg ref={sectionThreeMiniCloudRef}
+                 className={`section-three-mini-cloud ${sectionThreeMiniCloudRef ? 'section-three-mini-cloud-animate' : ''}`}
+                 width="235" height="103" viewBox="0 0 235 103" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.99998 102H220" stroke="black" strokeLinecap="round"/>
+                <path d="M3.99999 102C-14.4 42 51 21 77 54.5" stroke="black" strokeLinecap="round"/>
+                <path d="M220 102C261 66 204.5 3.49999 160.5 54.5" stroke="black" strokeLinecap="round"/>
+                <path d="M166 49C181.5 -5.00001 68 -27 73 56" stroke="black" strokeLinecap="round"/>
+            </svg>
+
+            <svg ref={sectionThreeMiniCloudTwoRef}
+                 className={`section-three-mini-cloud-two ${sectionThreeMiniCloudTwoInView ? 'section-three-mini-cloud-two-animate' : ''}`}
+                 width="227" height="82" viewBox="0 0 227 82" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.99998 81H220" stroke="black" strokeLinecap="round"/>
+                <path d="M3.99999 81C-14.4 21 51 -9.53674e-07 77 33.5" stroke="black" strokeLinecap="round"/>
+                <path d="M220 81C245.5 47.5 184.5 11.5 160.5 33.5" stroke="black" strokeLinecap="round"/>
+                <path d="M166 28C153.5 -8.5 85.5 -10.5 73 35" stroke="black" strokeLinecap="round"/>
+            </svg>
+
+            <svg ref={sectionThreeCloudTwoRef}
+                 className={`section-three-cloudTwo ${sectionThreeCloudTwoInView ? 'section-three-cloudTwo-animate' : ''}`}
+                 width="640" height="371" viewBox="0 0 640 371" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M154 119C-25 34.9998 -60 294 121 232" stroke="black" strokeLinecap="round"/>
+                <path d="M346 247C384 352 257 401 231 255" stroke="black" strokeLinecap="round"/>
+                <path d="M241.132 292C201.798 312.667 109.1 328.7 95.5 241.5" stroke="black" strokeLinecap="round"/>
+                <path d="M140.5 119C119.5 89.9999 154 68.5 169 101" stroke="black" strokeLinecap="round"/>
+                <path d="M256.5 285C258.5 289.833 267.5 299.3 287.5 298.5" stroke="black" strokeLinecap="round"/>
+                <path d="M105 119C29.5 107 -5 223 80 223" stroke="black" strokeLinecap="round"/>
+                <path d="M550 223C644 384 340 448 406 232" stroke="black" strokeLinecap="round"/>
+                <path d="M478 96.9999C661.077 39.2657 688 231 561 246" stroke="black" strokeLinecap="round"/>
+                <path d="M325 96.9999C319 -50 521 -8.99999 496 87.9999" stroke="black" strokeLinecap="round"/>
+                <path d="M375 42C377.667 33.3333 389.2 16.6 414 19" stroke="black" strokeLinecap="round"/>
+                <path d="M223 61C225.333 52 237 34.2 265 35" stroke="black" strokeLinecap="round"/>
+                <path d="M164 126C154 28 274 -16 333.053 47" stroke="black" strokeLinecap="round"/>
+            </svg>
+
+            <svg ref={sectionThreeBirdRef}
+                 className={`section-three-bird ${sectionThreeBirdRef ? 'section-three-bird-animate' : ''}`} width="493"
+                 height="192" viewBox="0 0 493 192" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M156 55C229 3.5 283 39 283 39C283 39 287.718 40.8413 292.119 45.5C292.834 46.2575 293.542 47.0894 294.219 48C295.673 49.9563 296.989 52.2758 297.952 55C299.053 58.1163 299.691 61.7622 299.546 66C299.17 76.9904 293.523 91.9616 277 112"
+                    stroke="black" strokeLinecap="round"/>
+                <path d="M292.119 45.5L330 33.5L297.952 55" stroke="black" strokeLinecap="round"/>
+                <path d="M277 112C230 169 81.9004 185.31 1 191" stroke="black" strokeLinecap="round"/>
+                <path d="M1 191C37 173 122.2 114.1 143 88.5" stroke="black" strokeLinecap="round"/>
+                <path d="M34 1C65.2082 38.2921 89.6836 52.3207 156 55" stroke="black" strokeLinecap="round"/>
+                <path d="M311.5 66C333.204 60.034 345.5 69.7372 366.5 75.6186C387.5 81.5 463.685 82.1579 492.5 66"
+                      stroke="black" strokeLinecap="round"/>
+                <path d="M245 56H246" stroke="black" strokeWidth="3" strokeLinecap="round"/>
+            </svg>
+
+            <svg ref={sectionThreeBirdTwoRef}
+                 className={`section-three-bird-two ${sectionThreeBirdTwoInView ? 'section-three-bird-two-animate' : ''}`}
+                 width="639" height="166" viewBox="0 0 639 166" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M235 29C308 -22.5 362 13 362 13C362 13 366.718 14.8413 371.119 19.5C371.834 20.2575 372.542 21.0894 373.219 22C374.673 23.9563 375.989 26.2758 376.952 29C378.053 32.1163 378.691 35.7622 378.546 40C378.17 50.9904 372.523 65.9616 356 86"
+                    stroke="black" strokeLinecap="round"/>
+                <path d="M371.119 19.5L409 7.5L376.952 29" stroke="black" strokeLinecap="round"/>
+                <path d="M356 86C309 143 160.9 159.31 80 165" stroke="black" strokeLinecap="round"/>
+                <path d="M1 19C32.2082 56.2921 180 56 235 29" stroke="black" strokeLinecap="round"/>
+                <path d="M390.5 40C412.204 34.034 442 64 478 85C514 106 609.185 85.1579 638 69" stroke="black"
+                      strokeLinecap="round"/>
+                <path d="M324 30H325" stroke="black" strokeWidth="3" strokeLinecap="round"/>
+                <path d="M9 157C63 140.317 190.8 85.7268 222 62" stroke="black" strokeLinecap="round"/>
+            </svg>
 
             <motion.div className={"greenButterfly-container"}
                         ref={ref}
@@ -91,19 +163,23 @@ function SectionThree() {
                 <img src={GreenButterflyImg} className={"greenButterfly-img"} alt={"green butterfly img"}/>
             </motion.div>
 
-            <h3 className={"sectionThree-header"}>
-                Фотография
-            </h3>
-
-            <p className={"sectionThree-text"}>
-                Професионални фотографски решения: интериорно и<br/> екстериорно заснемане, продуктова фотография.
-            </p>
+            <motion.div className={"monaLisa-container"}
+                        ref={ref}
+                        animate={isAnimating ? {y: 0, rotate: 0} : {}}
+                        initial={{y: '-35rem', rotate: -90}}
+                        transition={{duration: 2, ease: 'easeOut'}}
+                        style={{
+                            margin: '0 auto',
+                        }}
+            >
+                <img src={MonaLisaPaintingImg} className={"monaLisa-img"} alt={"Mona Lisa painting"}/>
+            </motion.div>
 
             <img className={"monaLisa-shadowImg"} src={shadow} alt={"Mona Lisa shadow"}/>
 
-
             <svg ref={sectionThreeBorderRef}
-                 className={`section-three-border ${sectionThreeBorderInView ? 'section-three-border-animate' : ''}`}  width="958" height="546" viewBox="0 0 958 546" fill="none"
+                 className={`section-three-border ${sectionThreeBorderInView ? 'section-three-border-animate' : ''}`}
+                 width="958" height="546" viewBox="0 0 958 546" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 545H149" stroke="black"/>
                 <path d="M1 397V545" stroke="black"/>
@@ -133,9 +209,17 @@ function SectionThree() {
                 <path d="M56 526.25V526" stroke="black" strokeWidth="3" strokeLinecap="round"/>
             </svg>
 
+            <h3 className={"sectionThree-header"}>
+                Фотография
+            </h3>
+
+            <p className={"sectionThree-text"}>
+                Професионални фотографски решения: интериорно и<br/> екстериорно заснемане, продуктова фотография.
+            </p>
 
             <svg ref={painterStickmanRef}
-                 className={`painter-stickman ${painterStickmanInView ? 'painter-stickman-animate' : ''}`}  width="951" height="689" viewBox="0 0 951 689" fill="none"
+                 className={`painter-stickman ${painterStickmanInView ? 'painter-stickman-animate' : ''}`} width="951"
+                 height="689" viewBox="0 0 951 689" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M675 364C707 327.835 725.5 329 757 353.5C757 353.5 765 361.5 785.105 358.972C805.21 356.445 834 328 871 352.5C908 377 922 367.5 937.5 347"
@@ -185,100 +269,6 @@ function SectionThree() {
                 <path d="M918 530.268H691" stroke="black" strokeLinecap="round"/>
                 <path d="M258 292C283.833 307.234 342 338.336 414 318.248" stroke="black" strokeLinecap="round"/>
             </svg>
-
-
-            <svg ref={sectionThreeCloudRef}
-                 className={`section-three-cloud ${sectionThreeCloudInView ? 'section-three-cloud-animate' : ''}`}  width="572" height="270" viewBox="0 0 572 270" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M190 178C186.667 197 194.4 228 252 200" stroke="black"/>
-                <path d="M71 178C-15 200 -24 98 59 98" stroke="black"/>
-                <path d="M71 178C22.6266 273.962 102 292 257 238" stroke="black"/>
-                <path d="M442 200C338 284 275 284 257 238" stroke="black"/>
-                <path d="M541 105C599 133 566 238 442 200" stroke="black"/>
-                <path d="M442 32C541 -9 616 32 541 105" stroke="black"/>
-                <path d="M225 51C343 -18 415.63 -7.21112 442 32" stroke="black"/>
-                <path d="M59 98C59 32 159 -7.00002 225 51" stroke="black"/>
-            </svg>
-
-
-            <svg ref={sectionThreeCloudTwoRef}
-                 className={`section-three-cloudTwo ${sectionThreeCloudTwoInView ? 'section-three-cloudTwo-animate' : ''}`}  width="640" height="371" viewBox="0 0 640 371" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M154 119C-25 34.9998 -60 294 121 232" stroke="black" strokeLinecap="round"/>
-                <path d="M346 247C384 352 257 401 231 255" stroke="black" strokeLinecap="round"/>
-                <path d="M241.132 292C201.798 312.667 109.1 328.7 95.5 241.5" stroke="black" strokeLinecap="round"/>
-                <path d="M140.5 119C119.5 89.9999 154 68.5 169 101" stroke="black" strokeLinecap="round"/>
-                <path d="M256.5 285C258.5 289.833 267.5 299.3 287.5 298.5" stroke="black" strokeLinecap="round"/>
-                <path d="M105 119C29.5 107 -5 223 80 223" stroke="black" strokeLinecap="round"/>
-                <path d="M550 223C644 384 340 448 406 232" stroke="black" strokeLinecap="round"/>
-                <path d="M478 96.9999C661.077 39.2657 688 231 561 246" stroke="black" strokeLinecap="round"/>
-                <path d="M325 96.9999C319 -50 521 -8.99999 496 87.9999" stroke="black" strokeLinecap="round"/>
-                <path d="M375 42C377.667 33.3333 389.2 16.6 414 19" stroke="black" strokeLinecap="round"/>
-                <path d="M223 61C225.333 52 237 34.2 265 35" stroke="black" strokeLinecap="round"/>
-                <path d="M164 126C154 28 274 -16 333.053 47" stroke="black" strokeLinecap="round"/>
-            </svg>
-
-
-            <svg ref={sectionThreeBirdRef}
-                 className={`section-three-bird ${sectionThreeBirdRef ? 'section-three-bird-animate' : ''}`} width="493" height="192" viewBox="0 0 493 192" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M156 55C229 3.5 283 39 283 39C283 39 287.718 40.8413 292.119 45.5C292.834 46.2575 293.542 47.0894 294.219 48C295.673 49.9563 296.989 52.2758 297.952 55C299.053 58.1163 299.691 61.7622 299.546 66C299.17 76.9904 293.523 91.9616 277 112"
-                    stroke="black" strokeLinecap="round"/>
-                <path d="M292.119 45.5L330 33.5L297.952 55" stroke="black" strokeLinecap="round"/>
-                <path d="M277 112C230 169 81.9004 185.31 1 191" stroke="black" strokeLinecap="round"/>
-                <path d="M1 191C37 173 122.2 114.1 143 88.5" stroke="black" strokeLinecap="round"/>
-                <path d="M34 1C65.2082 38.2921 89.6836 52.3207 156 55" stroke="black" strokeLinecap="round"/>
-                <path d="M311.5 66C333.204 60.034 345.5 69.7372 366.5 75.6186C387.5 81.5 463.685 82.1579 492.5 66"
-                      stroke="black" strokeLinecap="round"/>
-                <path d="M245 56H246" stroke="black" strokeWidth="3" strokeLinecap="round"/>
-            </svg>
-
-
-            <svg ref={sectionThreeBirdTwoRef}
-                 className={`section-three-bird-two ${sectionThreeBirdTwoInView ? 'section-three-bird-two-animate' : ''}`} width="639" height="166" viewBox="0 0 639 166" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M235 29C308 -22.5 362 13 362 13C362 13 366.718 14.8413 371.119 19.5C371.834 20.2575 372.542 21.0894 373.219 22C374.673 23.9563 375.989 26.2758 376.952 29C378.053 32.1163 378.691 35.7622 378.546 40C378.17 50.9904 372.523 65.9616 356 86"
-                    stroke="black" strokeLinecap="round"/>
-                <path d="M371.119 19.5L409 7.5L376.952 29" stroke="black" strokeLinecap="round"/>
-                <path d="M356 86C309 143 160.9 159.31 80 165" stroke="black" strokeLinecap="round"/>
-                <path d="M1 19C32.2082 56.2921 180 56 235 29" stroke="black" strokeLinecap="round"/>
-                <path d="M390.5 40C412.204 34.034 442 64 478 85C514 106 609.185 85.1579 638 69" stroke="black"
-                      strokeLinecap="round"/>
-                <path d="M324 30H325" stroke="black" strokeWidth="3" strokeLinecap="round"/>
-                <path d="M9 157C63 140.317 190.8 85.7268 222 62" stroke="black" strokeLinecap="round"/>
-            </svg>
-
-
-            <svg ref={sectionThreeMiniCloudRef}
-                 className={`section-three-mini-cloud ${sectionThreeMiniCloudRef ? 'section-three-mini-cloud-animate' : ''}`} width="235" height="103" viewBox="0 0 235 103" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.99998 102H220" stroke="black" strokeLinecap="round"/>
-                <path d="M3.99999 102C-14.4 42 51 21 77 54.5" stroke="black" strokeLinecap="round"/>
-                <path d="M220 102C261 66 204.5 3.49999 160.5 54.5" stroke="black" strokeLinecap="round"/>
-                <path d="M166 49C181.5 -5.00001 68 -27 73 56" stroke="black" strokeLinecap="round"/>
-            </svg>
-
-
-            <svg ref={sectionThreeMiniCloudTwoRef}
-                 className={`section-three-mini-cloud-two ${sectionThreeMiniCloudTwoInView ? 'section-three-mini-cloud-two-animate' : ''}`} width="227" height="82" viewBox="0 0 227 82" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.99998 81H220" stroke="black" strokeLinecap="round"/>
-                <path d="M3.99999 81C-14.4 21 51 -9.53674e-07 77 33.5" stroke="black" strokeLinecap="round"/>
-                <path d="M220 81C245.5 47.5 184.5 11.5 160.5 33.5" stroke="black" strokeLinecap="round"/>
-                <path d="M166 28C153.5 -8.5 85.5 -10.5 73 35" stroke="black" strokeLinecap="round"/>
-            </svg>
-
-
-            {/*<svg className={"mona-lisa-stickman"} width="44" height="160" viewBox="0 0 44 160" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
-            {/*    <path d="M20.4312 33C44.1017 46.2664 42.5 84.5 42.5 84.5" stroke="black"/>*/}
-            {/*    <path d="M28.5 97C51.5 106.5 42.5 118 28.5 159.5" stroke="black"/>*/}
-            {/*    <path d="M38.5 159.5L28.5 97C19.5989 46.5768 19.7618 57.2046 20.4312 33" stroke="black"/>*/}
-            {/*    <path d="M36.5 14.5C36.5 22.232 30.232 28.5 22.5 28.5C14.768 28.5 8.5 22.232 8.5 14.5C8.5 6.76801 14.768 0.5 22.5 0.5C30.232 0.5 36.5 6.76801 36.5 14.5Z" stroke="black"/>*/}
-            {/*    <path d="M20.4312 33C10.8902 44.5205 1.49999 62.5 1.49999 62.5C-1.5 70 7.5 71.5 16 79.5" stroke="black"/>*/}
-            {/*</svg>*/}
-
         </section>
     )
 }
