@@ -23,39 +23,8 @@ export default function SectionFive() {
     return (
         <section id={"sectionFive"}>
 
-            <img src={bowImg} className={"bow-img"} alt={"bow img"}/>
-
-            <motion.div className={"arrow-container"}
-                        ref={ref}
-                        initial={{x: 0, y: 0}}
-                        animate={inView ? {
-                            x: '22.5rem',
-                            y: '-16.5rem'
-                        } : {}}
-                        transition={{duration: 1.25, ease: 'easeInOut'}}
-                        style={{
-                            margin: '0 auto',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                        }}
-            >
-                <img src={arrowImg} className={"arrow-img"} alt={"arrow img"}/>
-            </motion.div>
-
-
-            <h3 className={"sectionFive-header"}>Контакти</h3>
-
-            <p className={"sectionFive-text-one"}>
-                Адрес: Дряново, п.код: 5370,<br/>
-                ул."3-ти март" №12<br/>
-            </p>
-
-            <p className={"sectionFive-text-two"}>тел.: 0889 77 80 80</p>
-
-            <p className={"sectionFive-text-three"}>e-mail: studio@sevenstudio.net</p>
-
-            <svg ref={cloudOneRef} className={`cloud-one ${cloudOneInView ? 'cloud-one-animate' : ''}`} width="409" height="280" viewBox="0 0 409 280" fill="none"
+            <svg ref={cloudOneRef} className={`cloud-one ${cloudOneInView ? 'cloud-one-animate' : ''}`} width="409"
+                 height="280" viewBox="0 0 409 280" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M87.0001 49C89 52 91.3483 54 93.5 55M141 34C141.512 35 142.6 37.2 143 40" stroke="black"
                       strokeLinecap="round"/>
@@ -71,8 +40,8 @@ export default function SectionFive() {
                 <path d="M245 57C257.333 52.6667 284 50.4 292 76" stroke="black"/>
             </svg>
 
-
-            <svg ref={cloudTwoRef} className={`cloud-two ${cloudTwoInView ? 'cloud-two-animate' : ''}`} width="658" height="420" viewBox="0 0 658 420" fill="none"
+            <svg ref={cloudTwoRef} className={`cloud-two ${cloudTwoInView ? 'cloud-two-animate' : ''}`} width="658"
+                 height="420" viewBox="0 0 658 420" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M74.0997 340L65 334.063" stroke="black" strokeLinecap="round"/>
                 <path d="M607 94C668 107 670 203 618 233" stroke="black" strokeLinecap="round"/>
@@ -85,8 +54,22 @@ export default function SectionFive() {
                 <path d="M275 94C612.868 -35.7867 688.387 -23.159 607 94" stroke="black" strokeLinecap="round"/>
             </svg>
 
+            <svg ref={seagullRef}
+                 className={`section-five-seagull ${seagullInView ? 'section-five-seagull-animate' : ''}`} width="193"
+                 height="18" viewBox="0 0 193 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 17C41.0439 -2.1366 61.371 0.940046 96 17C136.368 -6.01935 157.016 -3.05233 192 17"
+                      stroke="black" strokeLinecap="round"/>
+            </svg>
 
-            <svg ref={contactListRef} className={`contact-list ${contactListInView ? 'contact-list-animate' : ''}`} width="334" height="403" viewBox="0 0 334 403" fill="none"
+            <svg ref={seagullTwoRef}
+                 className={`section-five-seagull-two ${seagullTwoInView ? 'section-five-seagull-two-animate' : ''}`}
+                 width="193" height="18" viewBox="0 0 193 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 17C41.0439 -2.1366 61.371 0.940046 96 17C136.368 -6.01935 157.016 -3.05233 192 17"
+                      stroke="black" strokeLinecap="round"/>
+            </svg>
+
+            <svg ref={contactListRef} className={`contact-list ${contactListInView ? 'contact-list-animate' : ''}`}
+                 width="334" height="403" viewBox="0 0 334 403" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M273.5 2.5C281 64.379 258.5 70.7085 287.5 70C298.375 70.487 315.511 70 332.5 70" stroke="black"
                       strokeLinecap="round"/>
@@ -141,8 +124,40 @@ export default function SectionFive() {
                       strokeLinecap="round"/>
             </svg>
 
+            <img src={bowImg} className={"bow-img"} alt={"bow img"}/>
 
-            <svg ref={pirateShipRef} className={`pirateShip-stickman ${pirateShipInView ? 'pirateShip-stickman-animate' : ''}`} width="1049" height="787" viewBox="0 0 1049 787" fill="none"
+            <motion.div className={"arrow-container"}
+                        ref={ref}
+                        initial={{x: 0, y: 0}}
+                        animate={inView ? {
+                            x: '22.5rem',
+                            y: '-16.5rem'
+                        } : {}}
+                        transition={{duration: 1.25, ease: 'easeInOut'}}
+                        style={{
+                            margin: '0 auto',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                        }}
+            >
+                <img src={arrowImg} className={"arrow-img"} alt={"arrow img"}/>
+            </motion.div>
+
+            <h3 className={"sectionFive-header"}>Контакти</h3>
+
+            <p className={"sectionFive-text-one"}>
+                Адрес: Дряново, п.код: 5370,<br/>
+                ул."3-ти март" №12<br/>
+            </p>
+
+            <p className={"sectionFive-text-two"}>тел.: 0889 77 80 80</p>
+
+            <p className={"sectionFive-text-three"}>e-mail: studio@sevenstudio.net</p>
+
+            <svg ref={pirateShipRef}
+                 className={`pirateShip-stickman ${pirateShipInView ? 'pirateShip-stickman-animate' : ''}`} width="1049"
+                 height="787" viewBox="0 0 1049 787" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M210 523C265 811 882 733 808 511" stroke="black" strokeLinecap="round"/>
                 <path d="M210 523L403.5 528" stroke="black" strokeLinecap="round"/>
@@ -261,8 +276,9 @@ export default function SectionFive() {
                 <path d="M553 37C570.769 47.3489 580.731 53.1511 598.5 63.5" stroke="black" strokeLinecap="round"/>
             </svg>
 
-
-            <svg ref={questionMarkRef} className={`questionMark-stickman ${questionMarkInView ? 'questionMark-stickman-animate' : ''}`} width="302" height="493" viewBox="0 0 302 493" fill="none"
+            <svg ref={questionMarkRef}
+                 className={`questionMark-stickman ${questionMarkInView ? 'questionMark-stickman-animate' : ''}`}
+                 width="302" height="493" viewBox="0 0 302 493" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M40.222 367C32.1527 408.658 40.0955 438.169 9.22173 492M40.222 367C81.222 411 73.6377 416.697 75.222 492M40.222 367C48.0126 306.265 48.4558 283.333 40.222 268M40.222 268C75.222 315 111.222 289 75.222 225M40.222 268L26.2215 349"
@@ -281,18 +297,6 @@ export default function SectionFive() {
                       stroke="black"/>
                 <path d="M267.5 268C246.445 268 247.225 298 267.5 298C287.775 298 288.555 268 267.5 268Z"
                       stroke="black"/>
-            </svg>
-
-
-            <svg ref={seagullRef} className={`section-five-seagull ${seagullInView ? 'section-five-seagull-animate' : ''}`} width="193" height="18" viewBox="0 0 193 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 17C41.0439 -2.1366 61.371 0.940046 96 17C136.368 -6.01935 157.016 -3.05233 192 17"
-                      stroke="black" strokeLinecap="round"/>
-            </svg>
-
-
-            <svg ref={seagullTwoRef} className={`section-five-seagull-two ${seagullTwoInView ? 'section-five-seagull-two-animate' : ''}`} width="193" height="18" viewBox="0 0 193 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 17C41.0439 -2.1366 61.371 0.940046 96 17C136.368 -6.01935 157.016 -3.05233 192 17"
-                      stroke="black" strokeLinecap="round"/>
             </svg>
             <Footer/>
         </section>

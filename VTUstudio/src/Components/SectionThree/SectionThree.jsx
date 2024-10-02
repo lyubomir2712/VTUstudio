@@ -80,7 +80,7 @@ function SectionThree() {
             </svg>
 
             <svg ref={sectionThreeMiniCloudRef}
-                 className={`section-three-mini-cloud ${sectionThreeMiniCloudRef ? 'section-three-mini-cloud-animate' : ''}`}
+                 className={`section-three-mini-cloud ${sectionThreeMiniCloudInView ? 'section-three-mini-cloud-animate' : ''}`}
                  width="235" height="103" viewBox="0 0 235 103" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M3.99998 102H220" stroke="black" strokeLinecap="round"/>
