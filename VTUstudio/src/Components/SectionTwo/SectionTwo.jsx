@@ -60,65 +60,80 @@ export default function SectionTwo() {
     const { ref: horseRef, inView: horseInView } = useInView({ triggerOnce: false, threshold: 0.1 });
     return (
         <section id="sectionTwo">
-            <motion.div className={"peacock-container"}
-                        ref={ref}
-                        initial={{x: '-48rem'}}
-                        animate={isAnimating ? {x: 0} : {}}
-                        transition={{duration: 1, ease: 'easeOut'}}
-                        style={{
-                            margin: '0 auto',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                        }}>
-
-                <img src={peacockImg} className={"peacock-img"} alt="peacock logo"/>
-            </motion.div>
-
-            <h3 className={"sectionTwo-header"}>
-                Печатна реклама
-            </h3>
-
-            <p className={"sectionTwo-text"}>
-                Проектираме и изпълняваме печатни рекламни<br/>
-                мериали: каталози, книги, брошури, плакати,<br/>
-                билбордове.
-            </p>
-
-
-            <svg ref={sectionTwoBorderRef} className={`section-two-border ${sectionTwoBorderInView ? 'section-two-border-animate' : ''}`} width="1554" height="809" viewBox="0 0 1554 809" fill="none"
+            <svg ref={sectionTwoCloudTwoRef}
+                 className={`section-two-cloud-two ${sectionTwoCloudTwoInView ? 'section-two-cloud-two-animate' : ''}`}
+                 width="1745" height="716" viewBox="0 0 1745 716" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M16 134.5L23.5 128.5M23.5 144L32 137M34 151.5L40.5 144M45 156.5L50 148M59 159L61.5 149.5M73 157.5V149.5M32 1C9.00001 46 -19.6 140.4 50 158C68.4191 161.608 120.743 156.362 113 110C105.559 65.4457 63.3082 72.9249 50 79C41.3333 71.3333 25.6 45 32 1Z"
-                    stroke="black"/>
-                <path d="M1 126C6.66667 138 15 167 61 167" stroke="black"/>
-                <path
-                    d="M142 134.5L149.5 128.5M149.5 144L158 137M160 151.5L166.5 144M171 156.5L176 148M185 159L187.5 149.5M199 157.5V149.5M158 1C135 46 106.4 140.4 176 158C194.419 161.608 246.743 156.362 239 110C231.559 65.4457 189.308 72.9249 176 79C167.333 71.3333 151.6 45 158 1Z"
-                    stroke="black"/>
-                <path d="M127 126C132.667 138 141 167 187 167" stroke="black"/>
-                <path
-                    d="M1411.78 674.5L1404.28 680.5M1404.28 665L1395.78 672M1393.78 657.5L1387.28 665M1382.78 652.5L1377.78 661M1368.78 650L1366.28 659.5M1354.78 651.5V659.5M1395.78 808C1418.78 763 1447.38 668.6 1377.78 651C1359.36 647.392 1307.03 652.638 1314.78 699C1322.22 743.554 1364.47 736.075 1377.78 730C1386.44 737.667 1402.18 764 1395.78 808Z"
-                    stroke="black"/>
-                <path d="M1426.78 683C1421.11 671 1412.78 642 1366.78 642" stroke="black"/>
-                <path
-                    d="M1537.78 674.5L1530.28 680.5M1530.28 665L1521.78 672M1519.78 657.5L1513.28 665M1508.78 652.5L1503.78 661M1494.78 650L1492.28 659.5M1480.78 651.5V659.5M1521.78 808C1544.78 763 1573.38 668.6 1503.78 651C1485.36 647.392 1433.03 652.638 1440.78 699C1448.22 743.554 1490.47 736.075 1503.78 730C1512.44 737.667 1528.18 764 1521.78 808Z"
-                    stroke="black"/>
-                <path d="M1552.78 683C1547.11 671 1538.78 642 1492.78 642" stroke="black"/>
-                <path d="M69.3291 670.452C65.2936 561.857 67.9395 402.721 68.9702 195" stroke="black"/>
-                <path
-                    d="M1432.6 638C1432.6 638 1432.6 636.711 1432.6 550.257C1432.6 500.048 1432.6 456.084 1432.6 417C1432.6 323.183 1432.6 257.48 1432.6 201"
-                    stroke="black"/>
-                <path
-                    d="M1432.6 201C1432.6 63.4 1432.6 59.1156 1335 59.1156C1309.23 59.1156 1208.83 59.1156 1075 59.1156C815.525 59.1156 430.402 59.1156 220 59.1156"
-                    stroke="black"/>
-                <path d="M1090 48C1222.16 48 1246.51 48 1345.75 48C1445 48 1445 67 1445 186.503V418" stroke="black"/>
-                <path
-                    d="M409 768.132C276.854 766.591 251.478 769.29 152.239 768.132C53 766.975 53.2216 747.976 54.6151 628.482L54.6151 515L54.6151 399"
-                    stroke="black"/>
-                <path d="M67.9999 614C69.8273 751.588 66.8843 755.168 164.477 753.872L1335 753.872" stroke="black"/>
+                <path d="M734 576C730.5 572.276 721.5 564.5 714 550" stroke="black" strokeLinecap="round"/>
+                <path d="M1002 95.9998C1094 -44 1352 -18.0001 1430 95.9998" stroke="black" strokeLinecap="round"/>
+                <path d="M1430 95.9998C1564 42 1658 148 1582 228" stroke="black" strokeLinecap="round"/>
+                <path d="M1582 228C1778 228 1800 402 1630 428" stroke="black" strokeLinecap="round"/>
+                <path d="M1630 428C1754 540 1458 686 1266 608" stroke="black" strokeLinecap="round"/>
+                <path d="M1266 608C944 754 852.947 702.542 734 576" stroke="black" strokeLinecap="round"/>
+                <path d="M734 576C718 730 562 738 546 608" stroke="black" strokeLinecap="round"/>
+                <path d="M546 608C376 784 130 720 238 576" stroke="black" strokeLinecap="round"/>
+                <path d="M238 576C-42 664 -111.593 394.138 238 252.535" stroke="black" strokeLinecap="round"/>
+                <path d="M510 168C422 68 238 130 238 252.535" stroke="black" strokeLinecap="round"/>
+                <path d="M510 168C610 7.99998 860 -2.28882e-05 1002 95.9998" stroke="black" strokeLinecap="round"/>
+                <path d="M1086 506C1088 532 1126.8 568.4 1266 506" stroke="black" strokeLinecap="round"/>
+                <path d="M1472 406C1488.67 433.333 1484 486 1332 478" stroke="black" strokeLinecap="round"/>
             </svg>
 
+            <svg ref={sectionTwoCloudRef}
+                 className={`section-two-cloud ${sectionTwoCloudInView ? 'section-two-cloud-animate' : ''}`}
+                 width="1653" height="403" viewBox="0 0 1653 403" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M133 393C219 417.571 300 371 381 307" stroke="black" strokeLinecap="round"/>
+                <path d="M381 307C462 243 453 369 499 393" stroke="black" strokeLinecap="round"/>
+                <path d="M499 393C545 417 593.138 393.243 775 307" stroke="black" strokeLinecap="round"/>
+                <path d="M775 307C853 267 1039.89 270.694 1151 339" stroke="black" strokeLinecap="round"/>
+                <path d="M1151 339C1200.8 375.558 1271.94 382.993 1337 368.527" stroke="black" strokeLinecap="round"/>
+                <path d="M1499 225C1490.64 297.792 1418.6 350.385 1337 368.527" stroke="black" strokeLinecap="round"/>
+                <path d="M1499 225C1601 267 1721 177 1603 81" stroke="black" strokeLinecap="round"/>
+                <path d="M1603 81C1695 18 1551 -24.071 1367 18" stroke="black" strokeLinecap="round"/>
+                <path d="M963 57C1017.77 87.7778 1113.62 75.9341 1367 18" stroke="black" strokeLinecap="round"/>
+                <path d="M963 57C885 -3.00003 773.843 -10.9374 693 57" stroke="black" strokeLinecap="round"/>
+                <path d="M693 56.9999C583 149.439 518.814 110.146 436 63.9999" stroke="black" strokeLinecap="round"/>
+                <path d="M436 64C403.667 49 381 27 309 81" stroke="black" strokeLinecap="round"/>
+                <path d="M309 81C279.667 103 257 103 187 103" stroke="black" strokeLinecap="round"/>
+                <path d="M1 241C55.2561 238.906 21 361 133 393" stroke="black" strokeLinecap="round"/>
+            </svg>
 
-            <svg ref={sectionTwoBirdRef} className={`section-two-bird ${sectionTwoBirdInView ? 'section-two-bird-animate' : ''}`} width="2790" height="1794" viewBox="0 0 2790 1794" fill="none"
+            <svg ref={lightningRef} className={`lightning ${lightningInView ? 'lightning-animate' : ''}`} width="170"
+                 height="390" viewBox="0 0 170 390" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M117.17 87.5538L169 1" stroke="black" strokeLinecap="round"/>
+                <path d="M61.7659 1H169" stroke="black" strokeLinecap="round"/>
+                <path d="M8.14893 112.426H61.7659" stroke="black" strokeLinecap="round"/>
+                <path d="M61.7659 1C40.8272 44.5144 29.0877 68.9112 8.14893 112.426" stroke="black"
+                      strokeLinecap="round"/>
+                <path d="M61.7659 112.426L34.9574 174.108L8.14893 235.79" stroke="black" strokeLinecap="round"/>
+                <path d="M8.14893 235.79H61.7659" stroke="black" strokeLinecap="round"/>
+                <path d="M169 185.051H117.17" stroke="black" strokeLinecap="round"/>
+                <path d="M1 389L169 185.051" stroke="black" strokeLinecap="round"/>
+                <path d="M61.766 235.79L1 389" stroke="black" strokeLinecap="round"/>
+                <path d="M117.17 185.051L169 87.5538" stroke="black" strokeLinecap="round"/>
+                <path d="M117.25 87.5H169" stroke="black" strokeLinecap="round"/>
+            </svg>
+
+            <svg ref={lightningTwoRef} className={`lightning-two ${lightningTwoInView ? 'lightning-two-animate' : ''}`}
+                 width="144" height="354" viewBox="0 0 144 354" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M52.3617 214.005L1 353" stroke="black" strokeLinecap="round"/>
+                <path d="M1 353L143 167.974" stroke="black" strokeLinecap="round"/>
+                <path d="M143 167.974H121.096H99.1915" stroke="black" strokeLinecap="round"/>
+                <path d="M7.04254 214.005H52.3617" stroke="black" strokeLinecap="round"/>
+                <path d="M52.3617 102.087L7.04254 214.005" stroke="black" strokeLinecap="round"/>
+                <path d="M7.04254 102.087H52.3617" stroke="black" strokeLinecap="round"/>
+                <path d="M99.1915 167.974L143 79.5231" stroke="black" strokeLinecap="round"/>
+                <path d="M143 79.5231H121.096H99.1915" stroke="black" strokeLinecap="round"/>
+                <path d="M99.1915 79.5231L121.096 40.2615L143 1" stroke="black" strokeLinecap="round"/>
+                <path d="M52.3617 1L7.04254 102.087" stroke="black" strokeLinecap="round"/>
+                <path d="M52.3617 1H143" stroke="black" strokeLinecap="round"/>
+            </svg>
+
+            <svg ref={sectionTwoBirdRef}
+                 className={`section-two-bird ${sectionTwoBirdInView ? 'section-two-bird-animate' : ''}`} width="2790"
+                 height="1794" viewBox="0 0 2790 1794" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M381 477C349.302 547.286 334.342 614.13 332.255 677M1195 1357C1153.74 1352.73 1116.65 1347.75 1083 1342.24"
@@ -148,77 +163,23 @@ export default function SectionTwo() {
                     stroke="black" strokeWidth="8" strokeLinecap="round"/>
             </svg>
 
+            <motion.div className={"peacock-container"}
+                        ref={ref}
+                        initial={{x: '-48rem'}}
+                        animate={isAnimating ? {x: 0} : {}}
+                        transition={{duration: 1, ease: 'easeOut'}}
+                        style={{
+                            margin: '0 auto',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                        }}>
 
-            <svg ref={sectionTwoCloudRef} className={`section-two-cloud ${sectionTwoCloudInView ? 'section-two-cloud-animate' : ''}`} width="1653" height="403" viewBox="0 0 1653 403" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M133 393C219 417.571 300 371 381 307" stroke="black" strokeLinecap="round"/>
-                <path d="M381 307C462 243 453 369 499 393" stroke="black" strokeLinecap="round"/>
-                <path d="M499 393C545 417 593.138 393.243 775 307" stroke="black" strokeLinecap="round"/>
-                <path d="M775 307C853 267 1039.89 270.694 1151 339" stroke="black" strokeLinecap="round"/>
-                <path d="M1151 339C1200.8 375.558 1271.94 382.993 1337 368.527" stroke="black" strokeLinecap="round"/>
-                <path d="M1499 225C1490.64 297.792 1418.6 350.385 1337 368.527" stroke="black" strokeLinecap="round"/>
-                <path d="M1499 225C1601 267 1721 177 1603 81" stroke="black" strokeLinecap="round"/>
-                <path d="M1603 81C1695 18 1551 -24.071 1367 18" stroke="black" strokeLinecap="round"/>
-                <path d="M963 57C1017.77 87.7778 1113.62 75.9341 1367 18" stroke="black" strokeLinecap="round"/>
-                <path d="M963 57C885 -3.00003 773.843 -10.9374 693 57" stroke="black" strokeLinecap="round"/>
-                <path d="M693 56.9999C583 149.439 518.814 110.146 436 63.9999" stroke="black" strokeLinecap="round"/>
-                <path d="M436 64C403.667 49 381 27 309 81" stroke="black" strokeLinecap="round"/>
-                <path d="M309 81C279.667 103 257 103 187 103" stroke="black" strokeLinecap="round"/>
-                <path d="M1 241C55.2561 238.906 21 361 133 393" stroke="black" strokeLinecap="round"/>
-            </svg>
+                <img src={peacockImg} className={"peacock-img"} alt="peacock logo"/>
+            </motion.div>
 
-
-            <svg ref={sectionTwoCloudTwoRef} className={`section-two-cloud-two ${sectionTwoCloudTwoInView ? 'section-two-cloud-two-animate' : ''}`} width="1745" height="716" viewBox="0 0 1745 716" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M734 576C730.5 572.276 721.5 564.5 714 550" stroke="black" strokeLinecap="round"/>
-                <path d="M1002 95.9998C1094 -44 1352 -18.0001 1430 95.9998" stroke="black" strokeLinecap="round"/>
-                <path d="M1430 95.9998C1564 42 1658 148 1582 228" stroke="black" strokeLinecap="round"/>
-                <path d="M1582 228C1778 228 1800 402 1630 428" stroke="black" strokeLinecap="round"/>
-                <path d="M1630 428C1754 540 1458 686 1266 608" stroke="black" strokeLinecap="round"/>
-                <path d="M1266 608C944 754 852.947 702.542 734 576" stroke="black" strokeLinecap="round"/>
-                <path d="M734 576C718 730 562 738 546 608" stroke="black" strokeLinecap="round"/>
-                <path d="M546 608C376 784 130 720 238 576" stroke="black" strokeLinecap="round"/>
-                <path d="M238 576C-42 664 -111.593 394.138 238 252.535" stroke="black" strokeLinecap="round"/>
-                <path d="M510 168C422 68 238 130 238 252.535" stroke="black" strokeLinecap="round"/>
-                <path d="M510 168C610 7.99998 860 -2.28882e-05 1002 95.9998" stroke="black" strokeLinecap="round"/>
-                <path d="M1086 506C1088 532 1126.8 568.4 1266 506" stroke="black" strokeLinecap="round"/>
-                <path d="M1472 406C1488.67 433.333 1484 486 1332 478" stroke="black" strokeLinecap="round"/>
-            </svg>
-
-
-            <svg ref={lightningRef} className={`lightning ${lightningInView ? 'lightning-animate' : ''}`} width="170" height="390" viewBox="0 0 170 390" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M117.17 87.5538L169 1" stroke="black" strokeLinecap="round"/>
-                <path d="M61.7659 1H169" stroke="black" strokeLinecap="round"/>
-                <path d="M8.14893 112.426H61.7659" stroke="black" strokeLinecap="round"/>
-                <path d="M61.7659 1C40.8272 44.5144 29.0877 68.9112 8.14893 112.426" stroke="black"
-                      strokeLinecap="round"/>
-                <path d="M61.7659 112.426L34.9574 174.108L8.14893 235.79" stroke="black" strokeLinecap="round"/>
-                <path d="M8.14893 235.79H61.7659" stroke="black" strokeLinecap="round"/>
-                <path d="M169 185.051H117.17" stroke="black" strokeLinecap="round"/>
-                <path d="M1 389L169 185.051" stroke="black" strokeLinecap="round"/>
-                <path d="M61.766 235.79L1 389" stroke="black" strokeLinecap="round"/>
-                <path d="M117.17 185.051L169 87.5538" stroke="black" strokeLinecap="round"/>
-                <path d="M117.25 87.5H169" stroke="black" strokeLinecap="round"/>
-            </svg>
-
-
-            <svg ref={lightningTwoRef} className={`lightning-two ${lightningTwoInView ? 'lightning-two-animate' : ''}`} width="144" height="354" viewBox="0 0 144 354" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M52.3617 214.005L1 353" stroke="black" strokeLinecap="round"/>
-                <path d="M1 353L143 167.974" stroke="black" strokeLinecap="round"/>
-                <path d="M143 167.974H121.096H99.1915" stroke="black" strokeLinecap="round"/>
-                <path d="M7.04254 214.005H52.3617" stroke="black" strokeLinecap="round"/>
-                <path d="M52.3617 102.087L7.04254 214.005" stroke="black" strokeLinecap="round"/>
-                <path d="M7.04254 102.087H52.3617" stroke="black" strokeLinecap="round"/>
-                <path d="M99.1915 167.974L143 79.5231" stroke="black" strokeLinecap="round"/>
-                <path d="M143 79.5231H121.096H99.1915" stroke="black" strokeLinecap="round"/>
-                <path d="M99.1915 79.5231L121.096 40.2615L143 1" stroke="black" strokeLinecap="round"/>
-                <path d="M52.3617 1L7.04254 102.087" stroke="black" strokeLinecap="round"/>
-                <path d="M52.3617 1H143" stroke="black" strokeLinecap="round"/>
-            </svg>
-
-
-            <svg ref={photographerStickmanRef} className={`photographer-stickman ${photographerStickmanInView ? 'photographer-stickman-animate' : ''}`} width="716" height="1512" viewBox="0 0 716 1512" fill="none"
+            <svg ref={photographerStickmanRef}
+                 className={`photographer-stickman ${photographerStickmanInView ? 'photographer-stickman-animate' : ''}`}
+                 width="716" height="1512" viewBox="0 0 716 1512" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M301.753 155.365C309.144 157.532 329.056 160.565 349.58 155.365" stroke="black"
                       strokeLinecap="round"/>
@@ -301,8 +262,116 @@ export default function SectionTwo() {
                 <path d="M336.5 118.8L346.644 122.58" stroke="black" strokeLinecap="round"/>
             </svg>
 
+            <svg ref={sectionTwoBorderRef}
+                 className={`section-two-border ${sectionTwoBorderInView ? 'section-two-border-animate' : ''}`}
+                 width="1554" height="809" viewBox="0 0 1554 809" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M16 134.5L23.5 128.5M23.5 144L32 137M34 151.5L40.5 144M45 156.5L50 148M59 159L61.5 149.5M73 157.5V149.5M32 1C9.00001 46 -19.6 140.4 50 158C68.4191 161.608 120.743 156.362 113 110C105.559 65.4457 63.3082 72.9249 50 79C41.3333 71.3333 25.6 45 32 1Z"
+                    stroke="black"/>
+                <path d="M1 126C6.66667 138 15 167 61 167" stroke="black"/>
+                <path
+                    d="M142 134.5L149.5 128.5M149.5 144L158 137M160 151.5L166.5 144M171 156.5L176 148M185 159L187.5 149.5M199 157.5V149.5M158 1C135 46 106.4 140.4 176 158C194.419 161.608 246.743 156.362 239 110C231.559 65.4457 189.308 72.9249 176 79C167.333 71.3333 151.6 45 158 1Z"
+                    stroke="black"/>
+                <path d="M127 126C132.667 138 141 167 187 167" stroke="black"/>
+                <path
+                    d="M1411.78 674.5L1404.28 680.5M1404.28 665L1395.78 672M1393.78 657.5L1387.28 665M1382.78 652.5L1377.78 661M1368.78 650L1366.28 659.5M1354.78 651.5V659.5M1395.78 808C1418.78 763 1447.38 668.6 1377.78 651C1359.36 647.392 1307.03 652.638 1314.78 699C1322.22 743.554 1364.47 736.075 1377.78 730C1386.44 737.667 1402.18 764 1395.78 808Z"
+                    stroke="black"/>
+                <path d="M1426.78 683C1421.11 671 1412.78 642 1366.78 642" stroke="black"/>
+                <path
+                    d="M1537.78 674.5L1530.28 680.5M1530.28 665L1521.78 672M1519.78 657.5L1513.28 665M1508.78 652.5L1503.78 661M1494.78 650L1492.28 659.5M1480.78 651.5V659.5M1521.78 808C1544.78 763 1573.38 668.6 1503.78 651C1485.36 647.392 1433.03 652.638 1440.78 699C1448.22 743.554 1490.47 736.075 1503.78 730C1512.44 737.667 1528.18 764 1521.78 808Z"
+                    stroke="black"/>
+                <path d="M1552.78 683C1547.11 671 1538.78 642 1492.78 642" stroke="black"/>
+                <path d="M69.3291 670.452C65.2936 561.857 67.9395 402.721 68.9702 195" stroke="black"/>
+                <path
+                    d="M1432.6 638C1432.6 638 1432.6 636.711 1432.6 550.257C1432.6 500.048 1432.6 456.084 1432.6 417C1432.6 323.183 1432.6 257.48 1432.6 201"
+                    stroke="black"/>
+                <path
+                    d="M1432.6 201C1432.6 63.4 1432.6 59.1156 1335 59.1156C1309.23 59.1156 1208.83 59.1156 1075 59.1156C815.525 59.1156 430.402 59.1156 220 59.1156"
+                    stroke="black"/>
+                <path d="M1090 48C1222.16 48 1246.51 48 1345.75 48C1445 48 1445 67 1445 186.503V418" stroke="black"/>
+                <path
+                    d="M409 768.132C276.854 766.591 251.478 769.29 152.239 768.132C53 766.975 53.2216 747.976 54.6151 628.482L54.6151 515L54.6151 399"
+                    stroke="black"/>
+                <path d="M67.9999 614C69.8273 751.588 66.8843 755.168 164.477 753.872L1335 753.872" stroke="black"/>
+            </svg>
 
-            <svg ref={cowRef} className={`cow ${cowInView ? 'cow-animate' : ''}`} width="2276" height="1743" viewBox="0 0 2276 1743" fill="none"
+            <h3 className={"sectionTwo-header"}>
+                Печатна реклама
+            </h3>
+
+            <p className={"sectionTwo-text"}>
+                Проектираме и изпълняваме печатни рекламни<br/>
+                мериали: каталози, книги, брошури, плакати,<br/>
+                билбордове.
+            </p>
+
+            <svg ref={horseRef} className={`horse ${horseInView ? 'horse-animate' : ''}`} width="2850" height="1879"
+                 viewBox="0 0 2850 1879" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M1553 548.312C1358.99 566.896 1035.67 522.459 810 548.312" stroke="black"
+                      strokeLinecap="round"/>
+                <path d="M1553 548C1682.03 522.518 1816.65 524.526 1867 449" stroke="black" strokeLinecap="round"/>
+                <path d="M1867 449C1928.73 356 1980.17 323.967 2007.13 302.267C2028.83 289.867 2078.57 267.133 2109 263"
+                      stroke="black" strokeLinecap="round"/>
+                <path d="M2123 302C2119.55 279.041 2111.82 286.952 2109 263" stroke="black" strokeLinecap="round"/>
+                <path d="M2300 273C2257.29 43.7337 2424 -202.694 2424 273" stroke="black" strokeLinecap="round"/>
+                <path
+                    d="M2300 273C2230.47 -102.604 2109.5 -32.4366 2109.5 188.386C2110.78 202.383 2107.9 248.534 2109.5 262.681"
+                    stroke="black" strokeLinecap="round"/>
+                <path d="M2430 284C2471.4 280.566 2554.2 255.564 2637 216" stroke="black" strokeLinecap="round"/>
+                <path d="M2453 290C2527.92 283.077 2654.67 257.6 2719 236" stroke="black" strokeLinecap="round"/>
+                <path d="M2701 381C2601.78 327.178 2494.28 267.838 2424 273.358" stroke="black" strokeLinecap="round"/>
+                <path d="M2651 657.243C2853.54 760.319 2948.61 381 2700.6 381" stroke="black" strokeLinecap="round"/>
+                <path d="M2650.99 657C2604.31 485.633 2671.83 433.179 2701 381" stroke="black" strokeLinecap="round"/>
+                <path d="M2122.55 302C2134.03 382.743 2101.93 457.304 2092 508" stroke="black" strokeLinecap="round"/>
+                <path d="M2424 644.959C2537.5 614.853 2547.82 621.878 2651 657" stroke="black" strokeLinecap="round"/>
+                <path d="M2424 645.184C2310.65 676.129 2046.84 735.952 2092.19 508" stroke="black"
+                      strokeLinecap="round"/>
+                <path d="M1929 1186C2010.13 1161.22 2300.25 1033.2 2424 645" stroke="black" strokeLinecap="round"/>
+                <path
+                    d="M1764 1185.63C1453.43 1255.12 1114.23 1214.58 983.455 1185.63C961.773 1180.83 885.37 1169.08 810 1104"
+                    stroke="black" strokeLinecap="round"/>
+                <path d="M1976 1673H2042.5H2109" stroke="black" strokeLinecap="round"/>
+                <path d="M2067 1120C2102.83 1395.52 2109.25 1569.78 2108.99 1673" stroke="black"
+                      strokeLinecap="round"/>
+                <path d="M1929 1186C1946.71 1311.2 1976 1569.82 1976 1673" stroke="black" strokeLinecap="round"/>
+                <path d="M1976 1673C1976 1891.39 2159.32 1813.1 2109.38 1673" stroke="black" strokeLinecap="round"/>
+                <path d="M1784 1706C1784 1865.42 1976.94 1913.04 1940.39 1706" stroke="black" strokeLinecap="round"/>
+                <path d="M1784 1706H1940" stroke="black" strokeLinecap="round"/>
+                <path d="M1929 1186C1929 1368.62 1945.24 1623.46 1939.93 1706" stroke="black" strokeLinecap="round"/>
+                <path d="M1764 1186C1770.35 1315.24 1784 1602.83 1784 1706" stroke="black" strokeLinecap="round"/>
+                <path d="M670 1728H740H810" stroke="black" strokeLinecap="round"/>
+                <path d="M849 1674L908.785 1673L983 1674" stroke="black" strokeLinecap="round"/>
+                <path d="M849 1674C849 1895.7 1040.94 1833.83 983.153 1674" stroke="black" strokeLinecap="round"/>
+                <path d="M822 1186C828.155 1315.35 834.017 1572.78 849 1674" stroke="black" strokeLinecap="round"/>
+                <path d="M983 1186C967.25 1362.07 983 1587.34 983 1674" stroke="black" strokeLinecap="round"/>
+                <path d="M670.169 1728C651.444 1896.54 864.612 1957.17 810.033 1728" stroke="black"
+                      strokeLinecap="round"/>
+                <path d="M822 1186C798.377 1358.64 809.724 1641.28 809.724 1728" stroke="black" strokeLinecap="round"/>
+                <path d="M682 1186C668.637 1331.06 665.207 1631.94 670.15 1728" stroke="black" strokeLinecap="round"/>
+                <path d="M653 699C541.484 729.277 147.462 1173.8 182.155 1405" stroke="black" strokeLinecap="round"/>
+                <path d="M653 688C512.743 734.054 122.912 1156.01 135.288 1405" stroke="black" strokeLinecap="round"/>
+                <path d="M653 674C529.937 685.013 118.4 1105.99 92 1405" stroke="black" strokeLinecap="round"/>
+                <path d="M653 666C495.073 695.587 88.3847 1059.24 44 1405" stroke="black" strokeLinecap="round"/>
+                <path d="M653 657C530.234 687.994 20.6013 976.243 1 1405" stroke="black" strokeLinecap="round"/>
+                <path d="M1897 407C1845.31 439.672 1675.29 542.762 1545 570" stroke="black" strokeLinecap="round"/>
+                <path d="M1928 371C1897.08 390.987 1735.06 482.377 1563 532" stroke="black" strokeLinecap="round"/>
+                <path d="M1950 350C1890.88 374.094 1670.52 471.522 1578 493" stroke="black" strokeLinecap="round"/>
+                <path d="M1997 310C1970.86 329.957 1768.28 433.971 1590 457" stroke="black" strokeLinecap="round"/>
+                <path
+                    d="M2781.96 515.843C2781.96 513.936 2783.11 513.458 2783.93 515.626C2784.57 517.314 2781.63 517.072 2782.21 515.843C2784.64 510.642 2788.35 517.794 2784.73 517.794C2781.25 517.794 2783.67 513.023 2785.84 513.023C2789.06 513.023 2786.47 520.361 2783.31 517.577C2781.15 515.67 2787.5 511.405 2787.5 516.818C2787.5 519.796 2782.63 520.978 2782.02 517.74C2781.16 513.17 2788.38 511.085 2788.6 514.867C2788.95 520.632 2781.96 518.935 2781.96 513.511C2781.96 510.284 2788.6 509.756 2788.6 514.379C2788.6 518.629 2779.99 518.359 2781.1 515.843C2783.49 510.432 2791.27 513.762 2788.36 519.746C2786.14 524.303 2783.12 514.975 2786.94 514.975C2788.9 514.975 2788.34 521.462 2783.62 517.306C2779.22 513.424 2787.5 512.746 2787.5 515.843C2787.5 517.88 2784.82 515.611 2784.42 514.867C2783.43 513.007 2786.98 515.207 2784.67 515.788C2783.82 516.001 2784.17 512.739 2784.17 513.511C2784.17 515.197 2786.24 514.735 2785.28 513.891"
+                    stroke="black" strokeWidth="8" strokeLinecap="round"/>
+                <path
+                    d="M2425.55 386.876C2424.18 386.501 2425.76 384.333 2426.61 385.351C2427.86 386.859 2428.99 387.75 2428.66 389.926C2428.12 393.576 2423.43 391.388 2424.72 388.91C2427.12 384.298 2428.52 391.847 2426.02 391.847C2422.85 391.847 2421.95 385.002 2426.61 386.085C2431.96 387.333 2429.79 393.538 2425.02 393.937C2417.01 394.606 2413.39 380.82 2422.14 384.052C2426.98 385.839 2424.91 393.177 2420.31 391.339C2412.49 388.207 2413.32 378.072 2423.37 380.323C2445.32 385.243 2403.8 398.042 2415.08 385.407C2417.74 382.421 2428.72 381.009 2428.72 387.102C2428.72 392.054 2422.49 391.863 2422.49 386.819C2422.49 382.545 2426.55 376.739 2429.55 382.809C2432.58 388.96 2419.56 392.402 2415.67 391.903C2414.02 391.692 2412.47 389.064 2412.02 387.667C2410.44 382.785 2413.96 382.555 2418.02 382.018C2423.96 381.231 2425.32 387.064 2422.14 390.943C2417.69 396.366 2414.02 390.884 2417.19 386.311C2420.5 381.553 2427.97 380.432 2427.66 387.667C2427.54 390.72 2419.61 388.159 2419.25 385.746C2418.68 381.899 2425.62 378.134 2427.43 381.792C2430.86 388.756 2422.11 394.374 2416.08 394.954C2410.63 395.477 2409.05 390.156 2413.9 387.893C2417.52 386.205 2422.78 390.416 2419.72 393.937C2417.35 396.667 2415.52 389.729 2416.19 387.78C2418.64 380.722 2424.62 382.456 2427.66 387.102C2430.79 391.872 2422.59 398.76 2419.78 394.841C2417.46 391.597 2416.11 381.792 2422.37 381.792C2427.33 381.792 2422.73 390.957 2420.78 392.412C2415.87 396.084 2414.87 387.48 2414.96 385.068C2415.1 381.07 2421.36 379.159 2423.9 382.3C2429.38 389.068 2407.95 393.925 2414.96 383.826"
+                    stroke="black" strokeWidth="8" strokeLinecap="round"/>
+                <path d="M682.107 1186C269.548 1018.76 539.774 578.971 810 548" stroke="black" strokeLinecap="round"/>
+                <path d="M1872 441C1829.38 484.874 1689.98 598 1528 598" stroke="black" strokeLinecap="round"/>
+            </svg>
+
+
+            <svg ref={cowRef} className={`cow ${cowInView ? 'cow-animate' : ''}`} width="2276" height="1743"
+                 viewBox="0 0 2276 1743" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M729 1144C749.473 1199.92 785.916 1237.76 749.473 1144" stroke="black" strokeLinecap="round"/>
                 <path d="M674.697 1144C667.281 1194.28 686.232 1242.05 692 1144" stroke="black" strokeLinecap="round"/>
@@ -372,70 +441,6 @@ export default function SectionTwo() {
                 <path d="M769 1137.66C781.469 1172.11 842.153 1234.03 781.469 1127" stroke="black"
                       strokeLinecap="round"/>
             </svg>
-
-
-            <svg ref={horseRef} className={`horse ${horseInView ? 'horse-animate' : ''}`} width="2850" height="1879" viewBox="0 0 2850 1879" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M1553 548.312C1358.99 566.896 1035.67 522.459 810 548.312" stroke="black"
-                      strokeLinecap="round"/>
-                <path d="M1553 548C1682.03 522.518 1816.65 524.526 1867 449" stroke="black" strokeLinecap="round"/>
-                <path d="M1867 449C1928.73 356 1980.17 323.967 2007.13 302.267C2028.83 289.867 2078.57 267.133 2109 263"
-                      stroke="black" strokeLinecap="round"/>
-                <path d="M2123 302C2119.55 279.041 2111.82 286.952 2109 263" stroke="black" strokeLinecap="round"/>
-                <path d="M2300 273C2257.29 43.7337 2424 -202.694 2424 273" stroke="black" strokeLinecap="round"/>
-                <path
-                    d="M2300 273C2230.47 -102.604 2109.5 -32.4366 2109.5 188.386C2110.78 202.383 2107.9 248.534 2109.5 262.681"
-                    stroke="black" strokeLinecap="round"/>
-                <path d="M2430 284C2471.4 280.566 2554.2 255.564 2637 216" stroke="black" strokeLinecap="round"/>
-                <path d="M2453 290C2527.92 283.077 2654.67 257.6 2719 236" stroke="black" strokeLinecap="round"/>
-                <path d="M2701 381C2601.78 327.178 2494.28 267.838 2424 273.358" stroke="black" strokeLinecap="round"/>
-                <path d="M2651 657.243C2853.54 760.319 2948.61 381 2700.6 381" stroke="black" strokeLinecap="round"/>
-                <path d="M2650.99 657C2604.31 485.633 2671.83 433.179 2701 381" stroke="black" strokeLinecap="round"/>
-                <path d="M2122.55 302C2134.03 382.743 2101.93 457.304 2092 508" stroke="black" strokeLinecap="round"/>
-                <path d="M2424 644.959C2537.5 614.853 2547.82 621.878 2651 657" stroke="black" strokeLinecap="round"/>
-                <path d="M2424 645.184C2310.65 676.129 2046.84 735.952 2092.19 508" stroke="black"
-                      strokeLinecap="round"/>
-                <path d="M1929 1186C2010.13 1161.22 2300.25 1033.2 2424 645" stroke="black" strokeLinecap="round"/>
-                <path
-                    d="M1764 1185.63C1453.43 1255.12 1114.23 1214.58 983.455 1185.63C961.773 1180.83 885.37 1169.08 810 1104"
-                    stroke="black" strokeLinecap="round"/>
-                <path d="M1976 1673H2042.5H2109" stroke="black" strokeLinecap="round"/>
-                <path d="M2067 1120C2102.83 1395.52 2109.25 1569.78 2108.99 1673" stroke="black"
-                      strokeLinecap="round"/>
-                <path d="M1929 1186C1946.71 1311.2 1976 1569.82 1976 1673" stroke="black" strokeLinecap="round"/>
-                <path d="M1976 1673C1976 1891.39 2159.32 1813.1 2109.38 1673" stroke="black" strokeLinecap="round"/>
-                <path d="M1784 1706C1784 1865.42 1976.94 1913.04 1940.39 1706" stroke="black" strokeLinecap="round"/>
-                <path d="M1784 1706H1940" stroke="black" strokeLinecap="round"/>
-                <path d="M1929 1186C1929 1368.62 1945.24 1623.46 1939.93 1706" stroke="black" strokeLinecap="round"/>
-                <path d="M1764 1186C1770.35 1315.24 1784 1602.83 1784 1706" stroke="black" strokeLinecap="round"/>
-                <path d="M670 1728H740H810" stroke="black" strokeLinecap="round"/>
-                <path d="M849 1674L908.785 1673L983 1674" stroke="black" strokeLinecap="round"/>
-                <path d="M849 1674C849 1895.7 1040.94 1833.83 983.153 1674" stroke="black" strokeLinecap="round"/>
-                <path d="M822 1186C828.155 1315.35 834.017 1572.78 849 1674" stroke="black" strokeLinecap="round"/>
-                <path d="M983 1186C967.25 1362.07 983 1587.34 983 1674" stroke="black" strokeLinecap="round"/>
-                <path d="M670.169 1728C651.444 1896.54 864.612 1957.17 810.033 1728" stroke="black"
-                      strokeLinecap="round"/>
-                <path d="M822 1186C798.377 1358.64 809.724 1641.28 809.724 1728" stroke="black" strokeLinecap="round"/>
-                <path d="M682 1186C668.637 1331.06 665.207 1631.94 670.15 1728" stroke="black" strokeLinecap="round"/>
-                <path d="M653 699C541.484 729.277 147.462 1173.8 182.155 1405" stroke="black" strokeLinecap="round"/>
-                <path d="M653 688C512.743 734.054 122.912 1156.01 135.288 1405" stroke="black" strokeLinecap="round"/>
-                <path d="M653 674C529.937 685.013 118.4 1105.99 92 1405" stroke="black" strokeLinecap="round"/>
-                <path d="M653 666C495.073 695.587 88.3847 1059.24 44 1405" stroke="black" strokeLinecap="round"/>
-                <path d="M653 657C530.234 687.994 20.6013 976.243 1 1405" stroke="black" strokeLinecap="round"/>
-                <path d="M1897 407C1845.31 439.672 1675.29 542.762 1545 570" stroke="black" strokeLinecap="round"/>
-                <path d="M1928 371C1897.08 390.987 1735.06 482.377 1563 532" stroke="black" strokeLinecap="round"/>
-                <path d="M1950 350C1890.88 374.094 1670.52 471.522 1578 493" stroke="black" strokeLinecap="round"/>
-                <path d="M1997 310C1970.86 329.957 1768.28 433.971 1590 457" stroke="black" strokeLinecap="round"/>
-                <path
-                    d="M2781.96 515.843C2781.96 513.936 2783.11 513.458 2783.93 515.626C2784.57 517.314 2781.63 517.072 2782.21 515.843C2784.64 510.642 2788.35 517.794 2784.73 517.794C2781.25 517.794 2783.67 513.023 2785.84 513.023C2789.06 513.023 2786.47 520.361 2783.31 517.577C2781.15 515.67 2787.5 511.405 2787.5 516.818C2787.5 519.796 2782.63 520.978 2782.02 517.74C2781.16 513.17 2788.38 511.085 2788.6 514.867C2788.95 520.632 2781.96 518.935 2781.96 513.511C2781.96 510.284 2788.6 509.756 2788.6 514.379C2788.6 518.629 2779.99 518.359 2781.1 515.843C2783.49 510.432 2791.27 513.762 2788.36 519.746C2786.14 524.303 2783.12 514.975 2786.94 514.975C2788.9 514.975 2788.34 521.462 2783.62 517.306C2779.22 513.424 2787.5 512.746 2787.5 515.843C2787.5 517.88 2784.82 515.611 2784.42 514.867C2783.43 513.007 2786.98 515.207 2784.67 515.788C2783.82 516.001 2784.17 512.739 2784.17 513.511C2784.17 515.197 2786.24 514.735 2785.28 513.891"
-                    stroke="black" strokeWidth="8" strokeLinecap="round"/>
-                <path
-                    d="M2425.55 386.876C2424.18 386.501 2425.76 384.333 2426.61 385.351C2427.86 386.859 2428.99 387.75 2428.66 389.926C2428.12 393.576 2423.43 391.388 2424.72 388.91C2427.12 384.298 2428.52 391.847 2426.02 391.847C2422.85 391.847 2421.95 385.002 2426.61 386.085C2431.96 387.333 2429.79 393.538 2425.02 393.937C2417.01 394.606 2413.39 380.82 2422.14 384.052C2426.98 385.839 2424.91 393.177 2420.31 391.339C2412.49 388.207 2413.32 378.072 2423.37 380.323C2445.32 385.243 2403.8 398.042 2415.08 385.407C2417.74 382.421 2428.72 381.009 2428.72 387.102C2428.72 392.054 2422.49 391.863 2422.49 386.819C2422.49 382.545 2426.55 376.739 2429.55 382.809C2432.58 388.96 2419.56 392.402 2415.67 391.903C2414.02 391.692 2412.47 389.064 2412.02 387.667C2410.44 382.785 2413.96 382.555 2418.02 382.018C2423.96 381.231 2425.32 387.064 2422.14 390.943C2417.69 396.366 2414.02 390.884 2417.19 386.311C2420.5 381.553 2427.97 380.432 2427.66 387.667C2427.54 390.72 2419.61 388.159 2419.25 385.746C2418.68 381.899 2425.62 378.134 2427.43 381.792C2430.86 388.756 2422.11 394.374 2416.08 394.954C2410.63 395.477 2409.05 390.156 2413.9 387.893C2417.52 386.205 2422.78 390.416 2419.72 393.937C2417.35 396.667 2415.52 389.729 2416.19 387.78C2418.64 380.722 2424.62 382.456 2427.66 387.102C2430.79 391.872 2422.59 398.76 2419.78 394.841C2417.46 391.597 2416.11 381.792 2422.37 381.792C2427.33 381.792 2422.73 390.957 2420.78 392.412C2415.87 396.084 2414.87 387.48 2414.96 385.068C2415.1 381.07 2421.36 379.159 2423.9 382.3C2429.38 389.068 2407.95 393.925 2414.96 383.826"
-                    stroke="black" strokeWidth="8" strokeLinecap="round"/>
-                <path d="M682.107 1186C269.548 1018.76 539.774 578.971 810 548" stroke="black" strokeLinecap="round"/>
-                <path d="M1872 441C1829.38 484.874 1689.98 598 1528 598" stroke="black" strokeLinecap="round"/>
-            </svg>
-
 
             <svg className={"grass"} width="18566" height="1200" viewBox="0 0 18566 1200" fill="none"
                  xmlns="http://www.w3.org/2000/svg">

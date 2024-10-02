@@ -71,6 +71,19 @@ export default function SectionOne() {
 
     return (
         <section id={"sectionOne"}>
+
+            <motion.div className={"keycap-container"}
+                        ref={ref}
+                        animate={isAnimating ? {y: 0} : {}}
+                        initial={{y: '-33.5rem'}}
+                        transition={{duration: 0.5, ease: 'easeOut'}}
+                        style={{
+                            margin: '0 auto',
+                        }}
+            >
+                <img src={keycapImg} className={"keycap-img"} alt={"keycap image"}/>
+            </motion.div>
+
             <svg ref={sixEdgeStarRef}
                  className={`six-edge-star ${sixEdgeStarInView ? 'six-edge-star-animate' : ''}`} width="75" height="73"
                  viewBox="0 0 75 73" fill="none"
@@ -529,17 +542,6 @@ export default function SectionOne() {
                 <path d="M522 427L437 366" stroke="black"/>
             </svg>
 
-            <motion.div className={"keycap-container"}
-                        ref={ref}
-                        animate={isAnimating ? {y: 0} : {}}
-                        initial={{y: '-33.5rem'}}
-                        transition={{duration: 0.5, ease: 'easeOut'}}
-                        style={{
-                            margin: '0 auto',
-                        }}
-            >
-                <img src={keycapImg} className={"keycap-img"} alt={"keycap image"}/>
-            </motion.div>
 
             <motion.div className={"trampoline-container"}
                         ref={ref}
@@ -554,7 +556,6 @@ export default function SectionOne() {
             >
                 <img className={"trampoline-img"} src={TrampolineImg} alt="trampoline img"/>
             </motion.div>
-
             <img src={Shadow} alt="trampoline img" className={"trampolineShadow-img"}/>
         </section>
     )
