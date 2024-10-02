@@ -1,58 +1,3 @@
-.peacock-container{
-    position:absolute;
-    top: 307%;
-    left: 10%;
-    padding-right:27rem;
-}
-
-img.peacock-img{
-    height: 27rem;
-    width: auto;
-
-}
-
-.sectionTwo-header{
-    position: absolute;
-    top: 339%;
-    left: 63.4%;
-    font-weight: bolder;
-}
-
-.sectionTwo-text{
-    position: absolute;
-    top: 346%;
-    left: 60%;
-}
-
-.section-two-border{
-    position: absolute;
-    left: 57.5%;
-    top: 335%;
-    height: 13rem;
-    stroke-width: 7;
-}
-
-.section-two-border-animate{
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: draw 2s linear forwards;
-}
-
-.section-two-bird{
-    position: absolute;
-    top: 315%;
-    left: 85%;
-    stroke-width: 30;
-    height:5rem;
-    transform: rotate(-10deg);
-}
-
-.section-two-bird-animate{
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: draw 2s linear forwards;
-}
-
 .section-two-cloud{
     position: absolute;
     top: 290%;
@@ -111,6 +56,33 @@ img.peacock-img{
     animation: draw 7s linear forwards;
 }
 
+.section-two-bird{
+    position: absolute;
+    top: 315%;
+    left: 85%;
+    stroke-width: 30;
+    height:5rem;
+    transform: rotate(-10deg);
+}
+
+.section-two-bird-animate{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 2s linear forwards;
+}
+
+.peacock-container{
+    position:absolute;
+    top: 307%;
+    left: 10%;
+    padding-right:27rem;
+}
+
+img.peacock-img{
+    height: 27rem;
+    width: auto;
+}
+
 .photographer-stickman{
     position: absolute;
     stroke-width: 22;
@@ -119,18 +91,37 @@ img.peacock-img{
     height: 7rem;
 }
 
-.photographer-stickman-animate{
+.section-two-border{
+    position: absolute;
+    left: 57.5%;
+    top: 335%;
+    height: 13rem;
+    stroke-width: 7;
+}
+
+.section-two-border-animate{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 2s linear forwards;
 }
 
-.grass{
+.sectionTwo-header{
     position: absolute;
-    stroke-width: 20;
-    height: 4rem;
-    top: 369%;
-    left: 10%;
+    top: 339%;
+    left: 63.4%;
+    font-weight: bolder;
+}
+
+.sectionTwo-text{
+    position: absolute;
+    top: 346%;
+    left: 60%;
+}
+
+.photographer-stickman-animate{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 2s linear forwards;
 }
 
 .cow{
@@ -160,3 +151,12 @@ img.peacock-img{
     stroke-dashoffset: 1000;
     animation: draw 3s linear forwards;
 }
+
+.grass{
+    position: absolute;
+    stroke-width: 20;
+    height: 4rem;
+    top: 369%;
+    left: 10%;
+}
+
