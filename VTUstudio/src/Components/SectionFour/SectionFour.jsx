@@ -54,8 +54,6 @@ export default function SectionFour() {
         }
     }, [inView, scrollDirection]);
 
-    ////
-
     const { ref: pensilJetRef, inView: pensilJetInView } = useInView({ triggerOnce: false, threshold: 0.1 });
 
 
