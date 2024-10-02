@@ -1,3 +1,18 @@
+svg.svg-text{
+    height: 12rem;
+    width: auto;
+    position: absolute;
+    left: 20%;
+    top: 18%;
+    stroke-width: 1.2;
+}
+
+svg.svg-text-animate{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 40s linear forwards;
+}
+
 .graphiti-img{
     opacity: 0.8;
     position: absolute;
@@ -5,77 +20,6 @@
     right: 10%;
     height: 10em;
     width: auto;
-}
-
-.logoText-first-word{
-    font-size: 5rem;
-    text-align: right;
-    text-shadow: -8px 8px 5px rgba(0, 0, 0, 0.3);
-    -webkit-background-clip: text;
-    color: black;
-}
-
-.logoText-first-word img{
-    height: 4.4rem;
-    width: auto;
-}
-
-.info-text{
-    position: absolute;
-    bottom: 2.5%;
-    left: 32%;
-}
-
-span.logoText-first-word, span.logoText-second-word{
-    font-family: 'Roboto Light', sans-serif;
-    letter-spacing: 1rem;
-    font-size: 6rem;
-}
-
-.first-keycap{
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-}
-
-.cherries-container{
-    position: absolute;
-    transform: rotate(180deg);
-    top: 46%;
-    left: 23%;
-    z-index: 1;
-}
-
-.cherries-img{
-    z-index: 10;
-    height: 14rem;
-    width: auto;
-}
-
-.logoImg-container{
-    position: absolute;
-    left: 33%;
-    top: 65%;
-}
-
-img.logoImg-half{
-    height: 5.3rem;
-    width: auto;
-}
-
-img.cherriesShadow-img{
-    position: absolute;
-    top: 80%;
-    left: 20%;
-    height:1.8rem;
-    width: 15rem;
-    filter: brightness(0.1);
-}
-
-.keycap-first-container{
-    position: absolute;
-    left: 40%;
-    top: 52.5%;
 }
 
 .surfboard-stickman{
@@ -92,6 +36,59 @@ img.cherriesShadow-img{
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 5s linear forwards;
+}
+
+.cherries-container{
+    position: absolute;
+    transform: rotate(180deg);
+    top: 46%;
+    left: 23%;
+    z-index: 1;
+}
+
+.cherries-img{
+    z-index: 10;
+    height: 14rem;
+    width: auto;
+}
+
+.logoText-first-word{
+    font-size: 5rem;
+    text-align: right;
+    text-shadow: -8px 8px 5px rgba(0, 0, 0, 0.3);
+    -webkit-background-clip: text;
+    color: black;
+}
+
+.logoText-first-word img{
+    height: 4.4rem;
+    width: auto;
+}
+
+.logoImg-container{
+    position: absolute;
+    left: 33%;
+    top: 65%;
+}
+
+img.logoImg-half{
+    height: 5.3rem;
+    width: auto;
+}
+
+span.logoText-first-word, span.logoText-second-word{
+    font-family: 'Roboto Light', sans-serif;
+    letter-spacing: 1rem;
+    font-size: 6rem;
+}
+
+img.cherriesShadow-img{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    height:1.8rem;
+    width: 15rem;
+    filter: brightness(0.1);
 }
 
 .falling-stickman{
@@ -124,17 +121,29 @@ img.cherriesShadow-img{
     animation: draw 7s linear forwards;
 }
 
-svg.svg-text{
-    height: 12rem;
-    width: auto;
+.info-text{
     position: absolute;
-    left: 20%;
-    top: 18%;
-    stroke-width: 1.2;
+    bottom: 2.5%;
+    left: 32%;
 }
 
-svg.svg-text-animate{
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: draw 40s linear forwards;
+.centered-info-text{
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
+
+.first-keycap{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+}
+
+.keycap-first-container{
+    position: absolute;
+    left: 40%;
+    top: 52.5%;
+}
+
+

@@ -1,6 +1,6 @@
 import './Main.css';
 import { motion } from 'framer-motion';
-import graphitiImg from '../../assets/Images/Main/graphiti.png';
+import graphitiImg from '../../assets/Images/Main/graphiti-edited.png';
 import keycap from '../../assets/Images/Main/keycap.png';
 import cherriesImg from '../../assets/Images/Main/cherries.png';
 import VTUlogoHalve from '../../assets/Images/Main/DrawnVTUlogoHalve.png';
@@ -49,112 +49,8 @@ export default function Main() {
 
     return (<main id="main">
 
-            <motion.div className={"cherries-container"}
-                        ref={ref}
-                        animate={inView ? {y: 0, rotate: 180} : {}}
-                        initial={{y: '-32rem', rotate: 0}}
-                        transition={{duration: animationDuration, ease: 'easeOut'}}
-                        style={{
-                            margin: '0 auto',
-                        }}
-            >
-                <img className={"cherries-img"} src={cherriesImg} alt={"cherries img"}/>
-            </motion.div>
-
-            <img className={"graphiti-img"} src={graphitiImg} alt="Graphiti img"/>
-
-            <motion.div className={"logoImg-container"}
-                        ref={ref}
-                        initial={{y: '-32rem'}}
-                        animate={inView ? {y: 0} : {}}
-                        transition={{duration: animationDuration, ease: 'easeOut'}}
-                        style={{
-                            backgroundColor: 'none',
-                            margin: '0 auto',
-                        }}
-            >
-                <span className={'logoText-first-word'}><img className={"logoImg-half"} src={VTUlogoHalve}
-                                                             alt={"vtu logo half image"}/> STUDIO</span>
-            </motion.div>
-
-            <p className={"info-text"}>ВТУ студио е част от ВТУ ГРУП<br/> Създадено пред 2024 година и работи в
-                областта на уеб
-                разработката</p>
-
-            <motion.div className={"keycap-first-container"}
-                        initial={{y: '21.8rem'}}
-                        animate={inView && scrollDirection === 'up' ? {y: '-29.5rem'} : {}}
-                        transition={{duration: 0.4, ease: 'easeOut'}}
-                        style={{
-                            backgroundColor: 'none',
-                            margin: '0 auto',
-                        }}
-            >
-                <img className={"keycapImg first-keycap"} src={keycap} alt={"keycap image"}/>
-            </motion.div>
-
-            <img src={CherriesShadow} alt={"cherries shadow img"} className="cherriesShadow-img"/>
-
-
-            <svg ref={surfboardStickmanRef} className={`surfboard-stickman ${surfboardStickmanInView ? 'surfboard-stickman-animate' : ''}`} width="283" height="182" viewBox="0 0 283 182" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M178 38C179.667 49.3333 178.4 78.2 160 103C148.667 111.333 123.6 131 114 143" stroke="black"/>
-                <path d="M160 103C167.333 108.333 179.8 125.8 171 153" stroke="black"/>
-                <path
-                    d="M113.953 143.303L117.452 147.31M1.52417 119.5C5.95307 101.397 59.4558 86.97 211.427 133.785C244.265 143.757 284.376 159.471 281.89 170"
-                    stroke="black" strokeLinecap="round"/>
-                <path
-                    d="M180.372 1C157.807 1.00001 156.243 34.7279 180.372 34.7279C204.5 34.7279 202.936 0.999988 180.372 1Z"
-                    stroke="black" strokeLinecap="round"/>
-                <path
-                    d="M1.52418 119.5C0.265885 124.643 2.96874 130.083 8.49999 134.5C43.8337 162.714 94.3901 170.58 203.429 180.875C259.159 181.843 280.213 177.101 281.89 170"
-                    stroke="black" strokeLinecap="round"/>
-                <path d="M1 119.485L282 170" stroke="black"/>
-                <path d="M171 153L175.5 154" stroke="black" strokeLinecap="round"/>
-                <path d="M178 55.5C165.167 56.3333 138.4 59.8 134 67" stroke="black" strokeLinecap="round"/>
-                <path d="M178 55.5C181.167 59.6667 191.6 69.3 208 74.5" stroke="black" strokeLinecap="round"
-                      strokeLinejoin="round"/>
-                <path d="M38.2326 153C34.5 157.224 32.5 158.5 28 163.794C23.5 169.088 40.9954 163.982 50 157.224"
-                      stroke="black" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-
-
-            <svg ref={fallingStickmanRef} className={`falling-stickman ${fallingStickmanInView ? 'falling-stickman-animate' : ''}`} width="175" height="471" viewBox="0 0 175 471" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M101.5 328.5L94.9917 261.429L90.2534 156.536M86.6884 77.6168C133.876 80.7128 140.022 150.284 90.0278 151.541C65.7189 152.153 53.121 134.342 51.9942 115.721C50.8035 96.0465 62.4449 76.0262 86.6884 77.6168Z"
-                    stroke="black" strokeWidth="8" strokeLinecap="round"/>
-                <path d="M101.304 329C88.8498 343.272 60.813 395.184 60.6679 468.649" stroke="black" strokeWidth="8"
-                      strokeLinecap="round"/>
-                <path d="M95 189.5C128.667 182 190.4 134 168 2" stroke="black" strokeWidth="8" strokeLinecap="round"/>
-                <path d="M95 189.5C58.6667 181 -10.4 132.4 3.99999 6" stroke="black" strokeWidth="8"
-                      strokeLinecap="round"/>
-                <path d="M101.5 328.5C127.667 299.833 178.4 274.6 172 403" stroke="black" strokeWidth="8"
-                      strokeLinecap="round"/>
-            </svg>
-
-
-            <svg ref={laybackStickmanRef} className={`layback-stickman ${laybackStickmanInView ? 'layback-stickman-animate' : ''}`} width="305" height="76" viewBox="0 0 305 76" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M59 50H190" stroke="black" strokeLinecap="round"/>
-                <path d="M38.5 50C2.73524 50 6.31175 -2.35905 38.5 1.17078C70.6883 4.7006 74.2647 50 38.5 50Z"
-                      stroke="black"/>
-                <path d="M190 50C240 50 229 50 304 50" stroke="black" strokeLinecap="round"/>
-                <path d="M190 50.125C233 5.625 253.5 10.625 291 45.125" stroke="black" strokeLinecap="round"/>
-                <path d="M59 50C68 78 79 71 134 71" stroke="black" strokeLinecap="round"/>
-                <path d="M59 50C77.8889 46.0417 118.733 36.7 131 31" stroke="black" strokeLinecap="round"/>
-                <path d="M144.042 29.1341L133.486 34.2083L120 12.392L137.458 4L144.042 29.1341Z" stroke="black"
-                      strokeLinecap="round"/>
-                <path d="M127 9C112.5 5.33333 78.8 2.1 60 18.5" stroke="black" strokeLinecap="round"/>
-                <path
-                    d="M129 7.809C127.638 7.4176 126.131 7.02463 124.5 6.64709M60 18.5L59 17C60.3016 15.9587 61.6367 14.9927 63 14.0976M63 14.0976L63.5 15M63 14.0976C64.309 13.2381 65.6439 12.444 67 11.7114M67 11.7114L67.5 13M67 11.7114C68.7996 10.7393 70.6366 9.87535 72.5 9.11063M72.5 9.11063L73 10.5M72.5 9.11063C74.3118 8.3671 76.1485 7.71732 78 7.15296M78 7.15296L78.5 8.5M78 7.15296C79.9871 6.54726 81.9913 6.03995 84 5.62069M84 5.62069L84.5 7.5M84 5.62069C86.1666 5.16847 88.3385 4.81869 90.5 4.55839M90.5 4.55839V6.5M90.5 4.55839C92.8524 4.2751 95.1925 4.0978 97.5 4.00979M97.5 4.00979V5.62069M97.5 4.00979C99.5298 3.93236 101.534 3.92403 103.5 3.97341M103.5 3.97341V5.62069M103.5 3.97341C105.373 4.02045 107.21 4.11989 109 4.26189M109 4.26189V6M109 4.26189C110.537 4.38385 112.04 4.5372 113.5 4.71572M113.5 4.71572V6.5M113.5 4.71572C115.23 4.9273 116.901 5.17423 118.5 5.44614M118.5 5.44614V7.15296M118.5 5.44614C120.639 5.81001 122.649 6.21861 124.5 6.64709M124.5 6.64709V7.809"
-                    stroke="black" strokeLinecap="round"/>
-                <path d="M1 75.5C7.88394 67.3377 12.1592 52.5729 18 46L40.5 53.5L50.5 63.5L54 75.5H1Z" stroke="black"
-                      strokeLinejoin="round"/>
-            </svg>
-
-
-
-            <svg ref={svgTextRef} className={`svg-text ${svgTextInView ? 'svg-text-animate' : ''}`} width="121" height="85" viewBox="0 0 121 85" fill="none"
+            <svg ref={svgTextRef} className={`svg-text ${svgTextInView ? 'svg-text-animate' : ''}`} width="121"
+                 height="85" viewBox="0 0 121 85" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M11.5 41C10.1188 34.0942 6.05976 37 3.80249 41C2.32017 43.6267 1.2779 46.9553 1.42474 49.5C2.5 55.5 7.5 57 14.5 49.5"
@@ -379,6 +275,113 @@ export default function Main() {
                       strokeWidth="0.5" strokeLinecap="round"/>
             </svg>
 
+            <img className={"graphiti-img"} src={graphitiImg} alt="Graphiti img"/>
+
+            <svg ref={surfboardStickmanRef}
+                 className={`surfboard-stickman ${surfboardStickmanInView ? 'surfboard-stickman-animate' : ''}`}
+                 width="283" height="182" viewBox="0 0 283 182" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M178 38C179.667 49.3333 178.4 78.2 160 103C148.667 111.333 123.6 131 114 143" stroke="black"/>
+                <path d="M160 103C167.333 108.333 179.8 125.8 171 153" stroke="black"/>
+                <path
+                    d="M113.953 143.303L117.452 147.31M1.52417 119.5C5.95307 101.397 59.4558 86.97 211.427 133.785C244.265 143.757 284.376 159.471 281.89 170"
+                    stroke="black" strokeLinecap="round"/>
+                <path
+                    d="M180.372 1C157.807 1.00001 156.243 34.7279 180.372 34.7279C204.5 34.7279 202.936 0.999988 180.372 1Z"
+                    stroke="black" strokeLinecap="round"/>
+                <path
+                    d="M1.52418 119.5C0.265885 124.643 2.96874 130.083 8.49999 134.5C43.8337 162.714 94.3901 170.58 203.429 180.875C259.159 181.843 280.213 177.101 281.89 170"
+                    stroke="black" strokeLinecap="round"/>
+                <path d="M1 119.485L282 170" stroke="black"/>
+                <path d="M171 153L175.5 154" stroke="black" strokeLinecap="round"/>
+                <path d="M178 55.5C165.167 56.3333 138.4 59.8 134 67" stroke="black" strokeLinecap="round"/>
+                <path d="M178 55.5C181.167 59.6667 191.6 69.3 208 74.5" stroke="black" strokeLinecap="round"
+                      strokeLinejoin="round"/>
+                <path d="M38.2326 153C34.5 157.224 32.5 158.5 28 163.794C23.5 169.088 40.9954 163.982 50 157.224"
+                      stroke="black" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+
+            <motion.div className={"cherries-container"}
+                        ref={ref}
+                        animate={inView ? {y: 0, rotate: 180} : {}}
+                        initial={{y: '-32rem', rotate: 0}}
+                        transition={{duration: animationDuration, ease: 'easeOut'}}
+                        style={{
+                            margin: '0 auto',
+                        }}
+            >
+                <img className={"cherries-img"} src={cherriesImg} alt={"cherries img"}/>
+            </motion.div>
+
+
+            <motion.div className={"logoImg-container"}
+                        ref={ref}
+                        initial={{y: '-32rem'}}
+                        animate={inView ? {y: 0} : {}}
+                        transition={{duration: animationDuration, ease: 'easeOut'}}
+                        style={{
+                            backgroundColor: 'none',
+                            margin: '0 auto',
+                        }}
+            >
+                <span className={'logoText-first-word'}><img className={"logoImg-half"} src={VTUlogoHalve}
+                                                             alt={"vtu logo half image"}/> STUDIO</span>
+            </motion.div>
+
+            <svg ref={laybackStickmanRef}
+                 className={`layback-stickman ${laybackStickmanInView ? 'layback-stickman-animate' : ''}`} width="305"
+                 height="76" viewBox="0 0 305 76" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M59 50H190" stroke="black" strokeLinecap="round"/>
+                <path d="M38.5 50C2.73524 50 6.31175 -2.35905 38.5 1.17078C70.6883 4.7006 74.2647 50 38.5 50Z"
+                      stroke="black"/>
+                <path d="M190 50C240 50 229 50 304 50" stroke="black" strokeLinecap="round"/>
+                <path d="M190 50.125C233 5.625 253.5 10.625 291 45.125" stroke="black" strokeLinecap="round"/>
+                <path d="M59 50C68 78 79 71 134 71" stroke="black" strokeLinecap="round"/>
+                <path d="M59 50C77.8889 46.0417 118.733 36.7 131 31" stroke="black" strokeLinecap="round"/>
+                <path d="M144.042 29.1341L133.486 34.2083L120 12.392L137.458 4L144.042 29.1341Z" stroke="black"
+                      strokeLinecap="round"/>
+                <path d="M127 9C112.5 5.33333 78.8 2.1 60 18.5" stroke="black" strokeLinecap="round"/>
+                <path
+                    d="M129 7.809C127.638 7.4176 126.131 7.02463 124.5 6.64709M60 18.5L59 17C60.3016 15.9587 61.6367 14.9927 63 14.0976M63 14.0976L63.5 15M63 14.0976C64.309 13.2381 65.6439 12.444 67 11.7114M67 11.7114L67.5 13M67 11.7114C68.7996 10.7393 70.6366 9.87535 72.5 9.11063M72.5 9.11063L73 10.5M72.5 9.11063C74.3118 8.3671 76.1485 7.71732 78 7.15296M78 7.15296L78.5 8.5M78 7.15296C79.9871 6.54726 81.9913 6.03995 84 5.62069M84 5.62069L84.5 7.5M84 5.62069C86.1666 5.16847 88.3385 4.81869 90.5 4.55839M90.5 4.55839V6.5M90.5 4.55839C92.8524 4.2751 95.1925 4.0978 97.5 4.00979M97.5 4.00979V5.62069M97.5 4.00979C99.5298 3.93236 101.534 3.92403 103.5 3.97341M103.5 3.97341V5.62069M103.5 3.97341C105.373 4.02045 107.21 4.11989 109 4.26189M109 4.26189V6M109 4.26189C110.537 4.38385 112.04 4.5372 113.5 4.71572M113.5 4.71572V6.5M113.5 4.71572C115.23 4.9273 116.901 5.17423 118.5 5.44614M118.5 5.44614V7.15296M118.5 5.44614C120.639 5.81001 122.649 6.21861 124.5 6.64709M124.5 6.64709V7.809"
+                    stroke="black" strokeLinecap="round"/>
+                <path d="M1 75.5C7.88394 67.3377 12.1592 52.5729 18 46L40.5 53.5L50.5 63.5L54 75.5H1Z" stroke="black"
+                      strokeLinejoin="round"/>
+            </svg>
+
+            <img src={CherriesShadow} alt={"cherries shadow img"} className="cherriesShadow-img"/>
+
+            <svg ref={fallingStickmanRef}
+                 className={`falling-stickman ${fallingStickmanInView ? 'falling-stickman-animate' : ''}`} width="175"
+                 height="471" viewBox="0 0 175 471" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M101.5 328.5L94.9917 261.429L90.2534 156.536M86.6884 77.6168C133.876 80.7128 140.022 150.284 90.0278 151.541C65.7189 152.153 53.121 134.342 51.9942 115.721C50.8035 96.0465 62.4449 76.0262 86.6884 77.6168Z"
+                    stroke="black" strokeWidth="8" strokeLinecap="round"/>
+                <path d="M101.304 329C88.8498 343.272 60.813 395.184 60.6679 468.649" stroke="black" strokeWidth="8"
+                      strokeLinecap="round"/>
+                <path d="M95 189.5C128.667 182 190.4 134 168 2" stroke="black" strokeWidth="8" strokeLinecap="round"/>
+                <path d="M95 189.5C58.6667 181 -10.4 132.4 3.99999 6" stroke="black" strokeWidth="8"
+                      strokeLinecap="round"/>
+                <path d="M101.5 328.5C127.667 299.833 178.4 274.6 172 403" stroke="black" strokeWidth="8"
+                      strokeLinecap="round"/>
+            </svg>
+
+            <p className={"info-text"}>
+                <span class="centered-info-text">ВТУ студио е част от ВТУ ГРУП</span>Създадено пред 2024 година и работи в
+                областта на уеб
+                разработката</p>
+
+            <motion.div className={"keycap-first-container"}
+                        initial={{y: '21.8rem'}}
+                        animate={inView && scrollDirection === 'up' ? {y: '-29.5rem'} : {}}
+                        transition={{duration: 0.4, ease: 'easeOut'}}
+                        style={{
+                            backgroundColor: 'none',
+                            margin: '0 auto',
+                        }}
+            >
+                <img className={"keycapImg first-keycap"} src={keycap} alt={"keycap image"}/>
+            </motion.div>
         </main>
     )
 }
