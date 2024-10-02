@@ -1,49 +1,3 @@
-.bow-img{
-    position: absolute;
-    height: 30rem;
-    width: auto;
-    transform: rotate(-35deg);
-    left: 11%;
-    top: 790%;
-}
-
-.arrow-img{
-    transform: rotate(-36deg);
-    height: 2.5rem;
-    width: auto;
-}
-
-.arrow-container {
-    position: absolute;
-    top: 821%;
-    left: 10%;
-}
-
-
-.sectionFive-header{
-    position: absolute;
-    top: 803%;
-    left: 70.7%;
-}
-
-.sectionFive-text-one{
-    position: absolute;
-    top: 810%;
-    left: 68%;
-}
-
-.sectionFive-text-two{
-    position: absolute;
-    top: 818%;
-    left: 70%;
-}
-
-.sectionFive-text-three{
-    position: absolute;
-    top: 823%;
-    left: 68%;
-}
-
 .cloud-one{
     position: absolute;
     left: 10%;
@@ -71,49 +25,6 @@
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     animation: draw 3s linear forwards;
-}
-
-.contact-list{
-    position: absolute;
-    left: 80%;
-    height: 12rem;
-    top: 770%;
-    stroke-width: 4;
-}
-
-.contact-list-animate{
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: draw 6s linear forwards;
-}
-
-.pirateShip-stickman{
-    position: absolute;
-    left: 45%;
-    top: 823%;
-    z-index: 999;
-    height: 13rem;
-    stroke-width: 5;
-}
-
-.pirateShip-stickman-animate{
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: draw 3s linear forwards;
-}
-
-.questionMark-stickman{
-    position: absolute;
-    left: 87%;
-    top: 828%;
-    transform: scaleX(1);
-    stroke-width: 4;
-}
-
-.questionMark-stickman-animate{
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: draw 5s linear forwards;
 }
 
 .section-five-seagull{
@@ -145,3 +56,93 @@
     stroke-dashoffset: 1000;
     animation: draw 4s linear forwards;
 }
+
+.contact-list{
+    position: absolute;
+    left: 80%;
+    height: 12rem;
+    top: 770%;
+    stroke-width: 4;
+}
+
+.contact-list-animate{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 6s linear forwards;
+}
+
+.bow-img{
+    position: absolute;
+    height: 30rem;
+    width: auto;
+    transform: rotate(-35deg);
+    left: 11%;
+    top: 790%;
+}
+
+
+.arrow-container {
+    position: absolute;
+    top: 821%;
+    left: 10%;
+}
+
+.arrow-img{
+    transform: rotate(-36deg);
+    height: 2.5rem;
+    width: auto;
+}
+
+.sectionFive-header{
+    position: absolute;
+    top: 803%;
+    left: 70.7%;
+}
+
+.sectionFive-text-one{
+    position: absolute;
+    top: 810%;
+    left: 68%;
+}
+
+.sectionFive-text-two{
+    position: absolute;
+    top: 818%;
+    left: 70%;
+}
+
+.sectionFive-text-three{
+    position: absolute;
+    top: 823%;
+    left: 68%;
+}
+
+.pirateShip-stickman{
+    position: absolute;
+    left: 45%;
+    top: 823%;
+    z-index: 999;
+    height: 13rem;
+    stroke-width: 5;
+}
+
+.pirateShip-stickman-animate{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 3s linear forwards;
+}
+
+.questionMark-stickman{
+    position: absolute;
+    left: 87%;
+    top: 828%;
+    transform: scaleX(1);
+    stroke-width: 4;
+}
+
+.questionMark-stickman-animate{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 5s linear forwards;
+}
+
