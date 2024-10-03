@@ -59,7 +59,7 @@ export default function SectionTwo() {
     const { ref: cowRef, inView: cowInView } = useInView({ triggerOnce: false, threshold: 0.1 });
     const { ref: horseRef, inView: horseInView } = useInView({ triggerOnce: false, threshold: 0.1 });
     return (
-        <section id="sectionTwo">
+        <section id="sectionTwo" className="sectionTwo">
             <svg ref={sectionTwoCloudTwoRef}
                  className={`section-two-cloud-two ${sectionTwoCloudTwoInView ? 'section-two-cloud-two-animate' : ''}`}
                  width="1745" height="716" viewBox="0 0 1745 716" fill="none"

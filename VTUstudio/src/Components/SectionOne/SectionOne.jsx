@@ -70,7 +70,7 @@ export default function SectionOne() {
 
 
     return (
-        <section id={"sectionOne"}>
+        <section id={"sectionOne"} className={"sectionOne"}>
 
             <motion.div className={"keycap-container"}
                         ref={ref}

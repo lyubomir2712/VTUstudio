@@ -1,7 +1,15 @@
+.sectionOne{
+    background-color: aqua;
+    opacity: 0.5;
+    position: relative;
+    width: 89%;
+    margin-left: 6%;
+}
+
 .keycap-container{
     position: absolute;
-    left: 40%;
-    top: 177%;
+    left: 38.5%;
+    top: 65%;
     z-index: 1;
 }
 
@@ -12,7 +20,7 @@
 
 .six-edge-star{
     position: absolute;
-    top: 125%;
+    top: 10%;
     height: 1.5rem;
     transform: rotate(-10deg);
     left: 65%;
@@ -29,7 +37,7 @@
     position: absolute;
     height: 1rem;
     transform: rotate(-15deg);
-    top: 130%;
+    top: 10%;
     left: 63%;
     stroke-width: 5;
 }
@@ -44,7 +52,7 @@
     position: absolute;
     height: 0.6rem;
     transform: rotate(15deg);
-    top: 125%;
+    top: 15%;
     left: 60%;
     stroke-width: 5;
 }
@@ -59,7 +67,7 @@
     position: absolute;
     height: 0.6rem;
     transform: rotate(15deg);
-    top: 122%;
+    top: 12%;
     left: 63%;
     stroke-width: 5;
 }
@@ -72,8 +80,8 @@
 
 .star-rainbow{
     position: absolute;
-    top: 125%;
-    left: 35%;
+    top: 13%;
+    left: 32%;
     height: 7.5rem;
     transform: scaleX(1) rotate(-7deg);
     stroke-width: 3;
@@ -88,9 +96,9 @@
 
 .satelite{
     position: absolute;
-    top: 127%;
+    top: 15%;
     transform: rotate(25deg);
-    left: 78%;
+    right: 1%;
     stroke-width: 4;
     height: 8rem;
 }
@@ -103,8 +111,8 @@
 
 .svg-text-section-one{
     position: absolute;
-    left: 10.4%;
-    top: 130%;
+    left: 4.8%;
+    top: 18%;
     stroke-width: 1.3;
 }
 
@@ -117,8 +125,8 @@
 .cloud-border{
     position: absolute;
     stroke-width: 15;
-    top:154%;
-    left: 6%;
+    top:42%;
+    left: 0;
     height: 12rem;
 }
 
@@ -130,33 +138,32 @@
 
 .sectionOne-header{
     position: absolute;
-    left: 16.4%;
-    top: 153%;
+    left: 10.4%;
+    top: 42%;
     font-weight: bolder;
 }
 
 .sectionOne-text{
     position: absolute;
-    left: 8%;
-    top: 160%;
+    left: 2.2%;
+    top: 48%;
 }
 
 .lemon-container{
     position: absolute;
-    left: 30%;
-    top: 130%;
+    left: 27%;
+    top: 18%;
 }
 
 .lemon-img{
     height:40rem;
     width: auto;
     z-index: 1;
-
 }
 
 .lemonShadow-img{
-    top:194%;
-    left: 52%;
+    top:84%;
+    left: 54%;
     position: absolute;
     filter: brightness(0.1);
     height: auto;
@@ -165,8 +172,8 @@
 
 .laptop-stickman{
     position: absolute;
-    right: 13%;
-    top: 175.3%;
+    right: 9%;
+    top: 62.8%;
     height: 5rem;
     stroke-width: 6;
 }
@@ -181,8 +188,8 @@
 .lightbulb-stickman{
     position: absolute;
     stroke-width: 8;
-    top: 180%;
-    left: 15%;
+    top: 68%;
+    left: 9.5%;
     height: 13rem;
     fill: none;
 }
@@ -195,8 +202,8 @@
 
 .trampoline-container{
     position: absolute;
-    top: 190%;
-    left: 35%;
+    top: 78%;
+    left: 33%;
     padding-right: 10rem;
 }
 
@@ -209,8 +216,8 @@
 .trampolineShadow-img{
     position: absolute;
     filter: brightness(0.1);
-    top: 200%;
-    left: 30%;
+    top: 88%;
+    left: 29%;
     height: 10%;
     width: 25%;
 }
