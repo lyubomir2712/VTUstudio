@@ -43,16 +43,16 @@ export default function Transition() {
         <>
             <Navbar/>
             <div className="content">
-                <div style={{marginBottom: '5.5rem'}}><Section id={1} distance={600}><Main /></Section></div>
+                <div style={{marginBottom: '5.5rem'}}><Section id={1} distance={1000}><Main /></Section></div>
 
-               <div style={{marginBottom: '30rem'}}><Section id={2} distance={600}><SectionOne/></Section></div>
+               <div style={{marginBottom: '30rem'}}><Section id={2} distance={1000}><SectionOne/></Section></div>
 
                 <Section id={3} distance={600}><SectionTwo/></Section>
 
-                <div style={{marginTop: '37rem'}}><Section id={4} distance={300}><SectionThree/></Section></div>
+                <div style={{marginTop: '37rem'}}><Section id={4} distance={1000}><SectionThree/></Section></div>
 
-                <div style={{marginBottom: '45rem'}}><Section id={5} distance={600}><SectionFour /></Section></div>
-                <Section id={6} distance={300}><SectionFive /></Section>
+                <div style={{marginBottom: '45rem'}}><Section id={5} distance={1000}><SectionFour /></Section></div>
+                <Section id={6} distance={1000}><SectionFive /></Section>
             </div>
         </>
     );

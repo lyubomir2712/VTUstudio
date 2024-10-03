@@ -37,9 +37,9 @@ body{
 Main ,Section {
     scroll-snap-align: start;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
 }
 
 *{
@@ -78,11 +78,9 @@ html::-webkit-scrollbar {
 svg {
     height: 10rem;
     width: auto;
-
-    /*stroke-dasharray: 1000;*/
-    /*stroke-dashoffset: 1000;*/
-    /*animation: draw 3s linear forwards;*/
 }
+
+
 
 
 

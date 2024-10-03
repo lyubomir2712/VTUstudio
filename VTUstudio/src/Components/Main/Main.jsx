@@ -47,7 +47,7 @@ export default function Main() {
     const { ref: laybackStickmanRef, inView: laybackStickmanInView } = useInView({ triggerOnce: false, threshold: 0.1 });
     const { ref: svgTextRef, inView: svgTextInView } = useInView({ triggerOnce: false, threshold: 0.1 });
 
-    return (<main id="main">
+    return (<main id="main" className={"Main"}>
 
             <svg ref={svgTextRef} className={`svg-text ${svgTextInView ? 'svg-text-animate' : ''}`} width="121"
                  height="85" viewBox="0 0 121 85" fill="none"
@@ -323,8 +323,8 @@ export default function Main() {
                             margin: '0 auto',
                         }}
             >
-                <span className={'logoText-first-word'}><img className={"logoImg-half"} src={VTUlogoHalve}
-                                                             alt={"vtu logo half image"}/> STUDIO</span>
+                <span className={'logoText-main'}><img className={"logoImg-half"} src={VTUlogoHalve}
+                                                             alt={"vtu logo half image"}/>STUDIO</span>
             </motion.div>
 
             <svg ref={laybackStickmanRef}
