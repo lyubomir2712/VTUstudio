@@ -64,7 +64,7 @@ function SectionThree() {
 
 
     return (
-        <section id="sectionThree">
+        <section id="sectionThree" className="sectionThree">
             <svg ref={sectionThreeCloudRef}
                  className={`section-three-cloud ${sectionThreeCloudInView ? 'section-three-cloud-animate' : ''}`}
                  width="572" height="270" viewBox="0 0 572 270" fill="none"

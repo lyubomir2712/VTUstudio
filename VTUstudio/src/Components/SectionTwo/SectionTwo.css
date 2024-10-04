@@ -1,11 +1,15 @@
 .sectionTwo{
-
+    background-color: yellow;
+    opacity: 0.5;
+    width: 88%;
+    margin-left: 10%;
+    position: relative;
 }
 
 .section-two-cloud{
     position: absolute;
-    top: 290%;
-    left: 60%;
+    top: 13%;
+    left: 56%;
     height: 7rem;
     stroke-width: 6;
 }
@@ -19,8 +23,8 @@
 .section-two-cloud-two{
     position: absolute;
     stroke-width: 9;
-    left: 15%;
-    top: 290%;
+    left: 6%;
+    top: 15%;
     height: 7rem;
 }
 
@@ -32,8 +36,8 @@
 
 .lightning{
     position: absolute;
-    top: 308%;
-    left: 65%;
+    top: 30%;
+    left: 63%;
     height: 6rem;
     stroke-width: 6;
     transform: rotate(10deg);
@@ -48,7 +52,7 @@
 .lightning-two{
     position: absolute;
     left: 78%;
-    top: 307%;
+    top: 30%;
     height: 6rem;
     stroke-width: 6;
     transform: rotate(10deg);
@@ -62,7 +66,7 @@
 
 .section-two-bird{
     position: absolute;
-    top: 315%;
+    top: 38%;
     left: 85%;
     stroke-width: 30;
     height:5rem;
@@ -77,8 +81,8 @@
 
 .peacock-container{
     position:absolute;
-    top: 307%;
-    left: 10%;
+    top: 30%;
+    left: 0;
     padding-right:27rem;
 }
 
@@ -90,15 +94,15 @@ img.peacock-img{
 .photographer-stickman{
     position: absolute;
     stroke-width: 22;
-    top: 346%;
+    top: 68%;
     left: 50%;
     height: 7rem;
 }
 
 .section-two-border{
     position: absolute;
-    left: 57.5%;
-    top: 335%;
+    left: 53.5%;
+    top: 57%;
     height: 13rem;
     stroke-width: 7;
 }
@@ -111,15 +115,15 @@ img.peacock-img{
 
 .sectionTwo-header{
     position: absolute;
-    top: 339%;
-    left: 63.4%;
+    top: 61%;
+    left: 60%;
     font-weight: bolder;
 }
 
 .sectionTwo-text{
     position: absolute;
-    top: 346%;
-    left: 60%;
+    top: 68%;
+    left: 56.5%;
 }
 
 .photographer-stickman-animate{
@@ -130,7 +134,7 @@ img.peacock-img{
 
 .cow{
     position: absolute;
-    top: 361%;
+    top: 84%;
     left: 86.2%;
     stroke-width: 20;
     height: 7rem;
@@ -144,8 +148,8 @@ img.peacock-img{
 
 .horse{
     position: absolute;
-    top:362%;
-    left:23%;
+    top:84.5%;
+    left:15%;
     stroke-width: 20;
     height: 7rem;
 }
@@ -160,7 +164,7 @@ img.peacock-img{
     position: absolute;
     stroke-width: 20;
     height: 4rem;
-    top: 369%;
-    left: 10%;
+    top: 91.5%;
+    left: 0;
 }
 
