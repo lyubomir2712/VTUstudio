@@ -21,7 +21,7 @@ export default function SectionFive() {
     const { ref: seagullTwoRef, inView: seagullTwoInView } = useInView({ triggerOnce: false, threshold: 0.1 });
 
     return (
-        <section id={"sectionFive"}>
+        <section id={"sectionFive"} className={"sectionFive"}>
 
             <svg ref={cloudOneRef} className={`cloud-one ${cloudOneInView ? 'cloud-one-animate' : ''}`} width="409"
                  height="280" viewBox="0 0 409 280" fill="none"
