@@ -1,7 +1,15 @@
+.sectionFour{
+    background-color: purple;
+    opacity: 0.5;
+    position: relative;
+    width: 55%;
+    margin-left: 23%;
+}
+
 .pensil-container{
     position: absolute;
-    top: 558%;
-    left: 52.8%;
+    top: 0;
+    left: 53.8%;
     z-index: 999;
     padding-top: 7rem;
 }
@@ -16,15 +24,15 @@
     font-family: 'ZenKakuGothicNew-Light';
     letter-spacing: 1.5rem;
     font-size: 2.5rem;
-    left: 32.35%;
+    left: 17%;
     font-weight: 600;
-    top: 592%;
+    top: 33.5%;
 }
 
 .pensil-jet{
     position: absolute;
-    top: 640.5%;
-    left: 53.55%;
+    top: 82.6%;
+    left: 55.15%;
     width: 3rem;
     stroke-width: 2;
 }

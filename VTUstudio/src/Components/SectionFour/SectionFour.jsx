@@ -58,7 +58,7 @@ export default function SectionFour() {
 
 
     return (
-        <section id={"sectionFour"}>
+        <section id={"sectionFour"} className={"sectionFour"}>
             <motion.div className={"pensil-container"}
                         ref={ref}
                         initial={{y: '36rem'}}

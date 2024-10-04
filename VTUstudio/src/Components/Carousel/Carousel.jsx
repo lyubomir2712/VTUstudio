@@ -25,12 +25,10 @@ const Carousel = () => {
         }
     };
 
-    // Function to render grid items with specific empty cells
     const renderGrid = () => {
         return Array.from({ length: 5 }).map((_, rowIndex) => (
             <React.Fragment key={rowIndex}>
                 {Array.from({ length: 5 }).map((_, colIndex) => {
-                    // Skip cells in the 3rd row and 2nd, 3rd, 4th columns
                     if (rowIndex === 2 && (colIndex === 1 || colIndex === 2 || colIndex === 3)) {
                         return (
                             <Grid item xs={2.4} key={`${rowIndex}-${colIndex}`}>
@@ -45,7 +43,6 @@ const Carousel = () => {
                                 sx={{ height: '80px', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent' }}
                             >
                                 {<img className={"carousel-item"} src={VtuLogo} alt={"item"}/>}
-                                {/*{`Cell ${rowIndex + 1},${colIndex + 1}`}*/}
                             </Paper>
                         </Grid>
                     );
@@ -55,7 +52,7 @@ const Carousel = () => {
     };
 
     return (
-        <Box sx={{width: '100%', height: '100%', maxWidth: 1000, maxHeight: 600, margin: '0 auto', textAlign: 'center' }}>
+        <Box className={'carousel-container'} sx={{width: '100%', height: '100%', maxWidth: 1000, maxHeight: 600, margin: '0 auto', textAlign: 'center' }}>
             <SwipeableViews index={activeStep} onChangeIndex={setActiveStep} enableMouseEvents ={false}>
                 {carouselItems.map((item, index) => (
                     <div key={index}>

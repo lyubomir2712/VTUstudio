@@ -1,17 +1,17 @@
+.carousel-container{
+    position: absolute;
+    top: 22%;
+    left: 1%;
+}
+
 .hidden{
     visibility: hidden;
 }
-
-.portfolio-button{
-
-}
-
 
 .carousel-item{
     height:3.5rem;
     width:auto;
     filter: grayscale(100%);
-    /*transition: filter 0.5s ease;*/
 }
 
 .carousel-item:hover{
