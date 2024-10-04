@@ -9,6 +9,7 @@ import {useScroll, useSpring, useTransform,} from "framer-motion";
 import SectionFour from "../SectionFour/SectionFour.jsx";
 import SectionFive from "../SectionFive/SectionFive.jsx";
 import useScrollDelay from "./useScrollDelay.jsx";
+import Footer from "../Footer/Footer.jsx";
 
 function useParallax(value, distance) {
     return useTransform(value, [0, 1], [-distance, distance]);
