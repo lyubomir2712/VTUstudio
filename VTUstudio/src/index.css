@@ -25,16 +25,17 @@
     }
 }
 
-body{
-  background-image: url("assets/Images/WaveBackground.png");
-  background-position: 35% 80%;
-  background-size: 110%;
-  background-attachment: fixed;
-  margin:0;
-    min-height:100vh;
+body {
+    background-image: url("assets/Images/WaveBackground.png");
+    background-position: 35% 80%;
+    background-size: 110%;
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100vh;
 }
 
-Main ,Section {
+Main,
+Section {
     scroll-snap-align: start;
     height: 100vh;
     /*display: flex;*/
@@ -42,17 +43,18 @@ Main ,Section {
     /*align-items: center;*/
 }
 
-*{
+* {
     font-family: 'PF Reminder Pro Regular';
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 1.5rem;
 }
 
-html, body{
+html,
+body {
     scrollbar-width: none;
     -ms-overflow-style: none;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
     scroll-behavior: smooth;
 
 }
@@ -61,13 +63,28 @@ html::-webkit-scrollbar {
     display: none;
 }
 
-.sectionOne-header, .sectionTwo-header, .sectionThree-header, .sectionFour-header, .sectionFive-header {
+.content {
+    position: relative
+}
+
+.sectionOne-header,
+.sectionTwo-header,
+.sectionThree-header,
+.sectionFour-header,
+.sectionFive-header {
     font-size: 1.7rem;
     font-family: 'CaviarDreams Bold', sans-serif;
     font-weight: 700;
 }
 
-.sectionOne-text, .sectionTwo-text, .sectionThree-text, .sectionFour-text, .sectionFive-text-one, .sectionFive-text-two, .sectionFive-text-three, .infoText {
+.sectionOne-text,
+.sectionTwo-text,
+.sectionThree-text,
+.sectionFour-text,
+.sectionFive-text-one,
+.sectionFive-text-two,
+.sectionFive-text-three,
+.infoText {
     color: #595959;
     display: inline-block;
     text-align: center;
@@ -79,11 +96,3 @@ svg {
     height: 10rem;
     width: auto;
 }
-
-
-
-
-
-
-
-

@@ -1,15 +1,15 @@
-import React, {useEffect, useState} from "react";
-import Navbar from "../Navbar/Navbar.jsx";
+import React, { useEffect, useState } from "react";
 import Main from "../Main/Main.jsx";
 import SectionOne from "../SectionOne/SectionOne.jsx";
 import SectionTwo from "../SectionTwo/SectionTwo.jsx";
 import SectionThree from "../SectionThree/SectionThree.jsx";
 import { useRef } from "react";
-import {useScroll, useSpring, useTransform,} from "framer-motion";
+import { useScroll, useSpring, useTransform, } from "framer-motion";
 import SectionFour from "../SectionFour/SectionFour.jsx";
 import SectionFive from "../SectionFive/SectionFive.jsx";
 import useScrollDelay from "./useScrollDelay.jsx";
 import Footer from "../Footer/Footer.jsx";
+import Navigation from "../Navbar/Navigation.jsx";
 
 function useParallax(value, distance) {
     return useTransform(value, [0, 1], [-distance, distance]);
@@ -42,17 +42,19 @@ export default function Transition() {
     // The additional div's are used to make the space between the sections
     return (
         <>
-            <Navbar/>
+            <Navigation />
             <div className="content">
-                <div style={{marginBottom: '5.5rem'}}><Section id={1} distance={1000}><Main /></Section></div>
+                <div style={{ marginBottom: '5.5rem' }}><Section id={1} distance={1000}><Main /></Section></div>
 
-               <div style={{marginBottom: '30rem'}}><Section id={2} distance={1000}><SectionOne/></Section></div>
+                <div style={{ marginBottom: '30rem' }}><Section id={2} distance={1000}><SectionOne /></Section></div>
 
-                <Section id={3} distance={600}><SectionTwo/></Section>
+                <Section id={3} distance={600}><SectionTwo /></Section>
 
-                <div style={{marginTop: '37rem'}}><Section id={4} distance={1000}><SectionThree/></Section></div>
+                <div style={{ marginTop: '37rem' }}><Section id={4} distance={1000}><SectionThree /></Section></div>
 
-                <div style={{marginBottom: '45rem'}}><Section id={5} distance={1000}><SectionFour /></Section></div>
+                <div style={{ marginBottom: '45rem' }}><Section id={5} distance={1000}>
+                    {/* <SectionFour /> */}
+                </Section></div>
                 <Section id={6} distance={1000}><SectionFive /></Section>
             </div>
         </>

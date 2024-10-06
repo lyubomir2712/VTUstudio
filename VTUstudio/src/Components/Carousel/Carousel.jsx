@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SwipeableViews from 'react-swipeable-views';
+// import SwipeableViews from 'react-swipeable-views';
 import { Paper, Button, Box, Grid } from '@mui/material';
 import VtuLogo from '../../assets/Images/SectionFour/VtuLogo.png'
 import "./Carousel.css"
@@ -32,7 +32,7 @@ const Carousel = () => {
                     if (rowIndex === 2 && (colIndex === 1 || colIndex === 2 || colIndex === 3)) {
                         return (
                             <Grid item xs={2.4} key={`${rowIndex}-${colIndex}`}>
-                                <Paper elevation={0} sx={{ height: '80px', visibility: 'hidden',  boxShadow: 'none'}} />
+                                <Paper elevation={0} sx={{ height: '80px', visibility: 'hidden', boxShadow: 'none' }} />
                             </Grid>
                         );
                     }
@@ -42,7 +42,7 @@ const Carousel = () => {
                                 elevation={0}
                                 sx={{ height: '80px', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent' }}
                             >
-                                {<img className={"carousel-item"} src={VtuLogo} alt={"item"}/>}
+                                {<img className={"carousel-item"} src={VtuLogo} alt={"item"} />}
                             </Paper>
                         </Grid>
                     );
@@ -52,11 +52,11 @@ const Carousel = () => {
     };
 
     return (
-        <Box className={'carousel-container'} sx={{width: '100%', height: '100%', maxWidth: 1000, maxHeight: 600, margin: '0 auto', textAlign: 'center' }}>
-            <SwipeableViews index={activeStep} onChangeIndex={setActiveStep} enableMouseEvents ={false}>
+        <Box className={'carousel-container'} sx={{ width: '100%', height: '100%', maxWidth: 1000, maxHeight: 600, margin: '0 auto', textAlign: 'center' }}>
+            <SwipeableViews index={activeStep} onChangeIndex={setActiveStep} enableMouseEvents={false}>
                 {carouselItems.map((item, index) => (
                     <div key={index}>
-                        <Paper elevation={0} style={{padding: '1px', height: '20rem', backgroundColor: 'transparent' }}>
+                        <Paper elevation={0} style={{ padding: '1px', height: '20rem', backgroundColor: 'transparent' }}>
                             <Grid container spacing={2}>
                                 {renderGrid()}
                             </Grid>
