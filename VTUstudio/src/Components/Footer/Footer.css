@@ -1,11 +1,3 @@
-.footer-logo{
-    position: absolute;
-    left: 59.5rem;
-    height: 2.5rem;
-    width: auto;
-    bottom: 4%;
-}
-
 footer {
     position: absolute;
     background-color: #212121;
@@ -15,21 +7,20 @@ footer {
     bottom: 0;
     padding: 0 0 0.25rem 0;
 }
-.footer-content{
-    margin-left: 60rem;
-}
 
-.footer-logo-text{
-    margin-top: 0.2rem;
-    padding-top:0;
-    font-size: 0.4rem;
-    font-weight: bold;
-    letter-spacing: 0.9rem ;
-    font-family: 'Roboto Light', sans-serif;
+.footer-logo{
+    position: absolute;
+    bottom: 35px;
+    right: 10rem;
+    height: 2.5rem;
+    width: auto;
+    z-index: 10;
 }
 
 @media (max-width: 1024px) {
-    .footer-content{
-        margin-left: 41%;
+    .footer-logo {
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
     }
 }
