@@ -41,7 +41,7 @@
     color: red !important;
     font-size: 20px;
     cursor: pointer;
-    padding: 0 30px !important
+    padding: 0 30px !important;
 }
 
 .navbar-nav .nav-link {
@@ -108,6 +108,11 @@
 .navigation-toggle .dropdown-menu .dropdown-item:focus,
 .navigation-toggle .dropdown-menu .dropdown-item:active {
     background-color: rgba(33, 33, 33, 0.9) !important;
+}
+
+.nav-language-toggle {
+    width: fit-content !important;
+    align-self: flex-end;
 }
 
 @media screen and (min-width: 991px) {

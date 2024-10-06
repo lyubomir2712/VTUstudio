@@ -39,6 +39,12 @@ export default function Navigation() {
         languageButtonTextHandler({ language: languageButtonText });
     }
 
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    };
 
     return (
         <Navbar expand="lg" className=" navigation" data-bs-theme="dark">
@@ -53,38 +59,38 @@ export default function Navigation() {
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
-                        <Dropdown.Item href="#sectionOne">{t("Web design")}</Dropdown.Item>
-                        <Dropdown.Item href="#sectionTwo">{t("Print advertising")}</Dropdown.Item>
-                        <Dropdown.Item href="#sectionThree">{t("Photography")}</Dropdown.Item>
-                        <Dropdown.Item href="#sectionFour">{t("Photoalbums")}</Dropdown.Item>
-                        <Dropdown.Item href="#sectionFive">{t("Contacts")}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => scrollToSection('sectionOne')}>{t("Web design")}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => scrollToSection('sectionTwo')}>{t("Print advertising")}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => scrollToSection('sectionThree')}>{t("Photography")}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => scrollToSection('sectionFour')}>{t("Photoalbums")}</Dropdown.Item>
+                        <Dropdown.Item onClick={() => scrollToSection('sectionFive')}>{t("Contacts")}</Dropdown.Item>
                         <Dropdown.Item onClick={handleButtonClick} className='language menu-language-toggle'>{languageButtonText}</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
 
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Container fluid>
-                        <Row className="navbar-menu-wrapper">
-                            <div onClick={handleButtonClick} className={'language nav-language-toggle'}>{languageButtonText}</div>
+                        <Row className="navbar-menu-wrapper" >
+
+                            <span onClick={handleButtonClick} className={'language nav-language-toggle'}>{languageButtonText}</span>
+
                             <Col>
                                 <Nav className="navbar-collapsed-menu">
-                                    <Nav.Link href="#sectionOne">{t("Web design")}</Nav.Link>
+                                    <Nav.Link onClick={() => scrollToSection('sectionOne')}>{t("Web design")}</Nav.Link>
                                     <span className='navbar-menu-devider'>/</span>
-                                    <Nav.Link href="#sectionTwo">{t("Print advertising")}</Nav.Link>
+                                    <Nav.Link onClick={() => scrollToSection('sectionTwo')}>{t("Print advertising")}</Nav.Link>
                                     <span className='navbar-menu-devider'>/</span>
-                                    <Nav.Link href="#sectionThree">{t("Photography")}</Nav.Link>
+                                    <Nav.Link onClick={() => scrollToSection('sectionThree')}>{t("Photography")}</Nav.Link>
                                     <span className='navbar-menu-devider'>/</span>
-                                    <Nav.Link href="#sectionFour">{t("Portfolio")}</Nav.Link>
+                                    <Nav.Link onClick={() => scrollToSection('sectionFour')}>{t("Portfolio")}</Nav.Link>
                                     <span className='navbar-menu-devider'>/</span>
-                                    <Nav.Link href="#">{t("Photoalbums")}</Nav.Link>
-                                    <span className='navbar-menu-devider'>/</span>
-                                    <Nav.Link href="#sectionFive">{t("Contacts")}</Nav.Link>
+                                    <Nav.Link onClick={() => scrollToSection('sectionFive')}>{t("Contacts")}</Nav.Link>
                                 </Nav>
                             </Col>
                         </Row>
                     </Container>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+                </Navbar.Collapse >
+            </Container >
+        </Navbar >
     )
 }
