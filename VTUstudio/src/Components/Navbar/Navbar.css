@@ -11,18 +11,20 @@
 }
 
 .navigation.navbar .container-fluid {
-    justify-content: end;
+    justify-content: space-between !important;
     position: relative;
+    display: flex;
 }
 
 .navbar-brand {
-    position: absolute;
+    position: relative;
     top: 16px;
-    left: 40px;
+    left: 0;
     height: 70px;
     width: auto;
     padding: 0;
     margin: 0;
+    display: block;
 }
 
 .logo {
@@ -119,12 +121,22 @@
     .nav-language-toggle {
         display: inline-block;
     }
+
 }
 
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: none !important;
+    }
+}
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
     .navigation-toggle {
         display: block;
+    }
+
+    .navbar-collapse {
+        display: none !important;
     }
 
     .navbar-brand {
@@ -148,6 +160,12 @@
     .language {
         padding: 10px 12px !important;
     }
+
+    .navbar-menu-wrapper {
+        display: none !important;
+    }
+
+
 }
 
 [data-bs-theme=dark] .navbar-toggler-icon {

@@ -95,3 +95,15 @@ svg {
     height: 10rem;
     width: auto;
 }
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+    }
+}
