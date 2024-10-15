@@ -38,9 +38,6 @@ Main,
 Section {
     scroll-snap-align: start;
     height: 100vh;
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
 }
 
 * {
@@ -101,7 +98,6 @@ svg {
         display: block !important;
     }
 }
-
 
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {

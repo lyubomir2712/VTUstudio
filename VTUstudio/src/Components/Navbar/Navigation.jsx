@@ -48,7 +48,7 @@ export default function Navigation() {
 
     return (
         <Navbar expand="lg" className=" navigation" data-bs-theme="dark">
-            <Container fluid>
+            <Container fluid >
                 <Navbar.Brand href="#main">
                     <img src={Logo} alt="Logo" className={"logo"} />
                 </Navbar.Brand>

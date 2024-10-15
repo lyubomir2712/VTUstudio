@@ -5,26 +5,27 @@
     width: 100%;
     z-index: 999 !important;
     background: #212121;
-    padding: 0;
     color: white;
     padding: 5px 0 !important;
+    height: 8.3%;
 }
 
 .navigation.navbar .container-fluid {
-    justify-content: space-between !important;
+    justify-content: center !important;
     position: relative;
     display: flex;
 }
 
 .navbar-brand {
     position: relative;
-    top: 16px;
-    left: 0;
+    top: 24px;
     height: 70px;
     width: auto;
     padding: 0;
     margin: 0;
     display: block;
+    left: 25%;
+    transform: translateX(-50%);
 }
 
 .logo {
@@ -32,29 +33,32 @@
 }
 
 .navbar-menu-wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    text-align: right;
+    /*justify-content: flex-end;*/
+    /*text-align: right;*/
+    left: 32%;
+    transform: translateX(-50%);
 }
 
 .language {
     color: red !important;
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
     padding: 0 30px !important;
 }
 
 .navbar-nav .nav-link {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     padding: 0 12px;
     white-space: nowrap;
 }
 
 .navbar-menu-devider {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .navbar-collapsed-menu {
