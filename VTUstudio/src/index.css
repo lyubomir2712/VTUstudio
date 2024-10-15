@@ -96,13 +96,20 @@ svg {
     width: auto;
 }
 
+@media (min-width: 1024px) and (max-width: 1024px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: block !important;
+    }
+}
+
+
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
         display: none !important;
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
     .navbar-expand-lg .navbar-collapse {
         display: flex !important;
     }
