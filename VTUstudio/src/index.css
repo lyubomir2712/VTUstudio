@@ -101,23 +101,29 @@ svg {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
     .navbar-expand-lg .navbar-collapse {
         display: flex !important;
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .navigation-toggle {
+        display: block !important;
+    }
+}
+
 @media (max-width: 1024px) {
-    .container-fluid{
+    .container {
         width: 100% !important;
         display: flex !important;
         justify-content: space-between !important;
         align-items: center !important;
         align-self: end !important;
     }
-    .navbar-brand{
+
+    .navbar-brand {
         top: 20px;
         left: 0;
     }
 }
-

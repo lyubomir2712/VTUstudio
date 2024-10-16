@@ -48,7 +48,7 @@ export default function Navigation() {
 
     return (
         <Navbar expand="lg" className=" navigation" data-bs-theme="dark">
-            <Container fluid >
+            <Container  >
                 <Navbar.Brand href="#main">
                     <img src={Logo} alt="Logo" className={"logo"} />
                 </Navbar.Brand>
@@ -69,7 +69,7 @@ export default function Navigation() {
                 </Dropdown>
 
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Container fluid>
+                    <Container >
                         <Row className="navbar-menu-wrapper" >
 
                             <span onClick={handleButtonClick} className={'language nav-language-toggle'}>{languageButtonText}</span>
