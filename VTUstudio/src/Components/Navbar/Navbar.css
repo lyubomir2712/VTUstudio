@@ -7,7 +7,6 @@
     background: #212121;
     color: white;
     padding: 0 !important;
-    /* height: 8.3%; */
 }
 
 /* .container-fluid {
@@ -42,8 +41,6 @@
 }
 
 .navbar-menu-wrapper {
-    /* position: relative; */
-    /* left: 22.6%; */
     display: flex;
     flex-direction: column;
     align-items: center;
