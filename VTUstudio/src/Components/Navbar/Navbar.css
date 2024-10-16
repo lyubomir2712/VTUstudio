@@ -3,17 +3,22 @@
 .navigation {
     position: fixed !important;
     width: 100%;
-    z-index: 999 !important;
+    z-index: 10 !important;
     background: #212121;
     color: white;
     padding: 5px 0 !important;
     height: 8.3%;
 }
 
-.navigation.navbar .container-fluid {
+.container-fluid{
+    background-color: green;
     justify-content: center !important;
-    position: relative;
+}
+
+.navigation.navbar .container-fluid {
     display: flex;
+    width: 60%;
+    align-items: flex-end;
 }
 
 .navbar-brand {
@@ -22,10 +27,8 @@
     height: 70px;
     width: auto;
     padding: 0;
-    margin: 0;
     display: block;
-    left: 25%;
-    transform: translateX(-50%);
+    z-index: 20;
 }
 
 .logo {
@@ -34,13 +37,11 @@
 
 .navbar-menu-wrapper {
     position: relative;
+    left: 22.6%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*justify-content: flex-end;*/
-    /*text-align: right;*/
-    left: 32%;
-    transform: translateX(-50%);
+    background: blue;
 }
 
 .language {

@@ -93,11 +93,7 @@ svg {
     width: auto;
 }
 
-@media (min-width: 1024px) and (max-width: 1024px) {
-    .navbar-expand-lg .navbar-collapse {
-        display: block !important;
-    }
-}
+
 
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
@@ -105,8 +101,23 @@ svg {
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
     .navbar-expand-lg .navbar-collapse {
         display: flex !important;
     }
 }
+
+@media (max-width: 1024px) {
+    .container-fluid{
+        width: 100% !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        align-self: end !important;
+    }
+    .navbar-brand{
+        top: 20px;
+        left: 0;
+    }
+}
+
