@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const useScrollDelay = (scrollAmount = 50) => {
+const useScrollDelay = (scrollAmount = 51) => {
     useEffect(() => {
         const handleWheel = (event) => {
             event.preventDefault();
